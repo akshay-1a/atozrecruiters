@@ -1,0 +1,82 @@
+'use client';
+
+import React, { useState } from 'react'
+import Image from 'next/image'
+import { homepage } from '@/lib/constants'
+import { motion } from 'framer-motion';
+
+
+export default function Services() {
+    const service = homepage.services
+    return (
+        <section className='min-h-[80vh] flex flex-col justify-start items-center gap-5 mt-10 px-10'>
+            <h2 className='text-cyan-800 rounded-md p-3 text-center text-5xl font-bold'>
+                {service.title}
+            </h2>
+            <p className='text-xl '>
+                {service.desc}
+            </p>
+            <div className='flex flex-wrap justify-around items-center w-full'>
+                {service.cards.map((card, index) => (
+                    <GlossyCard key={index} {...card} />
+                ))}
+
+            </div>
+        </section>
+    )
+}
+
+
+
+
+const GlossyCard = ({ title, image, tags, desc, href }: { title: string; image: string; tags: string[]; desc: string; href: string }) => {
+    const [isHovered, setIsHovered] = useState(false)
+
+    return (
+        <motion.div
+            initial={{ scale: 0.9, clipPath: "inset(100% 0 100% 0)" }}
+            whileInView={{
+                clipPath: "inset(0% 0 0% 0)", transition: {
+                    delay: 0.5,
+                    duration: 0.7,
+                    ease: "linear",
+                    type: "tween",
+                }
+            }}
+            whileHover={{
+                scale: 0.94, transition: {
+                    delay: 0,
+                    duration: 0.1,
+                    ease: "easeInOut",
+                    type: "spring",
+                }
+            }}
+            viewport={{ once: true }}
+            className="relative overflow-hidden w-[64vh] h-[82vh] rounded-xl transition-all duration-300 ease-in-out"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            <div className={`absolute inset-0 bg-gradient-to-br from-cyan-900/90 to-cyan-900/90 backdrop-blur-md transition-all duration-300 ease-in-out  ${isHovered ? 'opacity-100 ' : 'opacity-90'}`} />
+            <div className={`absolute inset-0 rounded-xl transition-all duration-300 ease-in-out animate-border-glow h-full w-full`} />
+            <div className="relative overflow-hidden rounded-t-lg">
+                <Image
+                    src={`/homepage/services/${image}.jpg`}
+                    alt={title}
+                    width={5774}
+                    height={3849}
+                    className="object-cover w-full h-64"
+                />
+            </div>
+            <div className="relative p-6 h-full flex flex-col space-y-4">
+
+                <h2 className="text-2xl font-extrabold drop-shadow-lg text-cyan-50 text-center uppercase">{title}</h2>
+                <p className="font-thin text-cyan-50 text-pretty capitalize">{desc}</p>
+                <ul className="flex flex-wrap gap-2 text-cyan-100">
+                    {tags.map((tag, index) => (
+                        <li key={index} className="bg-cyan-900 h-10 p-1 rounded-md mb-2 drop-shadow-md"># {tag}</li>
+                    ))}
+                </ul>
+            </div>
+        </motion.div>
+    )
+}

@@ -1,0 +1,115 @@
+'use client';
+
+import React, { useEffect, useRef, useState } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { LucideIcon } from 'lucide-react';
+import { achievements } from '@/lib/constants';
+import CountUp from 'react-countup';
+import Image from 'next/image';
+
+interface Achievement {
+    icon: LucideIcon;
+    count: number;
+    label: string;
+}
+
+const AchievementCard: React.FC<Achievement> = ({ icon: Icon, count, label }) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, amount: 0.5 });
+    const [hasCountedUp, setHasCountedUp] = useState(false);
+
+    useEffect(() => {
+        if (isInView && !hasCountedUp) {
+            setHasCountedUp(true);
+        }
+    }, [isInView, hasCountedUp]);
+
+    return (
+        <motion.div
+            ref={ref}
+            whileHover={{ scale: 1.05 }}
+            className="p-6 rounded-lg text-center text-teal-100"
+        >
+            <div className='flex justify-center items-center gap-3 pb-2'>
+                <Icon className="w-24 h-24 text-yellow-400" />
+                <h3 className="text-7xl font-extrabold">
+                    {hasCountedUp ? (
+                        <CountUp end={count} duration={3} />
+                    ) : (
+                        '0'
+                    )}
+                    +
+                </h3>
+            </div>
+            <p className="text-cyan-200 text-xl font-light tracking-[2.5px]">{label}</p>
+        </motion.div>
+    );
+};
+
+export default function Count() {
+
+    return (
+        <section className="relative h-full/2 w-full py-5 border-y bg-cyan-600">
+            <div className=" container mx-auto px-4">
+                <div className="grid md:grid-cols-3 gap-8">
+                    {achievements.map((achievement: Achievement, index: number) => (
+                        <AchievementCard key={index} {...achievement} />
+                    ))}
+                </div>
+            </div>
+            <DataBase />
+        </section>
+    );
+}
+
+
+const DataBase = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, amount: 0.5 });
+    const [hasCountedUp, setHasCountedUp] = useState(false);
+
+    useEffect(() => {
+        if (isInView && !hasCountedUp) {
+            setHasCountedUp(true);
+        }
+    }, [isInView, hasCountedUp]);
+
+    return (
+        <motion.div
+            ref={ref}
+            className="mt-2 flex gap-12 items-start py-10 px-16 bg-cyan-200">
+            {/* Bottom Section */}
+            <motion.div
+                whileHover={{ scale: 1.05, }} 
+                className="relative flex-shrink-0 flex items-center justify-center">
+                <Image
+                    src="/homepage/count_chart.jpg"
+                    alt="Growth chart"
+                    width={400}
+                    height={400}
+                    className="rounded-lg aspect-auto w-full z-10"
+                />
+                <div className='absolute bg-cyan-600 translate-x-3 translate-y-3 rounded-lg h-full w-full z-0'/>
+                <div className="absolute w-full mx-auto inset-0 z-10 bg-slate-800/50 hover:bg-slate-950/80 text-cyan-50 p-6 rounded-lg flex flex-col justify-center items-center gap-5 drop-shadow-md transition-all ease-linear duration-300">
+                    <h3 className="text-6xl font-extrabold">
+                        {hasCountedUp ? (
+                            <CountUp end={100000} duration={3} />
+                        ) : (
+                            '0'
+                        )}
+                        +</h3>
+                    <p className="text-3xl font-extrabold text-yellow-400">Data Base</p>
+                </div>
+            </motion.div>
+            <div className=''>
+                <h2 className="text-2xl md:text-5xl font-extrabold text-cyan-950 mb-4 drop-shadow-sm">
+                    Unlocking Potential, Empowering Teams Where Talent Meets Opportunity
+                </h2>
+                <p className="text-cyan-800 text-lg font-extrathin">
+                    We believe in the transformative power of precision recruitment, where each placement contributes to your business's evolution. By combining our expertise with your vision, we're shaping success stories, one placement at a time.
+                </p>
+            </div>
+        </motion.div>
+
+    )
+}
