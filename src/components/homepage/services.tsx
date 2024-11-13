@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { homepage } from '@/lib/constants'
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { Button } from '../ui/button';
 
 
 export default function Services() {
@@ -43,6 +45,7 @@ const GlossyCard = ({ title, image, tags, desc, href }: { title: string; image: 
                     type: "tween",
                 }
             }}
+            viewport={{ once: true, amount: "some" }}
             whileHover={{
                 scale: 0.94, transition: {
                     delay: 0,
@@ -51,31 +54,37 @@ const GlossyCard = ({ title, image, tags, desc, href }: { title: string; image: 
                     type: "spring",
                 }
             }}
-            viewport={{ once: true }}
-            className="relative overflow-hidden w-[64vh] h-[82vh] rounded-xl transition-all duration-300 ease-in-out"
+            className="relative overflow-hidden w-[450px] aspect-[3/3.4] rounded-xl transition-all duration-300 ease-in-out"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
             <div className={`absolute inset-0 bg-gradient-to-br from-cyan-900/90 to-cyan-900/90 backdrop-blur-md transition-all duration-300 ease-in-out  ${isHovered ? 'opacity-100 ' : 'opacity-90'}`} />
             <div className={`absolute inset-0 rounded-xl transition-all duration-300 ease-in-out animate-border-glow h-full w-full`} />
-            <div className="relative overflow-hidden rounded-t-lg">
-                <Image
-                    src={`/homepage/services/${image}.jpg`}
-                    alt={title}
-                    width={5774}
-                    height={3849}
-                    className="object-cover w-full h-64"
-                />
-            </div>
-            <div className="relative p-6 h-full flex flex-col space-y-4">
+            <div className='relative h-full inset-0 flex flex-col gap-0 '>
+                <div className="relative overflow-hidden rounded-t-lg h-[70vh]">
+                    <Image
+                        src={`/homepage/services/${image}.jpg`}
+                        alt={title}
+                        width={5774}
+                        height={3849}
+                        className="object-cover h-full"
+                    />
+                </div>
+                <div className="relative p-4 h-full flex flex-col space-y-4 overflow-hidden justify-start">
 
-                <h2 className="text-2xl font-extrabold drop-shadow-lg text-cyan-50 text-center uppercase">{title}</h2>
-                <p className="font-thin text-cyan-50 text-pretty capitalize">{desc}</p>
-                <ul className="flex flex-wrap gap-2 text-cyan-100">
-                    {tags.map((tag, index) => (
-                        <li key={index} className="bg-cyan-900 h-10 p-1 rounded-md mb-2 drop-shadow-md"># {tag}</li>
-                    ))}
-                </ul>
+                    <h2 className="text-2xl font-extrabold drop-shadow-lg text-cyan-50 text-center uppercase">{title}</h2>
+                    <p className="font-thin text-cyan-50 text-center capitalize">{desc}</p>
+                    <ul className="flex flex-wrap gap-x-2 gap-y-1 text-cyan-100">
+                        {tags.map((tag, index) => (
+                            <li key={index} className="text-sm bg-cyan-900 p-1 rounded-md mb-2 drop-shadow-md"># {tag}</li>
+                        ))}
+                    </ul>
+                </div>
+                <Link href={href} className='mx-4 py-4'>
+                    <Button className=''>
+                        Explore more
+                    </Button>
+                </Link>
             </div>
         </motion.div>
     )

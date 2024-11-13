@@ -3,45 +3,34 @@ import Image from 'next/image';
 import React from 'react'
 import Link from 'next/link'
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
-import {} from 'react-icons';
+import { } from 'react-icons';
 import Navbar from './navbar';
+// import Footer from './footer';
 
 export default function Wrapper({
     children,
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-  return (
-    <div className=''>
-        <Navbar/>
-        {children}
-    </div>
-  )
-}
-
-
-export function Nabar(){
     return (
-        <nav className=''>
-            {/* logo */}
-            <div>
-                <Image src="logo.jpg" alt='' height={200} width={200} className='h-16 aspect-auto'/>
-            </div>
-            <div>
-
-            </div>
-        </nav>
+        <div className='text-slate-950'>
+            <Navbar />
+            {children}
+            <Footer />
+        </div>
     )
 }
 
-
 export function Footer() {
     return (
-        <footer className="bg-gray-800 text-white py-12">
+        <footer className="bg-slate-900 text-white pt-12">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="flex justify-around items-start gap-8">
                     <div>
-                        <h3 className="text-xl font-bold mb-4">TalentMatters</h3>
+                        <h3 className="text-3xl font-bold uppercase mb-4">
+                            A To Z
+                            Recruiters
+                        </h3>
                         <p>Connecting talent with opportunity</p>
                     </div>
                     <div>
@@ -58,7 +47,8 @@ export function Footer() {
                         <p>123 Business Street</p>
                         <p>City, State 12345</p>
                         <p>Phone: (123) 456-7890</p>
-                        <p>Email: info@talentmatters.com</p>
+                        <p>Job Seeker: resume@atozrecruiters.com</p>
+                        <p>Company: proposal@atozrecruiters.com</p>
                     </div>
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
@@ -70,8 +60,8 @@ export function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-                    <p>&copy; {new Date().getFullYear()} TalentMatters. All rights reserved.</p>
+                <div className="mt-8 py-4 border-t border-gray-700 text-center">
+                    <p>&copy; {new Date().getFullYear()} A To Z Recruiters. All rights reserved.</p>
                 </div>
             </div>
         </footer>
