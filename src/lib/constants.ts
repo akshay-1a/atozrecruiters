@@ -1,4 +1,11 @@
 import { Users, Briefcase, Award } from "lucide-react";
+import { IconType } from "react-icons";
+import {
+  IoLogoFacebook,
+  IoLogoTwitter,
+  IoLogoLinkedin,
+  IoLogoInstagram,
+} from "react-icons/io5";
 
 export const navItems = {
   company: [
@@ -258,3 +265,66 @@ export const gridItems = [
     alt: "Leadership",
   },
 ];
+
+type Contact = {
+  name: string;
+  number: string;
+};
+
+export const contacts: Contact[] = [
+  { name: "HR Department", number: "+91 87085 67919" },
+  { name: "Business Colaboration", number: "+91 91515 15209" },
+  { name: "Contact Support", number: "+91 91361 22887" },
+];
+
+
+
+type QuickLink = {
+  label: string;
+  url: string;
+};
+
+type SocialLink = {
+  icon: IconType;
+  url: string;
+  color: string;
+};
+
+export const footer = {
+  company: "A To Z Recruiters",
+  tagline: "Connecting talent with opportunity",
+  quick: [
+    { label: "Home", url: "/" },
+    { label: "About", url: "/#about" },
+    { label: "Services", url: "/#services" },
+    { label: "Contact", url: "/contact" },
+  ] as QuickLink[],
+  address: "123 Business Street",
+  address1: "Noida, IN",
+  phone: "(+91) 91 5151 5209",
+  job: "resume@atozrecruiters.com",
+  proposal: "proposal@atozrecruiters.com",
+  rights: "A To Z Recruiters. All rights reserved.",
+  links: [
+    {
+      icon: IoLogoFacebook,
+      url: "https://facebook.com/atozrecruiters",
+      color: "text-blue-600",
+    },
+    {
+      icon: IoLogoTwitter,
+      url: "https://twitter.com/atozrecruiters",
+      color: "text-blue-600",
+    },
+    {
+      icon: IoLogoLinkedin,
+      url: "https://linkedin.com/atozrecruiters",
+      color: "text-blue-600",
+    },
+    {
+      icon: IoLogoInstagram,
+      url: "https://instagram.com/atozrecruiters",
+      color: "text-pink-500",
+    },
+  ] as SocialLink[],
+};

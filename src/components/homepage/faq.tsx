@@ -58,7 +58,7 @@ export default function Faq() {
                     </div>
 
                     {/* Right Column */}
-                    <div className="space-y-6">
+                    <div className="space-y-6 py-5">
                         <p className="text-lg text-slate-950 text-justify font-serif">
                             {faqS.introParagraph}
                         </p>

@@ -49,7 +49,7 @@ const AchievementCard: React.FC<Achievement> = ({ icon: Icon, count, label }) =>
 export default function Count() {
 
     return (
-        <section className="relative h-full/2 w-full py-16 border-y bg-slate-950">
+        <section className="relative h-screen w-full py-16 border-y bg-slate-950">
             <div className=" container mx-auto px-4 pb-8">
                 <div className="grid md:grid-cols-3 gap-8">
                     {achievements.map((achievement: Achievement, index: number) => (
@@ -79,7 +79,11 @@ const DataBase = () => {
             ref={ref}
             className="mt-2 flex gap-12 items-start py-10 px-16 bg-cyan-200">
             <motion.div
-                whileHover={{ scale: 1.05, }} 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                whileHover={{ scale: 1.05, }}
+                transition={{ duration: 0.5 }}
+                viewport={{once:true}}
                 className="relative flex-shrink-0 flex items-center justify-center">
                 <Image
                     src="/homepage/count_chart.jpg"
@@ -100,14 +104,27 @@ const DataBase = () => {
                     <p className="text-3xl font-extrabold text-yellow-400">Data Base</p>
                 </div>
             </motion.div>
-            <div className=''>
+            <motion.div
+                initial={{ clipPath: "inset(0 100% 0 0)" }}
+                whileInView={{ clipPath: "inset(0 0 0 0)" }}
+                transition={{
+                    type: "spring",
+                    stiffness: 70,
+                    damping: 15,
+                    mass: 1,
+                    ease: "linear",
+                    duration: "0.5",
+                    delay: 0.5
+                }}
+                viewport={{ once: true }}
+                className='py-4'>
                 <h2 className="text-2xl md:text-5xl font-extrabold text-cyan-950 mb-4 drop-shadow-sm">
-                    Unlocking Potential, Empowering Teams Where Talent Meets Opportunity
+                    Transforming Talent, Elevating Success: Bridging Ambition with Achievement
                 </h2>
                 <p className="text-cyan-950 text-lg font-extrathin">
                     We believe in the transformative power of precision recruitment, where each placement contributes to your business's evolution. By combining our expertise with your vision, we're shaping success stories, one placement at a time.
                 </p>
-            </div>
+            </motion.div>
         </motion.div>
 
     )

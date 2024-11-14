@@ -1,11 +1,12 @@
 'use client';
-import Image from 'next/image';
+
 import React from 'react'
 import Link from 'next/link'
-import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
-import { } from 'react-icons';
+import { IoLogoFacebook, IoLogoTwitter, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io5";
 import Navbar from './navbar';
-// import Footer from './footer';
+import Whatsapp from './whatsapp';
+import { footer as f } from '@/lib/constants';
+
 
 export default function Wrapper({
     children,
@@ -17,51 +18,67 @@ export default function Wrapper({
             <Navbar />
             {children}
             <Footer />
+            <Whatsapp />
         </div>
     )
 }
 
+
 export function Footer() {
     return (
         <footer className="bg-slate-900 text-white pt-12">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-14">
                 <div className="flex justify-around items-start gap-8">
                     <div >
                         <h3 className="text-3xl font-extrabold uppercase mb-4">
-                            A To Z
-                            Recruiters
+                            {f.company}
                         </h3>
-                        <p className='text-xl'>Connecting talent with opportunity</p>
+                        <p className='text-xl'>
+                            {f.tagline}
+                        </p>
                     </div>
                     <div>
-                        <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+                        <h4 className="text-lg font-semibold mb-4">
+                            Quick Links
+                        </h4>
                         <ul className="space-y-2">
-                            <li><Link href="/" className="hover:text-blue-400">Home</Link></li>
-                            <li><Link href="/#about" className="hover:text-blue-400">About</Link></li>
-                            <li><Link href="/#services" className="hover:text-blue-400">Services</Link></li>
-                            <li><Link href="/contact" className="hover:text-blue-400">Contact</Link></li>
+                            {f.quick.map((link, index) => (
+                                <li key={index}>
+                                    <Link href={link.url} className="hover:text-blue-400">
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-                        <p>123 Business Street</p>
-                        <p>City, State 12345</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Job Seeker: resume@atozrecruiters.com</p>
-                        <p>Company: proposal@atozrecruiters.com</p>
+                        <p>{f.address}</p>
+                        <p>{f.address1}</p>
+                        <p>Phone:{f.phone}</p>
+                        <p>Job Seeker: {f.job}</p>
+                        <p>Company: {f.proposal}</p>
                     </div>
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
-                        <div className="flex space-x-4">
-                            <Link href="#" className=" hover:text-blue-400"><Facebook /></Link>
-                            <Link href="#" className="hover:text-blue-400"><Twitter /></Link>
-                            <Link href="#" className="hover:text-blue-400"><Linkedin /></Link>
-                            <Link href="#" className="hover:text-blue-400"><Instagram /></Link>
+                        <div className="grid grid-cols-2 gap-6">
+                            {f.links.map((link, index) => {
+                                const Icon = link.icon
+                                return (
+                                    <Link key={index} href={link.url} passHref>
+                                        <div className="flex justify-center">
+                                            <Icon className={`bg-slate-500 hover:bg-white p-2 h-12 w-12 text-white hover:${link.color} overflow-visible rounded-xl hover:scale-125 transition-all ease-in-out duration-1000`} />
+                                        </div>
+                                    </Link>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>
                 <div className="mt-8 py-4 border-t border-gray-700 text-center">
-                    <p>&copy; {new Date().getFullYear()} A To Z Recruiters. All rights reserved.</p>
+                    <p>
+                        &copy; {new Date().getFullYear()} {f.rights}
+                    </p>
                 </div>
             </div>
         </footer>
