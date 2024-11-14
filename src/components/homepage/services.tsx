@@ -11,7 +11,7 @@ import { Button } from '../ui/button';
 export default function Services() {
     const service = homepage.services
     return (
-        <section className='min-h-[80vh] flex flex-col justify-start items-center gap-5 mt-10 px-10'>
+        <section id="services" className='min-h-[80vh] flex flex-col justify-start items-center gap-5  p-10'>
             <h2 className='text-cyan-800 rounded-md p-3 text-center text-5xl font-bold'>
                 {service.title}
             </h2>
@@ -54,7 +54,7 @@ const GlossyCard = ({ title, image, tags, desc, href }: { title: string; image: 
                     type: "spring",
                 }
             }}
-            className="relative overflow-hidden w-[450px] aspect-[3/3.4] rounded-xl transition-all duration-300 ease-in-out"
+            className="relative overflow-hidden w-[400px] aspect-[3/3.4] rounded transition-all duration-300 ease-in-out"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >

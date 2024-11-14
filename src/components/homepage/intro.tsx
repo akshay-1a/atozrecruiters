@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Intro() {
     const data = homepage.introduction
     return (
-        <section className='h-screen flex justify-center items-center gap-36 p-20 bg-gradient-to-b from-white to-cyan-200 '>
+        <section id="about" className='h-screen flex justify-center items-center gap-36 p-20 bg-gradient-to-b from-white to-cyan-200 '>
             <div className='flex-1 flex flex-col items-start gap-14 pb-20 w-[60vh] text-slate-800 text-justify'>
                 <h1 className='font-extrabold text-5xl tracking-wider border-b-4 pb-6 border-cyan-700'>{data.title}</h1>
                 <p className='text-xl'>
