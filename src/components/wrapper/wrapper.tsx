@@ -26,12 +26,12 @@ export function Footer() {
         <footer className="bg-slate-900 text-white pt-12">
             <div className="container mx-auto px-4">
                 <div className="flex justify-around items-start gap-8">
-                    <div>
-                        <h3 className="text-3xl font-bold uppercase mb-4">
+                    <div >
+                        <h3 className="text-3xl font-extrabold uppercase mb-4">
                             A To Z
                             Recruiters
                         </h3>
-                        <p>Connecting talent with opportunity</p>
+                        <p className='text-xl'>Connecting talent with opportunity</p>
                     </div>
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
@@ -53,7 +53,7 @@ export function Footer() {
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
                         <div className="flex space-x-4">
-                            <Link href="#" className="hover:text-blue-400"><Facebook /></Link>
+                            <Link href="#" className=" hover:text-blue-400"><Facebook /></Link>
                             <Link href="#" className="hover:text-blue-400"><Twitter /></Link>
                             <Link href="#" className="hover:text-blue-400"><Linkedin /></Link>
                             <Link href="#" className="hover:text-blue-400"><Instagram /></Link>

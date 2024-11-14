@@ -72,11 +72,11 @@ export const homepage = {
     // public/homepage/...images.jpg
     links: [
       "consulting",
-      "outsourcing",
-      "recruitment",
       "resume",
-      "chart",
-      "team",
+      "hiring",
+      "handshake",
+      "outsourcing",
+      "forhire",
     ],
   },
 
@@ -184,8 +184,8 @@ export const homepage = {
     ],
   },
   faqSection: {
-    title: "Our Dream is to",
-    subtitle: "Empower Potential",
+    subtitle: "Our Dream is to",
+    title: "Empower Potential",
     default: "bg.jpg",
     path: "/homepage/faq/",
     introParagraph:
@@ -193,26 +193,26 @@ export const homepage = {
     faq: [
       {
         question: "What industries do you specialize in?",
-        image: "bg.jpg",
+        image: "industry.jpg",
         answer:
           "We cater to a wide range of industries, including IT, healthcare, manufacturing, finance, and more. Whatever your sector, we have the expertise to deliver tailored recruitment solutions.",
       },
       {
         question: "How do you ensure quality in your recruitment process?",
-        image: "img2.jpg",
+        image: "business.jpg",
         answer:
           "Our process combines in-depth market research, advanced screening techniques, and personalized consultations to ensure we match the right talent with the right roles every time.",
       },
       {
         question: "Do you offer services for startups or small businesses?",
-        image: "img3.jpg",
+        image: "startup.jpg",
         answer:
           "Absolutely! We provide flexible, scalable solutions designed to meet the unique needs of businesses at any stage of growth.",
       },
       {
         question:
           "What makes A to Z Recruitment different from other staffing agencies?",
-        image: "img4.jpg",
+        image: "staffing.jpg",
         answer:
           "Our commitment to building long-term partnerships and delivering customized, innovative solutions sets us apart. We're not just a service provider; we're your strategic growth partner.",
       },

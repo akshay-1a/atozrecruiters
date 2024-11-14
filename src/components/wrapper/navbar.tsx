@@ -12,13 +12,12 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
 import { navItems } from "@/lib/constants"
 import Image from "next/image"
 
 export default function Navbar() {
     return (
-        <header className="border-b bg-sky-200">
+        <header className="border-b bg-cyan-700">
             <div className="container mx-auto px-16 py-3">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="flex items-center space-x-2">

@@ -12,7 +12,7 @@ export default function Services() {
     const service = homepage.services
     return (
         <section id="services" className='min-h-[80vh] flex flex-col justify-start items-center gap-5  p-10'>
-            <h2 className='text-cyan-800 rounded-md p-3 text-center text-5xl font-bold'>
+            <h2 className='text-slate-800 rounded-md p-3 text-center text-5xl font-bold'>
                 {service.title}
             </h2>
             <p className='text-xl '>

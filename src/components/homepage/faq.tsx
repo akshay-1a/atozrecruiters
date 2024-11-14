@@ -26,17 +26,17 @@ export default function Faq() {
             />
 
             {/* Glass Overlay */}
-            <div className="absolute inset-0 bg-black/20 backdrop-blur-sm" />
+            <div className="absolute inset-0 bg-black/20 backdrop-blur-md" />
 
             <div className="container rounded-sm mx-auto p-4 relative z-10 bg-white/80">
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                     {/* Left Column */}
                     <div className="py-3 uppercase">
-                        <h2 className="text-3xl font-extrabold tracking-wider text-slate-400">
-                            {faqS.title}{" "}
+                        <h2 className="text-2xl font-extrabold tracking-wider text-slate-500">
+                            {faqS.subtitle}{" "}
                         </h2>
                         <h2 className='text-5xl font-extrabold text-slate-800 pb-4'>
-                            {faqS.subtitle}
+                            {faqS.title}
                         </h2>
                         <AnimatePresence mode="wait">
                             <motion.div
@@ -59,7 +59,7 @@ export default function Faq() {
 
                     {/* Right Column */}
                     <div className="space-y-6">
-                        <p className="text-lg text-slate-950 text-justify">
+                        <p className="text-lg text-slate-950 text-justify font-serif">
                             {faqS.introParagraph}
                         </p>
                         <Accordion
@@ -68,8 +68,10 @@ export default function Faq() {
                             className="w-full"
                             onValueChange={(value) => {
                                 if (value) {
-                                    const selectedFaq = faqS.faq.find(item => item.question === value)
-                                    setActiveImage(selectedFaq ? `${faqS.path}${selectedFaq.image}` : faqS.default)
+                                    console.log(activeImage)
+                                    const selectedFaq = faqS.faq.find
+                                    (item => item.question === value)
+                                    setActiveImage(selectedFaq ? `${selectedFaq.image}` : faqS.default)
                                 } else {
                                     setActiveImage(faqS.default)
                                 }
@@ -77,7 +79,7 @@ export default function Faq() {
                         >
                             {faqS.faq.map((item, index) => (
                                 <AccordionItem key={index} value={item.question}>
-                                    <AccordionTrigger className="text-left">
+                                    <AccordionTrigger className="text-left font-semibold">
                                         {item.question}
                                     </AccordionTrigger>
                                     <AccordionContent>

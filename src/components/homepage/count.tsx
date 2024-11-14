@@ -31,7 +31,7 @@ const AchievementCard: React.FC<Achievement> = ({ icon: Icon, count, label }) =>
             className="p-6 rounded-lg text-center text-teal-100"
         >
             <div className='flex justify-center items-center gap-3 pb-2'>
-                <Icon className="w-24 h-24 text-yellow-400" />
+                <Icon className="w-24 h-24 text-cyan-500" />
                 <h3 className="text-7xl font-extrabold">
                     {hasCountedUp ? (
                         <CountUp end={count} duration={3} />
@@ -49,8 +49,8 @@ const AchievementCard: React.FC<Achievement> = ({ icon: Icon, count, label }) =>
 export default function Count() {
 
     return (
-        <section className="relative h-full/2 w-full py-5 border-y bg-cyan-600">
-            <div className=" container mx-auto px-4">
+        <section className="relative h-full/2 w-full py-16 border-y bg-slate-950">
+            <div className=" container mx-auto px-4 pb-8">
                 <div className="grid md:grid-cols-3 gap-8">
                     {achievements.map((achievement: Achievement, index: number) => (
                         <AchievementCard key={index} {...achievement} />
@@ -78,7 +78,6 @@ const DataBase = () => {
         <motion.div
             ref={ref}
             className="mt-2 flex gap-12 items-start py-10 px-16 bg-cyan-200">
-            {/* Bottom Section */}
             <motion.div
                 whileHover={{ scale: 1.05, }} 
                 className="relative flex-shrink-0 flex items-center justify-center">
@@ -105,7 +104,7 @@ const DataBase = () => {
                 <h2 className="text-2xl md:text-5xl font-extrabold text-cyan-950 mb-4 drop-shadow-sm">
                     Unlocking Potential, Empowering Teams Where Talent Meets Opportunity
                 </h2>
-                <p className="text-cyan-800 text-lg font-extrathin">
+                <p className="text-cyan-950 text-lg font-extrathin">
                     We believe in the transformative power of precision recruitment, where each placement contributes to your business's evolution. By combining our expertise with your vision, we're shaping success stories, one placement at a time.
                 </p>
             </div>
