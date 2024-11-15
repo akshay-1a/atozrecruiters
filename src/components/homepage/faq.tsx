@@ -10,6 +10,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import { homepage } from '@/lib/constants'
+import { Clip } from '../animations/clip'
 
 export default function Faq() {
     const faqS = homepage.faqSection
@@ -17,28 +18,31 @@ export default function Faq() {
 
     return (
         <section className="relative p-24 overflow-hidden h-screen">
-            {/* Background Image */}
-            <Image
-                src={`${faqS.path}${activeImage}`}
-                alt="Background"
-                fill
-                className="object-cover h-full w-full"
-            />
-
+            <AnimatePresence mode='popLayout'>
+                {/* Background Image */}
+                <Image
+                    src={`${faqS.path}${activeImage}`}
+                    alt="Background"
+                    fill
+                    className="object-cover h-full w-full"
+                />
+            </AnimatePresence>
             {/* Glass Overlay */}
             <div className="absolute inset-0 bg-black/20 backdrop-blur-md" />
 
-            <div className="container rounded-sm mx-auto p-4 relative z-10 bg-white/80">
+            <Clip start='centerX' className="container rounded-sm mx-auto p-4 relative z-10 bg-white/80">
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                     {/* Left Column */}
                     <div className="py-3 uppercase">
-                        <h2 className="text-2xl font-extrabold tracking-wider text-slate-500">
-                            {faqS.subtitle}{" "}
-                        </h2>
-                        <h2 className='text-5xl font-extrabold text-slate-800 pb-4'>
-                            {faqS.title}
-                        </h2>
-                        <AnimatePresence mode="wait">
+                        <Clip start='top'>
+                            <h2 className="text-2xl font-extrabold tracking-wider text-slate-500">
+                                {faqS.subtitle}{" "}
+                            </h2>
+                            <h2 className='text-5xl font-extrabold text-slate-800 pb-4'>
+                                {faqS.title}
+                            </h2>
+                        </Clip>
+                        <AnimatePresence mode="popLayout">
                             <motion.div
                                 key={activeImage}
                                 initial={{ opacity: 0 }}
@@ -59,9 +63,12 @@ export default function Faq() {
 
                     {/* Right Column */}
                     <div className="space-y-6 py-5">
-                        <p className="text-lg text-slate-950 text-justify font-serif">
-                            {faqS.introParagraph}
-                        </p>
+
+                        <Clip start='bottom'>
+                            <p className="text-lg text-slate-950 text-justify font-serif">
+                                {faqS.introParagraph}
+                            </p>
+                        </Clip>
                         <Accordion
                             type="single"
                             collapsible
@@ -70,7 +77,7 @@ export default function Faq() {
                                 if (value) {
                                     console.log(activeImage)
                                     const selectedFaq = faqS.faq.find
-                                    (item => item.question === value)
+                                        (item => item.question === value)
                                     setActiveImage(selectedFaq ? `${selectedFaq.image}` : faqS.default)
                                 } else {
                                     setActiveImage(faqS.default)
@@ -90,7 +97,7 @@ export default function Faq() {
                         </Accordion>
                     </div>
                 </div>
-            </div>
+            </Clip>
         </section>
     )
 }

@@ -6,6 +6,7 @@ import { LucideIcon } from 'lucide-react';
 import { achievements } from '@/lib/constants';
 import CountUp from 'react-countup';
 import Image from 'next/image';
+import { Clip, PopEffect} from '../animations/clip';
 
 interface Achievement {
     icon: LucideIcon;
@@ -25,39 +26,43 @@ const AchievementCard: React.FC<Achievement> = ({ icon: Icon, count, label }) =>
     }, [isInView, hasCountedUp]);
 
     return (
-        <motion.div
-            ref={ref}
-            whileHover={{ scale: 1.05 }}
-            className="p-6 rounded-lg text-center text-teal-100"
-        >
-            <div className='flex justify-center items-center gap-3 pb-2'>
-                <Icon className="w-24 h-24 text-cyan-500" />
-                <h3 className="text-7xl font-extrabold">
-                    {hasCountedUp ? (
-                        <CountUp end={count} duration={3} />
-                    ) : (
-                        '0'
-                    )}
-                    +
-                </h3>
-            </div>
-            <p className="text-cyan-200 text-xl font-light tracking-[2.5px]">{label}</p>
-        </motion.div>
+        <PopEffect type='popup' >
+            <motion.div
+                ref={ref}
+                whileHover={{ scale: 1.05 }}
+                className="p-6 rounded-lg text-center text-teal-100"
+            >
+                <div className='flex justify-center items-center gap-3 pb-2'>
+                    <Icon className="w-24 h-24 text-cyan-500" />
+                    <h3 className="text-7xl font-extrabold">
+                        {hasCountedUp ? (
+                            <CountUp end={count} duration={3} />
+                        ) : (
+                            '0'
+                        )}
+                        +
+                    </h3>
+                </div>
+                <p className="text-cyan-200 text-xl font-light tracking-[2.5px]">{label}</p>
+            </motion.div>
+        </PopEffect>
     );
 };
 
 export default function Count() {
 
     return (
-        <section className="relative h-screen w-full py-16 border-y bg-slate-950">
-            <div className=" container mx-auto px-4 pb-8">
+        <section className="relative min-h-screen w-full py-10 bg-slate-950">
+            <Clip start='centerX' >
+                <DataBase />
+            </Clip>
+            <div className=" container mx-auto px-4 pt-10">
                 <div className="grid md:grid-cols-3 gap-8">
                     {achievements.map((achievement: Achievement, index: number) => (
                         <AchievementCard key={index} {...achievement} />
                     ))}
                 </div>
             </div>
-            <DataBase />
         </section>
     );
 }
@@ -77,13 +82,13 @@ const DataBase = () => {
     return (
         <motion.div
             ref={ref}
-            className="mt-2 flex gap-12 items-start py-10 px-16 bg-cyan-200">
+            className="mt-2 flex gap-12 items-start py-10 px-16 bg-cyan-200 md:h-[52vh]">
             <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 whileHover={{ scale: 1.05, }}
                 transition={{ duration: 0.5 }}
-                viewport={{once:true}}
+                viewport={{ once: true }}
                 className="relative flex-shrink-0 flex items-center justify-center">
                 <Image
                     src="/homepage/count_chart.jpg"
@@ -92,7 +97,7 @@ const DataBase = () => {
                     height={400}
                     className="rounded-lg aspect-auto w-full z-10"
                 />
-                <div className='absolute bg-cyan-600 translate-x-3 translate-y-3 rounded-lg h-full w-full z-0'/>
+                <div className='absolute bg-cyan-600 translate-x-3 translate-y-3 rounded-lg h-full w-full z-0' />
                 <div className="absolute w-full mx-auto inset-0 z-10 bg-slate-800/50 hover:bg-slate-950/80 text-cyan-50 p-6 rounded-lg flex flex-col justify-center items-center gap-5 drop-shadow-md transition-all ease-linear duration-300">
                     <h3 className="text-6xl font-extrabold">
                         {hasCountedUp ? (
@@ -104,27 +109,14 @@ const DataBase = () => {
                     <p className="text-3xl font-extrabold text-yellow-400">Data Base</p>
                 </div>
             </motion.div>
-            <motion.div
-                initial={{ clipPath: "inset(0 100% 0 0)" }}
-                whileInView={{ clipPath: "inset(0 0 0 0)" }}
-                transition={{
-                    type: "spring",
-                    stiffness: 70,
-                    damping: 15,
-                    mass: 1,
-                    ease: "linear",
-                    duration: "0.5",
-                    delay: 0.5
-                }}
-                viewport={{ once: true }}
-                className='py-4'>
+            <Clip start='right'>
                 <h2 className="text-2xl md:text-5xl font-extrabold text-cyan-950 mb-4 drop-shadow-sm">
                     Transforming Talent, Elevating Success: Bridging Ambition with Achievement
                 </h2>
                 <p className="text-cyan-950 text-lg font-extrathin">
                     We believe in the transformative power of precision recruitment, where each placement contributes to your business's evolution. By combining our expertise with your vision, we're shaping success stories, one placement at a time.
                 </p>
-            </motion.div>
+            </Clip>
         </motion.div>
 
     )

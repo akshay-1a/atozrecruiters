@@ -75,8 +75,11 @@ export function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-8 py-4 border-t border-gray-700 text-center">
+                <div className="mt-8 py-4 border-t border-gray-700 text-center flex justify-between px-14">
                     <p>
+                        Website Designed by and Developed by Akshay Arora <Link href="https://akshay.imperfectors.com">[Imperfectors.com]</Link>
+                    </p>
+                    <p className=''>
                         &copy; {new Date().getFullYear()} {f.rights}
                     </p>
                 </div>

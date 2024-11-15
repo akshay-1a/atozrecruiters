@@ -6,18 +6,21 @@ import { homepage } from '@/lib/constants'
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Button } from '../ui/button';
+import { Clip } from '../animations/clip';
 
 
 export default function Services() {
     const service = homepage.services
     return (
         <section id="services" className='min-h-[80vh] flex flex-col justify-start items-center gap-5  p-10'>
-            <h2 className='text-slate-800 rounded-md p-3 text-center text-5xl font-bold'>
+            <Clip start='right' className='flex flex-col gap-5 text-center'>
+            <h2 className='text-slate-800 rounded-md p-3 text-4xl font-extrabold'>
                 {service.title}
             </h2>
-            <p className='text-xl '>
+            <p className='text-lg '>
                 {service.desc}
             </p>
+            </Clip>
             <div className='flex flex-wrap justify-around items-center w-full'>
                 {service.cards.map((card, index) => (
                     <GlossyCard key={index} {...card} />

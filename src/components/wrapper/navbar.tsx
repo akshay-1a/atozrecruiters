@@ -17,29 +17,32 @@ import Image from "next/image"
 
 export default function Navbar() {
     return (
-        <header className="border-b bg-cyan-700">
-            <div className="container mx-auto px-16 py-3">
+        <header className="border-b bg-[#0171A3]">
+            <div className="container mx-auto px-16 py-5">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="flex items-center space-x-2">
                         <Image
                             src="/logo.jpg"
                             alt="A To Z Recruiters"
                             width={200} height={200}
-                            className="w-24 "
-                            />
+                            className="w-48 absolute top-2 border overflow-hidden"
+                        />
                         {/* <span className="text-2xl font-bold text-blue-600">AtoZ Recruiters</span> */}
                     </Link>
 
-                    <NavigationMenu>
+                    <NavigationMenu className="pr-10">
                         <NavigationMenuList>
                             <NavigationMenuItem>
-                                <NavigationMenuTrigger>Company</NavigationMenuTrigger>
+                                <NavigationMenuTrigger className="">
+                                    Company
+                                </NavigationMenuTrigger>
                                 <NavigationMenuContent>
                                     <ul className="grid w-[400px] gap-3 p-4 md:w-[340px] md:grid- cols-2">
                                         {navItems.company.map((item) => (
                                             <ListItem
                                                 key={item.title}
                                                 title={item.title}
+                                                url={item.url}
                                                 href={item.href}
                                             >
                                                 {item.description}
@@ -56,7 +59,8 @@ export default function Navbar() {
                                         {navItems.services.map((item) => (
                                             <ListItem
                                                 key={item.title}
-                                                title={item.title}
+                                                title={item.title} 
+                                                url={item.url}
                                                 href={item.href}
                                             >
                                                 {item.description}
@@ -69,11 +73,12 @@ export default function Navbar() {
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger>Industries</NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+                                    <ul className="grid w-[400px] gap-3 p-4 md:w-[340px] md:grid- cols-2">
                                         {navItems.industries.map((item) => (
                                             <ListItem
                                                 key={item.title}
                                                 title={item.title}
+                                                url={item.url}
                                                 href={item.href}
                                             >
                                                 {item.description}
@@ -106,24 +111,33 @@ const ListItem = React.forwardRef<
     React.ElementRef<"a">,
     React.ComponentPropsWithoutRef<"a"> & {
         title: string
+        url: string
         children?: React.ReactNode
     }
->(({ className, title, children, ...props }, ref) => {
+>(({ className, title, url, children, ...props }, ref) => {
     return (
         <li>
             <NavigationMenuLink asChild>
                 <a
                     ref={ref}
                     className={cn(
-                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                        "flex items-center gap-3 select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground hover:bg-sky-200",
                         className
                     )}
                     {...props}
                 >
-                    <div className="text-sm font-bold leading-none">{title}</div>
-                    <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        {children}
-                    </p>
+                    <Image
+                        src={`/nav/${url}`}
+                        alt={title}
+                        width={400}
+                        height={400}
+                        className="object-cover aspect-square h-16 w-16 rounded-md border border-black" />
+                    <div className="flex flex-col gap-1">
+                        <div className="text-sm font-bold leading-none">{title}</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            {children}
+                        </p>
+                    </div>
                 </a>
             </NavigationMenuLink>
         </li>

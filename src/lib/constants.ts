@@ -13,63 +13,94 @@ export const navItems = {
       title: "About Us",
       href: "/about",
       description: "Learn about our mission, vision, and values",
+      url: "about.jpg", // Example image URL
     },
     {
       title: "Our Team",
       href: "/team",
       description: "Meet our experienced recruitment professionals",
+      url: "team.jpg", // Example image URL
     },
     {
       title: "Careers",
       href: "/careers",
       description: "Join our growing team of recruiters",
+      url: "career.jpg", // Example image URL
     },
   ],
   services: [
     {
-      title: "Executive Search",
-      href: "/services/executive-search",
-      description: "Premium recruitment for senior positions",
+      title: "Recruitment Services",
+      href: "/services/recruitment-services",
+      description:
+        "Expert recruitment solutions for senior and executive positions",
+      url: "recruitment.jpg", // Example image URL
     },
     {
-      title: "Permanent Staffing",
-      href: "/services/permanent-staffing",
-      description: "Full-time placement solutions",
+      title: "HR Consulting Services",
+      href: "/services/hr-consulting-services",
+      description:
+        "Providing strategic HR consulting to optimize your workforce",
+      url: "hr.jpg", // Example image URL
     },
     {
-      title: "Contract Staffing",
-      href: "/services/contract-staffing",
-      description: "Flexible workforce solutions",
+      title: "Outsourcing Services",
+      href: "/services/outsourcing-services",
+      description:
+        "Efficient and cost-effective outsourcing solutions for your business",
+      url: "outsourcing.jpg", // Example image URL
     },
     {
-      title: "RPO Services",
-      href: "/services/rpo",
-      description: "Recruitment Process Outsourcing",
+      title: "Payroll Management",
+      href: "/services/payroll-management",
+      description:
+        "End-to-end payroll solutions for seamless payroll processing",
+      url: "paycheck.jpg", // Example image URL
+    },
+    {
+      title: "Training and Development",
+      href: "/services/training-and-development",
+      description:
+        "Tailored training programs to upskill your workforce and drive performance",
+      url: "training.jpg", // Example image URL
+    },
+    {
+      title: "Talent Acquisition Strategy",
+      href: "/services/talent-acquisition-strategy",
+      description:
+        "Strategic planning for attracting top talent and improving recruitment processes",
+      url: "talent.jpg", // Example image URL
     },
   ],
+
   industries: [
     {
       title: "Information Technology",
-      href: "/industries/it",
+      href: "/industries/information-technology",
       description: "Software, Hardware, and IT Services",
+      url: "infotech.jpg", // Example image URL
     },
     {
       title: "Banking & Finance",
       href: "/industries/banking",
       description: "Financial Services and Banking",
+      url: "banking.jpg", // Example image URL
     },
     {
       title: "Healthcare",
       href: "/industries/healthcare",
       description: "Medical and Healthcare Professionals",
+      url: "healthcare.jpg", // Example image URL
     },
     {
       title: "Manufacturing",
       href: "/industries/manufacturing",
       description: "Production and Manufacturing",
+      url: "manufacturing.jpg", // Example image URL
     },
   ],
 };
+
 
 export const homepage = {
   hero: {
@@ -91,7 +122,7 @@ export const homepage = {
     title: "Your Partner in Shaping Tomorrow's Workforce!",
     desc: [
       "At A to Z Recruitment and Staffing, we don't just fill positions; we shape futures. With a proven track record in providing top-tier recruitment and talent acquisition services, we cater to businesses across industries, ensuring that every hire aligns with your company's vision and goals.",
-      "But we don't stop there. Our commitment goes beyond matching skills to job descriptions. We aim to build long-term partnerships, offering strategic guidance and workforce solutions that evolve with the market. Whether enhancing your leadership team or streamlining recruitment, we bring a personalized, innovative approach to help you stay ahead in the talent game.",
+      "And actually we don't jsut stop there. As our commitment goes beyond matching skills to job descriptions. We aim to build long-term partnerships, offering strategic guidance and workforce solutions that evolve with the market. Whether enhancing your leadership team or streamlining recruitment, we bring a personalized, innovative approach to help you stay ahead in the talent game.",
     ],
     image: "inter.png",
     alt: "A To Z Recruitment And Staffing Firm",
@@ -266,15 +297,145 @@ export const gridItems = [
   },
 ];
 
+export const contactData = () => {
+  return {
+    context: {
+      mainHeading:
+        "Connect With Us: Tailored Solutions for Candidates & Clients",
+      paragraph: `Whether you're an aspiring professional seeking the perfect opportunity or an organization looking to build a stellar team, you're in the right place. 
+      We offer specialized forms for both candidates and clients, ensuring a seamless and personalized experience. 
+      Select the form that aligns with your goals and provide the necessary details to help us assist you effectively.`,
+    },
+    tabs: [
+      { label: "Candidate Form", formKey: "candidate" },
+      { label: "Client Form", formKey: "client" },
+    ],
+    forms: {
+      candidate: {
+        innerHeading: "Candidate Job Application",
+        purpose: `This form is designed for job seekers eager to take the next step in their career journey. 
+        Share your details to help us match you with the ideal opportunities.`,
+        fields: [
+          {
+            name: "fullName",
+            label: "Full Name",
+            type: "text",
+            required: true,
+          },
+          {
+            name: "fathersName",
+            label: "Father's Name",
+            type: "text",
+            required: true,
+          },
+          {
+            name: "experience",
+            label: "Total Experience (in years)",
+            type: "number",
+            required: true,
+          },
+          {
+            name: "currentRole",
+            label: "Current Job Role",
+            type: "text",
+            required: true,
+          },
+          { name: "contact", label: "Contact", type: "tel", required: true },
+          { name: "email", label: "Email ID", type: "email", required: true },
+          { name: "location", label: "Location", type: "text", required: true },
+          {
+            name: "resume",
+            label: "(Google Drive link of resume)",
+            type: "text",
+            required: false,
+          },
+        ],
+        imageUrl: "/contact/candidate.jpg", // Example image URL
+        imgCaption: "Let's Build Your Future Together!",
+        imagePosition: "right",
+      },
+      client: {
+        innerHeading: "Business Proposal Application",
+        purpose: `This form is tailored for businesses seeking top-tier talent. 
+        Share your requirements, and we'll connect you with exceptional candidates.`,
+        fields: [
+          {
+            name: "fullName",
+            label: "Full Name",
+            type: "text",
+            required: true,
+          },
+          {
+            name: "designation",
+            label: "Designation",
+            type: "text",
+            required: true,
+          },
+          {
+            name: "organization",
+            label: "Organization Name",
+            type: "text",
+            required: true,
+          },
+          {
+            name: "employeeStrength",
+            label: "Employee Strength",
+            type: "number",
+            required: true,
+          },
+          { name: "location", label: "Location", type: "text", required: true },
+          { name: "website", label: "Website", type: "url", required: false },
+          {
+            name: "requirements",
+            label: "Requirements",
+            type: "textarea",
+            required: true,
+          },
+        ],
+        imageUrl: "/contact/client.jpg",
+        imgCaption: "Let Us Find the Perfect Talent for You!",
+        imagePosition: "left",
+      },
+    },
+    contactInfo: {
+      heading: "Get in Touch",
+      details: [
+        {
+          label: "Proposal Email",
+          value: "proposal@company.com",
+        },
+        {
+          label: "Resume Email",
+          value: "resume@company.com",
+        },
+        {
+          label: "Phone Number",
+          value: "+1-234-567-8900",
+        },
+        {
+          label: "Address",
+          value: "123 Corporate Blvd, Business City, Country",
+        },
+      ],
+    },
+    mapEmbed: {
+      heading: "Our Location",
+      embedUrl: "https://www.google.com/maps/embed?pb=...", // Replace with your actual embed URL
+    },
+  };
+};
+
+
+
 type Contact = {
   name: string;
   number: string;
 };
 
 export const contacts: Contact[] = [
-  { name: "HR Department", number: "+91 87085 67919" },
-  { name: "Business Colaboration", number: "+91 91515 15209" },
-  { name: "Contact Support", number: "+91 91361 22887" },
+  // { name: "HR Department", number: "+91 87085 67919" },
+  // { name: "Business Colaboration", number: "+91 91515 15209" },
+  { name: "Contact Support", number: "+91 91515 15209" },
 ];
 
 
