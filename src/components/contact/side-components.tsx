@@ -9,6 +9,51 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { Mail, Phone, MapPin } from 'lucide-react'
 
+
+export function ContactDetails({heading, desc}: {heading: string, desc: string;}) {
+    return (
+        <Card className={`overflow-hidden`}>
+            <CardHeader>
+                <CardTitle>{heading}</CardTitle>
+                <CardDescription>{desc}</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+                <div className="flex items-center space-x-2">
+                    <Mail className="w-5 h-5 text-gray-500" />
+                    <span>proposals@example.com</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                    <Mail className="w-5 h-5 text-gray-500" />
+                    <span>resumes@example.com</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                    <Phone className="w-5 h-5 text-gray-500" />
+                    <span>(+91) 91515 15209</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                    <MapPin className="w-5 h-5 text-gray-500" />
+                    <span>Migsun Twiinz, SUN-3, 602, ETA-2, Greater Noida</span>
+                </div>
+            </CardContent>
+        </Card>
+    )
+}
+
+
+
+export function Map() {
+    return (
+        <div className="my-12">
+            <Card className="h-[400px] overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.4713146363642!2d77.53559077528375!3d28.495464275739852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceb02d9e21aaf%3A0x32749e2105a3848b!2sMigsun%20Wynne%20(Twiinz)!5e0!3m2!1sen!2sin!4v1731767128022!5m2!1sen!2sin" width="100%" height="100%" style={{ border:0 }}allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </Card>
+        </div>
+    )
+}
+
+
+
+
 export function Candidate() {
     return (
         <div>
@@ -66,8 +111,6 @@ export function Candidate() {
     )
 }
 
-
-
 export function Client() {
     return (
         <div className="">
@@ -121,56 +164,8 @@ export function Client() {
     )
 }
 
-
 export function SideImg() {
     return (
         <Image src='/contact/bg.jpg' alt="" width={1000} height={1000} className="w-[50%] object-cover object-center aspect-auto rounded-lg m-2" />
-    )
-}
-
-export function ContactDetails({data}: any) {
-    return (
-        <Card className={`overflow-hidden`}>
-            <CardHeader>
-                <CardTitle>Contact Information</CardTitle>
-                <CardDescription>Get in touch with us directly.</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-                <div className="flex items-center space-x-2">
-                    <Mail className="w-5 h-5 text-gray-500" />
-                    <span>{data.details.value}</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                    <Mail className="w-5 h-5 text-gray-500" />
-                    <span>resumes@example.com</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                    <Phone className="w-5 h-5 text-gray-500" />
-                    <span>+1 (555) 123-4567</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                    <MapPin className="w-5 h-5 text-gray-500" />
-                    <span>123 Business Ave, Suite 100, San Francisco, CA 94107</span>
-                </div>
-            </CardContent>
-        </Card>
-    )
-}
-
-
-
-export function Map() {
-    return (
-        <div className="my-12">
-            <Card className="h-[400px] overflow-hidden">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0673431840716!2d-122.41941708468212!3d37.77492997975903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter+HQ!5e0!3m2!1sen!2sus!4v1565726104009!5m2!1sen!2sus"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                ></iframe>
-            </Card>
-        </div>
     )
 }

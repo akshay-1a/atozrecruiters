@@ -1,4 +1,12 @@
-import { Users, Briefcase, Award } from "lucide-react";
+import {
+  Users,
+  Briefcase,
+  Award,
+  Mail,
+  MapPin,
+  Phone,
+  LucideIcon,
+} from "lucide-react";
 import { IconType } from "react-icons";
 import {
   IoLogoFacebook,
@@ -100,7 +108,6 @@ export const navItems = {
     },
   ],
 };
-
 
 export const homepage = {
   hero: {
@@ -300,11 +307,9 @@ export const gridItems = [
 export const contactData = () => {
   return {
     context: {
-      mainHeading:
-        "Connect With Us: Tailored Solutions for Candidates & Clients",
-      paragraph: `Whether you're an aspiring professional seeking the perfect opportunity or an organization looking to build a stellar team, you're in the right place. 
-      We offer specialized forms for both candidates and clients, ensuring a seamless and personalized experience. 
-      Select the form that aligns with your goals and provide the necessary details to help us assist you effectively.`,
+      Heading: "Connect With Us",
+      subHeading: "Tailored Solutions for Candidates & Clients",
+      paragraph: `Whether you're a professional seeking your next big opportunity or an organization looking for the right talent, you've come to the right place. Select the appropriate form below to help us tailor our services to your needs and build lasting connections.`,
     },
     tabs: [
       { label: "Candidate Form", formKey: "candidate" },
@@ -340,14 +345,14 @@ export const contactData = () => {
             type: "text",
             required: true,
           },
-          { name: "contact", label: "Contact", type: "tel", required: true },
+          { name: "contact", label: "Contact No", type: "tel", required: true },
           { name: "email", label: "Email ID", type: "email", required: true },
           { name: "location", label: "Location", type: "text", required: true },
           {
             name: "resume",
             label: "(Google Drive link of resume)",
-            type: "text",
-            required: false,
+            type: "url",
+            required: true,
           },
         ],
         imageUrl: "/contact/candidate.jpg", // Example image URL
@@ -383,6 +388,8 @@ export const contactData = () => {
             type: "number",
             required: true,
           },
+          { name: "contact", label: "Contact No", type: "tel", required: true },
+          { name: "email", label: "Email ID", type: "email", required: true },
           { name: "location", label: "Location", type: "text", required: true },
           { name: "website", label: "Website", type: "url", required: false },
           {
@@ -393,12 +400,13 @@ export const contactData = () => {
           },
         ],
         imageUrl: "/contact/client.jpg",
-        imgCaption: "Let Us Find the Perfect Talent for You!",
+        imgCaption: "Let us Find the Perfect Talent for You!",
         imagePosition: "left",
       },
     },
     contactInfo: {
-      heading: "Get in Touch",
+      heading: "Contact Information",
+      desc: "Get in touch with us directly.",
       details: [
         {
           label: "Proposal Email",
@@ -417,6 +425,9 @@ export const contactData = () => {
           value: "123 Corporate Blvd, Business City, Country",
         },
       ],
+      heading2: "Let's Connect",
+      para: "We believe in building strong partnerships with both candidates and businesses. Whether you’re aiming to elevate your career or find the perfect talent, our team is here to deliver personalized solutions that drive success.",
+      actionBtn: "Apply Now!",
     },
     mapEmbed: {
       heading: "Our Location",
@@ -424,8 +435,6 @@ export const contactData = () => {
     },
   };
 };
-
-
 
 type Contact = {
   name: string;
@@ -437,8 +446,6 @@ export const contacts: Contact[] = [
   // { name: "Business Colaboration", number: "+91 91515 15209" },
   { name: "Contact Support", number: "+91 91515 15209" },
 ];
-
-
 
 type QuickLink = {
   label: string;
@@ -460,12 +467,17 @@ export const footer = {
     { label: "Services", url: "/#services" },
     { label: "Contact", url: "/contact" },
   ] as QuickLink[],
-  address: "123 Business Street",
-  address1: "Noida, IN",
+  address: "Migsun Twiinz, SUN-3,",
+  address1: "602, ETA-2, Greater Noida",
   phone: "(+91) 91 5151 5209",
   job: "resume@atozrecruiters.com",
   proposal: "proposal@atozrecruiters.com",
   rights: "A To Z Recruiters. All rights reserved.",
+  developer: "Website Designed by and Developed by Akshay Arora",
+  link: {
+    url: "https://akshay.imperfectors.com",
+    label: "[akshay.imperfectors.com]",
+  },
   links: [
     {
       icon: IoLogoFacebook,

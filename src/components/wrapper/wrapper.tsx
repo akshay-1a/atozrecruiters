@@ -67,7 +67,7 @@ export function Footer() {
                                 return (
                                     <Link key={index} href={link.url} passHref>
                                         <div className="flex justify-center">
-                                            <Icon className={`bg-slate-500 hover:bg-white p-2 h-12 w-12 text-white hover:${link.color} overflow-visible rounded-xl hover:scale-125 transition-all ease-in-out duration-1000`} />
+                                            <Icon className={`bg-slate-500 hover:bg-white p-2 h-12 w-12 text-white hover:text-blue-500 hover:${link.color} overflow-visible rounded-xl hover:scale-125 transition-all ease-in-out duration-1000`} />
                                         </div>
                                     </Link>
                                 )
@@ -77,7 +77,10 @@ export function Footer() {
                 </div>
                 <div className="mt-8 py-4 border-t border-gray-700 text-center flex justify-between px-14">
                     <p>
-                        Website Designed by and Developed by Akshay Arora <Link href="https://akshay.imperfectors.com">[Imperfectors.com]</Link>
+                        {f.developer}
+                        <Link href={f.link.url}>
+                            {f.link.label}
+                        </Link>
                     </p>
                     <p className=''>
                         &copy; {new Date().getFullYear()} {f.rights}
