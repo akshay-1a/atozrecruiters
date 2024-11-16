@@ -64,7 +64,7 @@ export function FormComponent({ imgCap, imgUrl, imgPos, formData, onSubmit }: Fo
             }
 
             setSuccess(true)
-            // formElement.reset() // Reset form after successful submission
+            formElement.reset() // Reset form after successful submission
             onSubmit(data)
 
         } catch (error) {
