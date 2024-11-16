@@ -14,6 +14,7 @@ import {
 import { cn } from "@/lib/utils"
 import { navItems } from "@/lib/constants"
 import Image from "next/image"
+import { Button } from "../ui/button"
 
 export default function Navbar() {
     return (
@@ -30,7 +31,7 @@ export default function Navbar() {
                         {/* <span className="text-2xl font-bold text-blue-600">AtoZ Recruiters</span> */}
                     </Link>
 
-                    <NavigationMenu className="pr-10">
+                    <NavigationMenu className="pr-10 hidden md:block">
                         <NavigationMenuList>
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger className="">

@@ -7,7 +7,7 @@ import React from 'react'
 
 export default function client() {
     return (
-        <main className='min-h-screen w-full bg-cyan-50 '>
+        <main className='min-h-screen w-full overflow-hidden bg-cyan-50 '>
             <Hero />
             <Count />
             <Intro />

@@ -15,6 +15,7 @@ export default function Whatsapp() {
     }, [])
 
     const handleWhatsAppClick = (number: string) => {
+        number = number.replace(/\s+/g, '');
         window.open(`https://wa.me/${number}`, '_blank')
     }
 
@@ -25,7 +26,7 @@ export default function Whatsapp() {
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.5 }}
-                    className="fixed z-50 bottom-4 right-4"
+                    className="fixed z-50 bottom-4 right-10 md:right-4 "
                 >
                     <button
                         onClick={() => setIsOpen(!isOpen)}

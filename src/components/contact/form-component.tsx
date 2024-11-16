@@ -91,7 +91,7 @@ export function FormComponent({ imgCap, imgUrl, imgPos, formData, onSubmit }: Fo
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {formData.fields.map((field) => (
-                                <div key={field.name} className={`space-y-2 ${field.type === "textarea" ? "col-span-2" : ""}`} >
+                                <div key={field.name} className={`space-y-2 ${field.type === "textarea" ? "md:col-span-2" : ""}`} >
                                     <Label htmlFor={field.name}>{field.label}</Label>
                                     {field.type === "textarea" ? (
                                         <Textarea id={field.name} name={field.name} required={field.required} />
@@ -135,7 +135,7 @@ export function FormImage({
     return (
         <div className={`flex gap-5 ${position === 'right' ? 'flex-row' : 'flex-row-reverse'}`}>
             <div className="flex-1">{children}</div>
-            <div className="flex-1 relative m-4 overflow-hidden rounded-lg">
+            <div className="flex-1 relative m-4 overflow-hidden rounded-lg hidden md:block">
                 <div
                     className=""
                     onMouseEnter={() => setIsHovered(true)}

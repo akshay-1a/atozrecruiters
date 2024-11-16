@@ -426,7 +426,7 @@ export const contactData = () => {
         },
       ],
       heading2: "Let's Connect",
-      para: "We believe in building strong partnerships with both candidates and businesses. Whether you’re aiming to elevate your career or find the perfect talent, our team is here to deliver personalized solutions that drive success.",
+      para: "We believe in building strong partnerships with both candidates and businesses. Whether you're aiming to elevate your career or find the perfect talent, our team is here to deliver personalized solutions that drive success.",
       actionBtn: "Apply Now!",
     },
     mapEmbed: {
@@ -458,9 +458,10 @@ type SocialLink = {
   color: string;
 };
 
-export const footer = {
+export const Footer = {
   company: "A To Z Recruiters",
-  tagline: "Connecting talent with opportunity",
+  tagline:
+    "Connecting talent with opportunity as we Bridge Talent and Opportunity, One Connection at a Time.",
   quick: [
     { label: "Home", url: "/" },
     { label: "About", url: "/#about" },
@@ -473,7 +474,7 @@ export const footer = {
   job: "resume@atozrecruiters.com",
   proposal: "proposal@atozrecruiters.com",
   rights: "A To Z Recruiters. All rights reserved.",
-  developer: "Website Designed by and Developed by Akshay Arora",
+  developer: "Website Designed and Developed by Akshay Arora",
   link: {
     url: "https://akshay.imperfectors.com",
     label: "[akshay.imperfectors.com]",

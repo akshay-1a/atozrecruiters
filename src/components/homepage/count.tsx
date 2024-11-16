@@ -30,7 +30,7 @@ const AchievementCard: React.FC<Achievement> = ({ icon: Icon, count, label }) =>
             <motion.div
                 ref={ref}
                 whileHover={{ scale: 1.05 }}
-                className="p-6 rounded-lg text-center text-teal-100"
+                className="p-6 rounded-lg text-center text-teal-100 w-full overflow-hidden"
             >
                 <div className='flex justify-center items-center gap-3 pb-2'>
                     <Icon className="w-24 h-24 text-cyan-500" />

@@ -6,7 +6,7 @@ import { Clip, PopEffect } from '../animations/clip'
 export default function Intro() {
     const data = homepage.introduction
     return (
-        <section id="about" className='h-screen flex justify-center items-center gap-36 p-20 bg-cyan-100 '>
+        <section id="about" className='h-screen flex justify-center items-center gap-36 p-20 bg-cyan-100 w-full overflow-hidden'>
             <Clip start='right' className='flex-1 flex flex-col items-start gap-14 pb-20 w-[60vh] text-slate-800 text-pretty'>
                 <h1 className='font-extrabold text-5xl leading-snug tracking-wider border-b-4 pb-6 border-cyan-900'>{data.title}</h1>
                 <p className='text-xl'>

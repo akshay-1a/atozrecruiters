@@ -47,9 +47,9 @@ export default function ContactPage({ contactData }: ContactPageProps) {
     }
 
     return (
-        <div className="container mx-auto p-20 pt-24 bg-cyan-50">
+        <div className="container mx-auto p-4 md:p-20 pt-20 bg-cyan-50 w-full overflow-hidden text-pretty">
             {/* Breadcrumb */}
-            <nav className="flex mb-8 text-sm text-slate-500" aria-label="Breadcrumb">
+            <nav className="flex mt-8 pl-5 md:pl-0 md:mt-0 text-sm text-slate-500" aria-label="Breadcrumb">
                 <ol className="inline-flex items-center space-x-1 md:space-x-3">
                     <li className="inline-flex items-center">
                         <a href="/" className="hover:text-slate-700">Home</a>
@@ -64,9 +64,9 @@ export default function ContactPage({ contactData }: ContactPageProps) {
             </nav>
 
             {/* Context Section */}
-            <section className="mb-12 text-center pt-10 px-28">
-                <h1 className="text-7xl text-slate-900 font-bold pl-1">{contactData.context.Heading}</h1>
-                <h1 className="text-2xl text-slate-600 font-extrabold mb-4">{contactData.context.subHeading}</h1>
+            <section className="mb-12 text-center pt-10 px-3 md:px-28 space-y-4 md:space-y-0">
+                <h1 className="text-4xl md:text-7xl text-slate-900 font-bold pl-1">{contactData.context.Heading}</h1>
+                <h1 className="text-2xl text-slate-600 font-extrabold md:pb-10">{contactData.context.subHeading}</h1>
                 <p className="text-xl text-slate-600 mx-auto">
                     {contactData.context.paragraph}
                 </p>

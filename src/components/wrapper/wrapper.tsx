@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { IoLogoFacebook, IoLogoTwitter, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io5";
 import Navbar from './navbar';
 import Whatsapp from './whatsapp';
-import { footer as f } from '@/lib/constants';
+import { Footer as f } from '@/lib/constants';
 
 
 export default function Wrapper({
@@ -26,14 +26,14 @@ export default function Wrapper({
 
 export function Footer() {
     return (
-        <footer className="bg-slate-900 text-white pt-12">
+        <footer className="bg-slate-900 text-white pt-12 text-base capitalize">
             <div className="container mx-auto px-14">
-                <div className="flex justify-around items-start gap-8">
+                <div className="flex flex-col md:flex-row justify-around items-start gap-8">
                     <div >
                         <h3 className="text-3xl font-extrabold uppercase mb-4">
                             {f.company}
                         </h3>
-                        <p className='text-xl'>
+                        <p className='text-lg max-w-md '>
                             {f.tagline}
                         </p>
                     </div>
@@ -75,15 +75,15 @@ export function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-8 py-4 border-t border-gray-700 text-center flex justify-between px-14">
-                    <p>
-                        {f.developer}
+                <div className="mt-8 py-4 gap-4 border-t border-gray-700 text-center flex flex-col md:flex-row justify-center md:px-14">
+                    <p className='text-base'>
+                        &copy; {new Date().getFullYear()} {f.rights}
+                    </p>
+                    <p className='text-sm  md:text-base hidden'>
+                        {f.developer}{" "}
                         <Link href={f.link.url}>
                             {f.link.label}
                         </Link>
-                    </p>
-                    <p className=''>
-                        &copy; {new Date().getFullYear()} {f.rights}
                     </p>
                 </div>
             </div>
