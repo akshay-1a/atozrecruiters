@@ -14,21 +14,20 @@ import {
 import { cn } from "@/lib/utils"
 import { navItems } from "@/lib/constants"
 import Image from "next/image"
-import { Button } from "../ui/button"
+import MobileNav from "./mobile-nav"
 
 export default function Navbar() {
     return (
         <header className="border-b bg-[#0171A3]">
-            <div className="container mx-auto px-16 py-5">
+            <div className="container mx-auto px-8 md:px-16 py-5">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="flex items-center space-x-2">
                         <Image
                             src="/logo.jpg"
                             alt="A To Z Recruiters"
                             width={200} height={200}
-                            className="w-48 absolute top-2 border overflow-hidden"
+                            className="w-32 md:w-48 absolute top-2 border overflow-hidden"
                         />
-                        {/* <span className="text-2xl font-bold text-blue-600">AtoZ Recruiters</span> */}
                     </Link>
 
                     <NavigationMenu className="pr-10 hidden md:block">
@@ -98,10 +97,7 @@ export default function Navbar() {
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
-
-                    {/* <div className="hidden md:block">
-                        <Button>Get Started</Button>
-                    </div> */}
+                    <MobileNav/>
                 </div>
             </div>
         </header>
