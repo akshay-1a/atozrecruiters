@@ -17,7 +17,7 @@ export default function Faq() {
     const [activeImage, setActiveImage] = useState(faqS.default)
 
     return (
-        <section className="relative p-24 overflow-hidden h-screen">
+        <section className="relative p-8 md:p-24 min-h-screen text-pretty">
             <AnimatePresence mode='popLayout'>
                 {/* Background Image */}
                 <Image
@@ -31,7 +31,7 @@ export default function Faq() {
             <div className="absolute inset-0 bg-black/20 backdrop-blur-md" />
 
             <Clip start='centerX' className="container rounded-sm mx-auto p-4 relative z-10 bg-white/80">
-                <div className="grid md:grid-cols-2 gap-12 items-start">
+                <div className="grid md:grid-cols-2 md:gap-12 items-start">
                     {/* Left Column */}
                     <div className="py-3 uppercase">
                         <Clip start='top'>
@@ -62,10 +62,9 @@ export default function Faq() {
                     </div>
 
                     {/* Right Column */}
-                    <div className="space-y-6 py-5">
-
+                    <div className="space-y-6 md:py-5">
                         <Clip start='bottom'>
-                            <p className="text-lg text-slate-950 text-justify font-serif">
+                            <p className="md:text-lg text-slate-950 text-justify font-serif">
                                 {faqS.introParagraph}
                             </p>
                         </Clip>
@@ -86,7 +85,7 @@ export default function Faq() {
                         >
                             {faqS.faq.map((item, index) => (
                                 <AccordionItem key={index} value={item.question}>
-                                    <AccordionTrigger className="text-left font-semibold">
+                                    <AccordionTrigger className="text-left font-bold md:font-semibold">
                                         {item.question}
                                     </AccordionTrigger>
                                     <AccordionContent>

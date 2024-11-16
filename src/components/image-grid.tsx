@@ -10,13 +10,13 @@ export default function ImageGrid() {
     return (
         <div className='relative w-full h-full flex flex-col items-end gap-5'>
             <div className='flex gap-5 items-end'>
-                <Box style="h-20 w-20 bg-[#0171A3]" />
-                <div className='flex items-end gap-5'>
-                    <AnimatedImage
-                        src={data[1]}
-                        style="h-60 w-60"
-                        alt="Data analytics" />
-                </div>
+                <Box style="h-20 w-20 bg-[#0171A3] hidden md:block" />
+                <AnimatedImage
+                    src={data[1]}
+                    style="h-full w-56 md:h-60 md:w-60"
+                    alt="Data analytics" />
+                {/* <div className='flex items-end gap-5'>
+                </div> */}
                 <div className="flex flex-col gap-5">
                     <AnimatedImage
                         src={data[2]}
@@ -46,8 +46,8 @@ export default function ImageGrid() {
 const Box = ({ style }: any) => {
     return (
         <Clip start='left'>
-        <div className={`drop-shadow relative rounded ${style}`
-        } />
+            <div className={`drop-shadow relative rounded ${style}`
+            } />
         </Clip>
     )
 }

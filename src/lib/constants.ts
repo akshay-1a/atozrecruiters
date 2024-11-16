@@ -483,22 +483,22 @@ export const Footer = {
     {
       icon: IoLogoFacebook,
       url: "https://facebook.com/atozrecruiters",
-      color: "text-blue-600",
+      color: "blue",
     },
     {
       icon: IoLogoTwitter,
       url: "https://twitter.com/atozrecruiters",
-      color: "text-blue-600",
+      color: "blue",
     },
     {
       icon: IoLogoLinkedin,
       url: "https://linkedin.com/atozrecruiters",
-      color: "text-blue-600",
+      color: "blue",
     },
     {
       icon: IoLogoInstagram,
       url: "https://instagram.com/atozrecruiters",
-      color: "text-pink-500",
+      color: "pink",
     },
   ] as SocialLink[],
 };

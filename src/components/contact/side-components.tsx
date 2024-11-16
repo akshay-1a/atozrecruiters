@@ -20,11 +20,11 @@ export function ContactDetails({heading, desc}: {heading: string, desc: string;}
             <CardContent className="space-y-4">
                 <div className="flex items-center space-x-2">
                     <Mail className="w-5 h-5 text-gray-500" />
-                    <span>proposals@example.com</span>
+                    <span>proposal@atozrecruiters.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                     <Mail className="w-5 h-5 text-gray-500" />
-                    <span>resumes@example.com</span>
+                    <span>resume@atozrecruiters.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                     <Phone className="w-5 h-5 text-gray-500" />
@@ -89,7 +89,7 @@ export function Candidate() {
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="email">Email ID</Label>
-                                        <Input id="email" type="email" placeholder="john@example.com" />
+                                        <Input id="email" type="email" placeholder="john@atozrecruiters.com" />
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="location">Location</Label>
@@ -147,7 +147,7 @@ export function Client() {
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="website">Website</Label>
-                                        <Input id="website" placeholder="https://www.example.com" />
+                                        <Input id="website" placeholder="https://www.atozrecruiters.com" />
                                     </div>
                                 </div>
                                 <div className="space-y-2">

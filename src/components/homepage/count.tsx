@@ -52,7 +52,7 @@ const AchievementCard: React.FC<Achievement> = ({ icon: Icon, count, label }) =>
 export default function Count() {
 
     return (
-        <section className="relative min-h-screen w-full py-10 bg-slate-950">
+        <section className="relative md:min-h-screen w-full py-10 bg-slate-950 text-pretty">
             <Clip start='centerX' >
                 <DataBase />
             </Clip>
@@ -82,7 +82,7 @@ const DataBase = () => {
     return (
         <motion.div
             ref={ref}
-            className="mt-2 flex gap-12 items-start py-10 px-16 bg-cyan-200 md:h-[52vh]">
+            className="mt-2 flex flex-col md:flex-row items-center justify-center w-full gap-16 py-10 px-8 md:px-20 bg-cyan-200 md:h-[48vh]">
             <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -93,9 +93,9 @@ const DataBase = () => {
                 <Image
                     src="/homepage/count_chart.jpg"
                     alt="Growth chart"
-                    width={400}
-                    height={400}
-                    className="rounded-lg aspect-auto w-full z-10"
+                    width={800}
+                    height={800}
+                    className="rounded-lg h-56 md:h-60 md:aspect-auto w-full z-10"
                 />
                 <div className='absolute bg-cyan-600 translate-x-3 translate-y-3 rounded-lg h-full w-full z-0' />
                 <div className="absolute w-full mx-auto inset-0 z-10 bg-slate-800/50 hover:bg-slate-950/80 text-cyan-50 p-6 rounded-lg flex flex-col justify-center items-center gap-5 drop-shadow-md transition-all ease-linear duration-300">

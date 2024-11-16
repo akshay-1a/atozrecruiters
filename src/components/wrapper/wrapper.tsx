@@ -28,7 +28,7 @@ export function Footer() {
     return (
         <footer className="bg-slate-900 text-white pt-12 text-base capitalize">
             <div className="container mx-auto px-14">
-                <div className="flex flex-col md:flex-row justify-around items-start gap-8">
+                <div className="flex flex-col md:flex-row md:justify-around md:items-start gap-8">
                     <div >
                         <h3 className="text-3xl font-extrabold uppercase mb-4">
                             {f.company}
@@ -66,8 +66,9 @@ export function Footer() {
                                 const Icon = link.icon
                                 return (
                                     <Link key={index} href={link.url} passHref>
-                                        <div className="flex justify-center">
-                                            <Icon className={`bg-slate-500 hover:bg-white p-2 h-12 w-12 text-white hover:text-blue-500 hover:${link.color} overflow-visible rounded-xl hover:scale-125 transition-all ease-in-out duration-1000`} />
+                                        <div className={`flex justify-center items-center rounded-xl bg-slate-500 hover:bg-white text-white
+                                            ${link.color === 'pink' ? 'hover:text-pink-500' : 'hover:text-blue-500'}`}>
+                                            <Icon className={`p-2 h-12 w-12 overflow-visible rounded-xl hover:scale-125 transition-all ease-in-out duration-1000`} />
                                         </div>
                                     </Link>
                                 )
