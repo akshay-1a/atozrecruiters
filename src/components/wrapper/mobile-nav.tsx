@@ -48,9 +48,12 @@ export default function MobileNav() {
                     </button>
                 </SheetTrigger>
                 <SheetContent side="left" className="w-[280px] p-0">
-                    <SheetHeader className="p-6 border-b">
-                        <SheetTitle className="text-lg font-bold text-sky-800">
-                            Menu
+                    <SheetHeader className="p-6 border-b bg-cyan-100">
+                        <SheetTitle className="text-lg font-bold text-sky-800 uppercase">
+                            <span className="font-extrabold font-serif text-5xl">A To Z</span>
+                            <br/>
+                            <span className="font-extrabold tracking-[3.2px] font-serif text-xl">Recruiters</span>
+                            
                         </SheetTitle>
                     </SheetHeader>
 
@@ -127,12 +130,12 @@ export default function MobileNav() {
 
                         <motion.div
                             variants={itemVariants}
-                            className="mt-4 px-4"
+                            className="mt-4 px- 4"
                         >
                             <Link
                                 href="/contact"
                                 onClick={() => setIsOpen(false)}
-                                className="block py-3 px- 4 text-sm font-medium text-sky-600 hover:bg-sky-50 rounded-lg transition-colors"
+                                className="block py-3 px-4 text-sm font-medium text-sky-600 hover:bg-sky-50 rounded-lg transition-colors"
                             >
                                 Contact
                             </Link>
