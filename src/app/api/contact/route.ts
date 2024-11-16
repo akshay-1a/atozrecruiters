@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-// Email templates remain the same as your current version
+// Email templates
 const getCandidateEmailTemplate = (data: any) => `
 <h2>New Candidate Application</h2>
 <p><strong>Full Name:</strong> ${data.fullName}</p>
@@ -21,6 +21,8 @@ const getClientEmailTemplate = (data: any) => `
 <p><strong>Designation:</strong> ${data.designation}</p>
 <p><strong>Organization:</strong> ${data.organization}</p>
 <p><strong>Employee Strength:</strong> ${data.employeeStrength}</p>
+<p><strong>Contact:</strong> ${data.contact}</p>
+<p><strong>Email:</strong> ${data.email}</p>
 <p><strong>Location:</strong> ${data.location}</p>
 ${data.website ? `<p><strong>Website:</strong> ${data.website}</p>` : ""}
 <p><strong>Requirements:</strong> ${data.requirements}</p>
@@ -33,30 +35,27 @@ const createTransporter = () => {
   }
 
   return nodemailer.createTransport({
-    host: process.env.EMAIL_HOST,
-    port: process.env.EMAIL_PORT,
-    secure: process.env.EMAIL_SECURE,
+    service: "Zoho", // Add this line
+    host: "smtp.zoho.com",
+    port: 465,
+    secure: true, // true for 465 port
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
     },
-    tls: {
-      rejectUnauthorized: process.env.EMAIL_SECURE,
-    },
   });
 };
 
+type FormType = "candidate" | "client";
+
 // Function to get the appropriate recipient email based on form type
-const getRecipientEmail = (formType: string) => {
+const getRecipientEmail = (formType: FormType) => {
   const recipients = {
     candidate: "resume@atozrecruiters.com",
     client: "proposal@atozrecruiters.com",
-  };
+  } as const;
 
-  return (
-    recipients[formType as keyof typeof recipients] ||
-    process.env.EMAIL_DEFAULT_RECIPIENT
-  );
+  return recipients[formType];
 };
 
 export async function POST(request: Request) {
@@ -72,7 +71,13 @@ export async function POST(request: Request) {
 
     const data = await request.json();
     const { formType, ...formData } = data;
-
+    // Validate form type
+    if (formType !== "candidate" && formType !== "client") {
+      return NextResponse.json(
+        { message: "Invalid form type" },
+        { status: 400 }
+      );
+    }
     const emailTemplate =
       formType === "candidate"
         ? getCandidateEmailTemplate(formData)
@@ -84,19 +89,18 @@ export async function POST(request: Request) {
         : `New Business Proposal: ${formData.organization}`;
 
     const transporter = createTransporter();
-
-    // Get the appropriate recipient email based on form type
     const recipientEmail = getRecipientEmail(formType);
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: recipientEmail,
-      replyTo: formData.email || process.env.EMAIL_USER, // Set reply-to as the form submitter's email if available
+      replyTo: formData.email || process.env.EMAIL_USER,
       subject: subject,
       html: emailTemplate,
     };
 
     try {
+      // Verify connection first
       await transporter.verify();
       const info = await transporter.sendMail(mailOptions);
       console.log("Email sent successfully:", info.messageId);
