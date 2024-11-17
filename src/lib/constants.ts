@@ -15,6 +15,121 @@ import {
   IoLogoInstagram,
 } from "react-icons/io5";
 
+export const MetaData = {
+  homepage: {
+    title: "Home | A to Z Recruitment and Staffing",
+    description:
+      "Your trusted partner in recruitment and talent acquisition, shaping futures and empowering businesses.",
+    keywords: [
+      "Recruitment",
+      "Talent Acquisition",
+      "Staffing Solutions",
+      "HR Consulting",
+    ],
+  },
+  aboutUs: {
+    title: "About Us | A to Z Recruitment and Staffing",
+    description:
+      "Learn about our journey, values, and dedication to connecting talent with opportunity.",
+    keywords: ["About A to Z", "Our Story", "HR Solutions"],
+  },
+  ourTeam: {
+    title: "Our Team | A to Z Recruitment and Staffing",
+    description:
+      "Meet the minds behind our success, driving innovation in recruitment and staffing.",
+    keywords: ["HR Team", "Recruitment Experts", "Staffing Professionals"],
+  },
+  careers: {
+    title: "Careers | A to Z Recruitment and Staffing",
+    description:
+      "Explore career opportunities with us and grow your professional journey.",
+    keywords: ["Careers at A to Z", "Job Opportunities", "Work With Us"],
+  },
+  recruitmentServices: {
+    title: "Recruitment Services | A to Z Recruitment and Staffing",
+    description:
+      "Tailored recruitment services to meet your unique hiring needs.",
+    keywords: [
+      "Recruitment Services",
+      "Permanent Placements",
+      "Executive Search",
+    ],
+  },
+  hrConsulting: {
+    title: "HR Consulting | A to Z Recruitment and Staffing",
+    description:
+      "Expert HR consulting to enhance your organization’s efficiency.",
+    keywords: ["HR Consulting", "Performance Management", "HR Strategy"],
+  },
+  outsourcing: {
+    title: "Outsourcing Services | A to Z Recruitment and Staffing",
+    description: "Seamless outsourcing solutions for all your staffing needs.",
+    keywords: ["Staffing Solutions", "Temporary Staffing", "Outsourcing"],
+  },
+  payrollManagement: {
+    title: "Payroll Management | A to Z Recruitment and Staffing",
+    description: "Efficient and accurate payroll services for your business.",
+    keywords: ["Payroll Services", "Compliance", "Employee Management"],
+  },
+  trainingDevelopment: {
+    title: "Training & Development | A to Z Recruitment and Staffing",
+    description:
+      "Empowering teams through comprehensive training and development programs.",
+    keywords: ["Employee Training", "Skill Development", "Corporate Training"],
+  },
+  talentAcquisition: {
+    title: "Talent Acquisition Strategy | A to Z Recruitment and Staffing",
+    description:
+      "Strategic solutions for your talent acquisition needs, aligning with your business goals.",
+    keywords: [
+      "Talent Acquisition",
+      "Recruitment Strategy",
+      "Workforce Planning",
+    ],
+  },
+  informationTechnology: {
+    title: "Information Technology | A to Z Recruitment and Staffing",
+    description:
+      "Providing expert HR solutions tailored to the fast-paced IT industry.",
+    keywords: ["IT Staffing", "Tech Talent", "IT Recruitment"],
+  },
+  bankingFinance: {
+    title: "Banking & Finance | A to Z Recruitment and Staffing",
+    description:
+      "Trusted HR services for the banking and finance sector, ensuring the right fit for critical roles.",
+    keywords: [
+      "Finance Recruitment",
+      "Banking HR Solutions",
+      "Financial Talent",
+    ],
+  },
+  healthcare: {
+    title: "Healthcare Industry | A to Z Recruitment and Staffing",
+    description:
+      "Comprehensive staffing solutions for the healthcare sector, ensuring quality patient care.",
+    keywords: ["Healthcare Staffing", "Medical Recruitment", "Healthcare HR"],
+  },
+  manufacturing: {
+    title: "Manufacturing | A to Z Recruitment and Staffing",
+    description:
+      "Efficient workforce solutions for the manufacturing industry, optimizing productivity and growth.",
+    keywords: [
+      "Manufacturing Recruitment",
+      "Industrial Staffing",
+      "Skilled Labor",
+    ],
+  },
+  contact: {
+    title: "Contact Us | A to Z Recruitment and Staffing",
+    description:
+      "Get in touch with us for personalized HR solutions and expert advice.",
+    keywords: ["Contact A to Z", "HR Solutions", "Get in Touch"],
+  },
+};
+
+export type MetaDataKey = keyof typeof MetaData;
+// export type MetaData = typeof MetaData[keyof typeof MetaData];
+
 export const navItems = {
   company: [
     {
