@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { MetaData, MetaDataKey } from "./constants";
 
-export async function generateMetadata(path: string): Promise<Metadata> {
+export async function GenerateMetadata(path: string): Promise<Metadata> {
   // Remove leading slash and convert to camelCase
   const key = path
     .slice(1)

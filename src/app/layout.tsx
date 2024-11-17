@@ -16,27 +16,11 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  title: "A TO Z Recruiters",
-  description: "Your personal A to Z Recruitment and Staffing firm, we don't just fill positions; we shape futures.",
-};
+// export const metadata: Metadata = {
+//   title: "A TO Z Recruiters",
+//   description: "Your personal A to Z Recruitment and Staffing firm, we don't just fill positions; we shape futures.",
+// };
 
-
-export async function generateMetadata({ params, searchParams }: {
-  params: { slug: string[] }
-  searchParams: { [key: string]: string | string[] | undefined }
-}): Promise<Metadata> {
-  const path = params.slug ? params.slug.join('/') : ''
-  const key = path.replace(/-./g, x => x[1].toUpperCase()) as MetaDataKey
-
-  const metadata = MetaData[key] || MetaData.homepage
-
-  return {
-    title: metadata.title,
-    description: metadata.description,
-    keywords: metadata.keywords,
-  }
-}
 
 export default function RootLayout({
   children,

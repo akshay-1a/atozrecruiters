@@ -66,9 +66,10 @@ export function Footer() {
                                 const Icon = link.icon
                                 return (
                                     <Link key={index} href={link.url} passHref>
-                                        <div className={`flex justify-center items-center rounded-xl bg-slate-500 hover:bg-white text-white
-                                            ${link.color === 'pink' ? 'hover:text-pink-500' : 'hover:text-blue-500'}`}>
-                                            <Icon className={`p-2 h-12 w-12 overflow-visible rounded-xl hover:scale-125 transition-all ease-in-out duration-1000`} />
+                                        <div className={`flex justify-center items-center rounded-xl bg-slate-500 hover:bg-white text-white 
+                                            ${link.color === 'pink' ? 'hover:text-pink-500' : 'hover:text-blue-500'}
+                                            hover:scale-125 transition-all ease-in-out duration-500`}>
+                                            <Icon className={`p-2 h-12 w-12 overflow-visible rounded-xl `} />
                                         </div>
                                     </Link>
                                 )

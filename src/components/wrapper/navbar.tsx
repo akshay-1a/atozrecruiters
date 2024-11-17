@@ -26,6 +26,8 @@ export default function Navbar() {
                             src="/logo.jpg"
                             alt="A To Z Recruiters"
                             width={200} height={200}
+                            priority={true}
+                            placeholder="empty"
                             className="w-32 md:w-48 absolute top-2 border overflow-hidden"
                         />
                     </Link>

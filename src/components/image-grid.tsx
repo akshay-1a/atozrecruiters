@@ -66,6 +66,7 @@ export function AnimatedImage({ src, alt, style = '' }: AnimatedImageProps) {
                 alt={alt}
                 width={2000}
                 height={2000}
+                priority={true}
                 className={`drop-shadow object-cover rounded ${style}`}
             />
         </Clip>

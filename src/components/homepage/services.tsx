@@ -70,6 +70,7 @@ const GlossyCard = ({ title, image, tags, desc, href }: { title: string; image: 
                         alt={title}
                         width={5774}
                         height={3849}
+                        priority={true}
                         className="object-cover h-full"
                     />
                 </div>

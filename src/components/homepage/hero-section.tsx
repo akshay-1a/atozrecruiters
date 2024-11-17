@@ -4,6 +4,7 @@ import ImageGrid from "../image-grid"
 import { Button } from "../ui/button"
 import { BsArrowRight } from "react-icons/bs"
 import { Clip } from "../animations/clip";
+import { redirect } from "next/navigation";
 
 export default function Hero() {
     const context = homepage.hero
@@ -30,6 +31,7 @@ export default function Hero() {
                     </Clip>
                     <Clip start="right">
                         <Button
+                        onClick={()=>{redirect('/contact');}}
                             variant={"default"} className=" bg-cyan-800 hover:bg-cyan-700 text-cyan-50 text-xl font-semibold capitalize lg:p-6 rounded-lg flex items-center gap-4 ml-2">
                             {context.cta}
                             <div className="hover:-rotate-45 transition-transform ease-linear duration-150 hover:scale-150 ">

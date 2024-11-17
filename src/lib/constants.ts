@@ -19,7 +19,7 @@ export const MetaData = {
   homepage: {
     title: "Home | A to Z Recruitment and Staffing",
     description:
-      "Your trusted partner in recruitment and talent acquisition, shaping futures and empowering businesses.",
+      "Your trusted partner in recruitment and talent acquisition, shaping futures and empowering businesses. We don't just fill positions; we shape futures.",
     keywords: [
       "Recruitment",
       "Talent Acquisition",
@@ -126,9 +126,9 @@ export const MetaData = {
     keywords: ["Contact A to Z", "HR Solutions", "Get in Touch"],
   },
 };
-
 export type MetaDataKey = keyof typeof MetaData;
 // export type MetaData = typeof MetaData[keyof typeof MetaData];
+
 
 export const navItems = {
   company: [
@@ -244,7 +244,7 @@ export const homepage = {
     title: "Your Partner in Shaping Tomorrow's Workforce!",
     desc: [
       "At A to Z Recruitment and Staffing, we don't just fill positions; we shape futures. With a proven track record in providing top-tier recruitment and talent acquisition services, we cater to businesses across industries, ensuring that every hire aligns with your company's vision and goals.",
-      "And actually we don't jsut stop there. As our commitment goes beyond matching skills to job descriptions. We aim to build long-term partnerships, offering strategic guidance and workforce solutions that evolve with the market. Whether enhancing your leadership team or streamlining recruitment, we bring a personalized, innovative approach to help you stay ahead in the talent game.",
+      "And actually we don't just stop there. As our commitment goes beyond matching skills to job descriptions. We aim to build long-term partnerships, offering strategic guidance and workforce solutions that evolve with the market. Whether enhancing your leadership team or streamlining recruitment, we bring a personalized, innovative approach to help you stay ahead in the talent game.",
     ],
     image: "inter.png",
     alt: "A To Z Recruitment And Staffing Firm",
@@ -428,7 +428,7 @@ export const contactData = () => {
     },
     tabs: [
       { label: "Candidate Form", formKey: "candidate" },
-      { label: "Client Form", formKey: "client" },
+      { label: "Business Proposal Form", formKey: "client" },
     ],
     forms: {
       candidate: {
