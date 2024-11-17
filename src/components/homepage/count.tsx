@@ -52,12 +52,12 @@ const AchievementCard: React.FC<Achievement> = ({ icon: Icon, count, label }) =>
 export default function Count() {
 
     return (
-        <section className="relative md:min-h-screen w-full py-10 bg-slate-950 text-pretty">
+        <section className="relative lg:min-h-screen w-full py-10 bg-slate-950 text-pretty">
             <Clip start='centerX' >
                 <DataBase />
             </Clip>
             <div className=" container mx-auto px-4 pt-10">
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid lg:grid-cols-3 gap-8">
                     {achievements.map((achievement: Achievement, index: number) => (
                         <AchievementCard key={index} {...achievement} />
                     ))}
@@ -82,7 +82,7 @@ const DataBase = () => {
     return (
         <motion.div
             ref={ref}
-            className="mt-2 flex flex-col md:flex-row items-center justify-center w-full gap-16 py-10 px-8 md:px-20 bg-cyan-200 md:h-[48vh]">
+            className="mt-2 flex flex-col lg:flex-row items-center justify-center w-full gap-16 py-10 px-8 lg:px-20 bg-cyan-200 lg:h-[48vh]">
             <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -95,7 +95,7 @@ const DataBase = () => {
                     alt="Growth chart"
                     width={800}
                     height={800}
-                    className="rounded-lg h-56 md:h-60 md:aspect-auto w-full z-10"
+                    className="rounded-lg h-56 lg:h-60 lg:aspect-auto w-full z-10"
                 />
                 <div className='absolute bg-cyan-600 translate-x-3 translate-y-3 rounded-lg h-full w-full z-0' />
                 <div className="absolute w-full mx-auto inset-0 z-10 bg-slate-800/50 hover:bg-slate-950/80 text-cyan-50 p-6 rounded-lg flex flex-col justify-center items-center gap-5 drop-shadow-md transition-all ease-linear duration-300">
@@ -110,7 +110,7 @@ const DataBase = () => {
                 </div>
             </motion.div>
             <Clip start='right'>
-                <h2 className="text-2xl md:text-5xl font-extrabold text-cyan-950 mb-4 drop-shadow-sm">
+                <h2 className="text-2xl lg:text-5xl font-extrabold text-cyan-950 mb-4 drop-shadow-sm">
                     Transforming Talent, Elevating Success: Bridging Ambition with Achievement
                 </h2>
                 <p className="text-cyan-950 text-lg font-extrathin">

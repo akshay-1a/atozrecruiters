@@ -1,7 +1,7 @@
 import React from 'react'
 import { homepage } from '@/lib/constants'
 import Image from 'next/image'
-import { Clip, PopEffect } from '../animations/clip'
+import { Clip } from '../animations/clip'
 
 export default function Intro() {
     const data = homepage.introduction
