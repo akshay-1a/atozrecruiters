@@ -13,5 +13,5 @@ export function useMetadata() {
     )
     .join("") as MetaDataKey;
 
-  return MetaData[key] || MetaData.homepage;
+  return MetaData[key] || MetaData.home.page;
 }

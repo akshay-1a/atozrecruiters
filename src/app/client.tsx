@@ -5,7 +5,7 @@ import Intro from '@/components/homepage/intro'
 import Services from '@/components/homepage/services'
 import React from 'react'
 
-export default function client() {
+export default function Client() {
     return (
         <main className='min-h-screen w-full overflow-hidden bg-cyan-50 '>
             <Hero />

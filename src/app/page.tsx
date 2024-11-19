@@ -1,11 +1,11 @@
 import React from 'react'
 import Client from './client'
 import { Metadata } from 'next';
-import { GenerateMetadata } from '@/lib/generate-metadata';
+import { generateMetadata as getMetadata } from '@/lib/generate-metadata';
 
 
 export async function generateMetadata(): Promise<Metadata> {
-  return GenerateMetadata('/');
+  return getMetadata({ slug: ['home', 'page'] })
 }
 
 export default function page() {

@@ -4,6 +4,7 @@ import "./globals.css";
 import Wrapper from "@/components/wrapper/wrapper";
 import { MetaData, MetaDataKey } from '../lib/constants'
 import { Analytics } from "@vercel/analytics/react";
+import { generateMetadata as getMetadata } from '@/lib/generate-metadata'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,6 +16,17 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+
+export async function generateMetadata(
+  props: {
+    params: Promise<{ slug: string[] }>
+  }
+): Promise<Metadata> {
+  const params = await props.params;
+  return getMetadata({ slug: params.slug || [] })
+}
+
 
 // export const metadata: Metadata = {
 //   title: "A TO Z Recruiters",
