@@ -6,6 +6,10 @@ export interface NavItem {
   url: string;
 }
 
+export interface CompanyData {
+  slug: string;
+  title: string;
+}
 
 export interface ServiceData {
   href: string;

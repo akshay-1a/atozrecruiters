@@ -5,6 +5,7 @@ import Wrapper from "@/components/wrapper/wrapper";
 import { MetaData, MetaDataKey } from '../lib/constants'
 import { Analytics } from "@vercel/analytics/react";
 import { generateMetadata as getMetadata } from '@/lib/generate-metadata'
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -41,6 +42,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2BN828PKY6"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-2BN828PKY6');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-slate-950`}
       >
