@@ -33,8 +33,8 @@ export default function Client({ data }: ClientProps) {
             <Process data={data.process} />
             <WhyChooseUs data={data.whyChooseUs} />
             <Testimonials data={data.testimonials} />
-            <RelatedServices data={Related}/>
             <FAQ data={data.faq} />
+            <RelatedServices data={Related}/>
         </div>
     )
 }

@@ -659,7 +659,7 @@ export const Related = {
     },
     {
       name: "Outsourcing Services",
-      image: "Outsourcing",
+      image: "outsourcing",
       href: "/services/outsourcing-services",
     },
     {
