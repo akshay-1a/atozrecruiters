@@ -1,7 +1,7 @@
-import { MetaData, navItems } from "@/lib/constants"; // Adjust the import path as needed
+import { MetaData, navItems } from "@/lib/constants";
 
 export default async function sitemap() {
-  const baseUrl = "https://www.yourwebsite.com"; // Replace with your actual domain
+  const baseUrl = "https://www.atozrecruiters.com";
 
   // Helper function to create sitemap entries
   const createSitemapEntry = (path: string) => ({
