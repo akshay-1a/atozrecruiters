@@ -18,20 +18,30 @@ export function ContactDetails({ heading, desc }: { heading: string, desc: strin
                 <CardDescription>{desc}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-                <div className="flex items-center space-x-2">
-                    <Mail className="w-5 h-5 text-gray-500" />
-                    <span>proposal@atozrecruiters.com</span>
+                <div>
+                    <h4 className="font-bold">
+                        For Clients:
+                    </h4>
+                    <div className="flex items-center space-x-2">
+                        <Mail className="w-5 h-5 text-slate-600 font-extrabold" />
+                        <span>proposal@atozrecruiters.com</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 className="font-bold">
+                        For Job Seekers:
+                    </h4>
+                    <div className="flex items-center space-x-2">
+                        <Mail className="w-5 h-5 text-slate-600 font-extrabold" />
+                        <span>resume@atozrecruiters.com</span>
+                    </div>
                 </div>
                 <div className="flex items-center space-x-2">
-                    <Mail className="w-5 h-5 text-gray-500" />
-                    <span>resume@atozrecruiters.com</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                    <Phone className="w-5 h-5 text-gray-500" />
+                    <Phone className="w-5 h-5 text-slate-600 font-extrabold" />
                     <span>(+91) 91515 15209</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                    <MapPin className="w-5 h-5 text-gray-500" />
+                    <MapPin className="w-8 h-8 text-slate-600 font-extrabold" />
                     <span>3rd floor, KB Complex, Pocket F, Block F, Sector Alpha II, Greater Noida, Brahmpur Rajraula Urf Nawada, Uttar Pradesh 201308</span>
                 </div>
             </CardContent>

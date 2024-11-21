@@ -40,7 +40,7 @@ export default function MobileNav() {
     }
 
     return (
-        <div className="block md:hid den">
+        <div className="block md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
                     <button className="p-2 hover:bg-sky-800 rounded-lg transition-colors">

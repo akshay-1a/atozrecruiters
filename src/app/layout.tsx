@@ -42,7 +42,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2BN828PKY6"

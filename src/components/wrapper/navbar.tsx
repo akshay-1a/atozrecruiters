@@ -32,7 +32,7 @@ export default function Navbar() {
                         />
                     </Link>
 
-                    <NavigationMenu className="pr-10 hidden md:block">
+                    <NavigationMenu className=" hidden md:block">
                         <NavigationMenuList>
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger className="">
