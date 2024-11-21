@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import ImageGrid from '../image-grid'
 import { redirect } from 'next/navigation'
 import { BsArrowRight } from 'react-icons/bs'
@@ -17,7 +16,7 @@ interface OverviewProps {
 
 export default function Overview({ data }: OverviewProps) {
     return (
-        <div className="container mx-auto lg:pb-10 w-full">
+        <div className="container px-8 md:px-20 mx-auto pb-10 w-full">
             <div className="lg:grid lg:grid-cols-2 lg:justify-end space-y-4">
                 {/* Left Column - Text Content */}
                 <div className="lg:space-y-">
@@ -28,9 +27,6 @@ export default function Overview({ data }: OverviewProps) {
                             {data.title}
                         </h1>
                     </Clip>
-                    {/* {data.headline} */}
-                    {/* <h1 className="absolute capitalize w-2/3 text-3xl lg:text-6xl lg:text-7xl font-bold text-transparent strok leading-wide translate-x-[3px] -translate-y-9">
-                        </h1> */}
                     <Clip start="right">
                         <p className="text-slate-600 font-medium tracking-wider text-xl lg:pt-40 pb-10 lg:px-2">
                             {data.description}
@@ -38,7 +34,7 @@ export default function Overview({ data }: OverviewProps) {
                     </Clip>
                     <Clip start="right">
                         <Button
-                            onClick={() => { redirect('/contact'); }}
+                            onClick={() => { redirect('/contact/#client'); }}
                             variant={"default"} className=" bg-cyan-800 hover:bg-cyan-700 text-cyan-50 text-xl font-semibold capitalize lg:p-6 rounded-lg flex items-center gap-4 ml-2">
                                 Let's Connect 
                             {/* {data.cta} */}

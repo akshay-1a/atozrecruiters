@@ -21,7 +21,7 @@ export default function Navbar() {
         <header className="border-b bg-[#0171A3]">
             <div className="container mx-auto px-8 md:px-16 py-5">
                 <div className="flex items-center justify-between">
-                    <Link href="/" className="flex items-center space-x-2">
+                    <Link href="/" className="flex items-center space-x-2 z-50">
                         <Image
                             src="/logo.jpg"
                             alt="A To Z Recruiters"

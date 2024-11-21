@@ -15,6 +15,7 @@ interface FormField {
 }
 
 interface FormComponentProps {
+    formtype: string
     imgCap: string
     imgUrl: string
     imgPos: string
@@ -26,7 +27,7 @@ interface FormComponentProps {
     onSubmit: (formData: Record<string, string>) => void
 }
 
-export function FormComponent({ imgCap, imgUrl, imgPos, formData, onSubmit }: FormComponentProps) {
+export function FormComponent({ formtype, imgCap, imgUrl, imgPos, formData, onSubmit }: FormComponentProps) {
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [error, setError] = useState<string | null>(null)
     const [success, setSuccess] = useState(false)
@@ -76,13 +77,13 @@ export function FormComponent({ imgCap, imgUrl, imgPos, formData, onSubmit }: Fo
     }
 
     return (
-        <Card>
+        <Card id={`${formtype}`}>
             <FormImage position={imgPos} imgCap={imgCap} imgUrl={imgUrl}>
                 <CardHeader>
                     <CardTitle>{formData.innerHeading}</CardTitle>
                     <CardDescription>{formData.purpose}</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className="md:space-y-4">
                     {success && (
                         <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4">
                             Form submitted successfully! We'll get back to you soon.
@@ -133,9 +134,9 @@ export function FormImage({
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <div className={`flex gap-5 ${position === 'right' ? 'flex-row' : 'flex-row-reverse'}`}>
-            <div className="flex-1">{children}</div>
-            <div className="flex-1 relative m-4 overflow-hidden rounded-lg hidden md:block">
+        <div className={`flex flex-col-reverse md:gap-5 select-none ${position === 'right' ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+            <div className="md:flex-1">{children}</div>
+            <div className="md:flex-1 relative m-4 mb-0 md:mb-4 rounded-lg overflow-hidden">
                 <div
                     className=""
                     onMouseEnter={() => setIsHovered(true)}
@@ -145,15 +146,16 @@ export function FormImage({
                         className={`absolute inset-0 z-20 flex bg-black/60 items-center justify-center transition-opacity duration-300 ${isHovered ? 'opacity-100 ' : 'opacity-0'
                             }`}
                     >
-                        <p className="text-white font-extrabold text-3xl p-24 text-center">{imgCap}</p>
+                        <p className="text-white font-extrabold text-3xl p-24 text-center select-none">{imgCap}</p>
                     </div>
-                    <div className="aspect-w-4 aspect-h-3">
+                    <div className="aspect-w-4 aspect-h-3 h-60">
                         <Image
                             src={imgUrl}
                             alt={imgCap}
+                            priority={true}
                             fill
                             className={`rounded-lg transition-transform duration-300 object-cover
-                                ${position === "left" ? 'object-center' : 'object-bottom'} ${isHovered ? 'scale-125' : 'scale-100'
+                                ${position === "left" ? 'object-[0px_42%] md:object-center ' : 'object-bottom'} ${isHovered ? 'scale-125' : 'scale-100'
                                 }`}
                         />
                     </div>

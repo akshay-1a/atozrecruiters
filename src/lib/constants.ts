@@ -2,10 +2,6 @@ import {
   Users,
   Briefcase,
   Award,
-  Mail,
-  MapPin,
-  Phone,
-  LucideIcon,
 } from "lucide-react";
 import { IconType } from "react-icons";
 import {
@@ -62,7 +58,7 @@ export const MetaData = {
   },
   services: {
     recruitmentServices: {
-      href: "/recruitment-services",
+      href: "recruitment-services",
       title: "Recruitment Services | A to Z Recruitment and Staffing",
       description:
         "Tailored recruitment services to meet your unique hiring needs.",
@@ -73,27 +69,27 @@ export const MetaData = {
       ],
     },
     hrConsulting: {
-      href: "/hr-consulting-services",
+      href: "hr-consulting-services",
       title: "HR Consulting | A to Z Recruitment and Staffing",
       description:
         "Expert HR consulting to enhance your organization’s efficiency.",
       keywords: ["HR Consulting", "Performance Management", "HR Strategy"],
     },
     outsourcing: {
-      href: "/outsourcing-services",
+      href: "outsourcing-services",
       title: "Outsourcing Services | A to Z Recruitment and Staffing",
       description:
         "Seamless outsourcing solutions for all your staffing needs.",
       keywords: ["Staffing Solutions", "Temporary Staffing", "Outsourcing"],
     },
     payrollManagement: {
-      href: "/payroll-management",
+      href: "payroll-management",
       title: "Payroll Management | A to Z Recruitment and Staffing",
       description: "Efficient and accurate payroll services for your business.",
       keywords: ["Payroll Services", "Compliance", "Employee Management"],
     },
     trainingDevelopment: {
-      href: "/training-and-development",
+      href: "training-and-development",
       title: "Training & Development | A to Z Recruitment and Staffing",
       description:
         "Empowering teams through comprehensive training and development programs.",
@@ -104,7 +100,7 @@ export const MetaData = {
       ],
     },
     talentAcquisition: {
-      href: "/talent-acquisition-strategy",
+      href: "talent-acquisition-strategy",
       title:
         "Talent Acquisition Strategy | A to Z Recruitment and       Staffing",
       description:
@@ -182,42 +178,42 @@ export const navItems = {
   services: [
     {
       title: "Recruitment Services",
-      href: "/recruitment-services",
+      href: "/services/recruitment-services",
       description:
         "Expert recruitment solutions for senior and executive positions",
       url: "recruitment.jpg", // Example image URL
     },
     {
       title: "HR Consulting Services",
-      href: "/hr-consulting-services",
+      href: "/services/hr-consulting-services",
       description:
         "Providing strategic HR consulting to optimize your workforce",
       url: "hr.jpg", // Example image URL
     },
     {
       title: "Outsourcing Services",
-      href: "/outsourcing-services",
+      href: "/services/outsourcing-services",
       description:
         "Efficient and cost-effective outsourcing solutions for your business",
       url: "outsourcing.jpg", // Example image URL
     },
     {
       title: "Payroll Management",
-      href: "/payroll-management",
+      href: "/services/payroll-management",
       description:
         "End-to-end payroll solutions for seamless payroll processing",
       url: "paycheck.jpg", // Example image URL
     },
     {
       title: "Training and Development",
-      href: "/training-and-development",
+      href: "/services/training-and-development",
       description:
         "Tailored training programs to upskill your workforce and drive performance",
       url: "training.jpg", // Example image URL
     },
     {
       title: "Talent Acquisition Strategy",
-      href: "/talent-acquisition-strategy",
+      href: "/services/talent-acquisition-strategy",
       description:
         "Strategic planning for attracting top talent and improving recruitment processes",
       url: "talent.jpg", // Example image URL
@@ -308,7 +304,7 @@ export const homepage = {
           "Permanent Placements",
           "Executive Recruitments",
         ],
-        href: "/recruitment-services",
+        href: "/services/recruitment-services",
       },
       {
         title: "HR Consulting Services",
@@ -320,7 +316,7 @@ export const homepage = {
           "Project-Based Assignments",
           "Performance Management",
         ],
-        href: "/hr-consulting-services",
+        href: "/services/hr-consulting-services",
       },
       {
         title: "Outsourcing Services",
@@ -332,7 +328,7 @@ export const homepage = {
           "Manpower Outsourcing",
           "Employee Management",
         ],
-        href: "/outsourcing-services",
+        href: "/services/outsourcing-services",
       },
       {
         title: "Payroll Management",
@@ -344,7 +340,7 @@ export const homepage = {
           "Salary Disbursement",
           "Employee Benefits Administration",
         ],
-        href: "/payroll-management",
+        href: "/services/payroll-management",
       },
       {
         title: "Training and Development",
@@ -356,7 +352,7 @@ export const homepage = {
           "Skill Enhancement",
           "Onboarding Programs",
         ],
-        href: "/training-and-development",
+        href: "/services/training-and-development",
       },
       {
         title: "Talent Acquisition Strategy",
@@ -368,7 +364,7 @@ export const homepage = {
           "Talent Analytics",
           "Diversity Hiring",
         ],
-        href: "/talent-acquisition-strategy",
+        href: "/services/talent-acquisition-strategy",
       },
     ],
   },
@@ -425,27 +421,6 @@ export const achievements = [
   { icon: Users, count: 1200, label: "Successful Placements" },
   { icon: Briefcase, count: 70, label: "Partner Companies" },
   { icon: Award, count: 58, label: "Industry Awards" },
-];
-
-export const gridItems = [
-  { type: "color", color: "bg-blue-600" },
-  {
-    type: "image",
-    content: "/placeholder.svg?height=200&width=200",
-    alt: "Team collaboration",
-  },
-  { type: "color", color: "bg-yellow-400" },
-  { type: "color", color: "bg-cyan-400" },
-  {
-    type: "image",
-    content: "/placeholder.svg?height=200&width=200",
-    alt: "Business growth",
-  },
-  {
-    type: "image",
-    content: "/placeholder.svg?height=200&width=200",
-    alt: "Leadership",
-  },
 ];
 
 export const contactData = () => {

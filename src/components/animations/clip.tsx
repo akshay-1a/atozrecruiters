@@ -4,10 +4,12 @@ import { motion } from "framer-motion";
 
 export function Clip({
     children,
+    delay = 0.2,
     className = "",
     start = "top", // Default start direction
 }: Readonly<{
     children: React.ReactNode;
+    delay?: number;
     className?: string;
     start?: "left" | "right" | "top" | "bottom" | "centerX" | "centerY" | "circle";
 }>) {
@@ -38,7 +40,7 @@ export function Clip({
             initial={{ clipPath: initialClipPath[start] }}
             whileInView={{ clipPath: whileInViewClipPath[start] }}
             transition={{
-                delay: 0.2,
+                delay: delay,
                 duration: 0.7, // Slightly longer for smoother circle animation
                 ease: "easeInOut",
             }}
@@ -99,4 +101,79 @@ export function PopEffect({
             {children}
         </motion.div>
     );
+}
+
+
+
+type Direction = 'up' | 'down' | 'left' | 'right' | 'center'
+type EffectType = 'in' | 'out'
+
+export function Fade({
+    children,
+    className = "",
+    direction = 'up',
+    effectType = 'in',
+    speed = 0.7,
+    delay = 0.2,
+    ease = [0.25, 0.1, 0.25, 1],
+    distance = 150,
+    viewportAmount = 0.3
+}: Readonly<{
+    children: React.ReactNode
+    className?: string
+    direction?: Direction
+    effectType?: EffectType
+    speed?: number
+    delay?: number
+    ease?: number[]
+    distance?: number
+    viewportAmount?: number
+}>) {
+    const getInitialPosition = (dir: Direction) => {
+        switch (dir) {
+            case 'up': return { y: distance }
+            case 'down': return { y: -distance }
+            case 'left': return { x: distance }
+            case 'right': return { x: -distance }
+            case 'center': return { scale: effectType === 'in' ? 1 - distance / 100 : 1 + distance / 100 }
+            default: return {}
+        }
+    }
+
+    const variants = {
+        initial: {
+            opacity: 0,
+            ...getInitialPosition(direction),
+        },
+        animate: {
+            opacity: 1,
+            x: 0,
+            y: 0,
+            scale: 1,
+        },
+    }
+
+    return (
+        <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+                once: true,
+                amount: viewportAmount
+            }}
+            variants={variants}
+            transition={{
+                duration: speed,
+                delay: delay,
+                ease: ease,
+            }}
+            style={{
+                willChange: 'transform, opacity',
+                backfaceVisibility: 'hidden',
+            }}
+            className={className}
+        >
+            {children}
+        </motion.div>
+    )
 }

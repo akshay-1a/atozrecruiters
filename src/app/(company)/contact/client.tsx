@@ -84,6 +84,7 @@ export default function ContactPage({ contactData }: ContactPageProps) {
                 {contactData.tabs.map((tab) => (
                     <TabsContent key={tab.formKey} value={tab.formKey}>
                         <FormComponent
+                        formtype={tab.formKey}
                             imgPos={contactData.forms[tab.formKey].imagePosition}
                             imgCap={contactData.forms[tab.formKey].imgCaption}
                             imgUrl={contactData.forms[tab.formKey].imageUrl}

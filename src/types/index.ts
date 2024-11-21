@@ -27,11 +27,19 @@ export interface ServiceData {
   };
   process: {
     title: string;
-    steps: string[];
+    src: string;
+    steps: {
+      url: string;
+      title: string;
+      step: string;
+    }[];
   };
   whyChooseUs: {
     title: string;
-    points: string[];
+    points: {
+      title: string;
+      para: string;
+    }[];
   };
   testimonials: {
     title: string;
@@ -47,11 +55,15 @@ export interface ServiceData {
       a: string;
     }[];
   };
-  related: {
+}
+
+
+export interface Related {
     title: string;
+    url: string;
     services: {
-      name: string;
-      link: string;
+        name: string;
+        image: string;
+        href: string;
     }[];
-  };
 }

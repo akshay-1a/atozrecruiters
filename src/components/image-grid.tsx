@@ -54,7 +54,7 @@ export default function ImageGrid({ links, url }: ImageGridProps) {
 
 const Box = ({ style }: any) => {
     return (
-        <Clip start='left'>
+        <Clip>
             <div className={`drop-shadow relative rounded ${style}`
             } />
         </Clip>
@@ -70,7 +70,7 @@ interface AnimatedImageProps {
 
 export function AnimatedImage({ url, src, alt, style = '' }: AnimatedImageProps) {
     return (
-        <Clip start='left'>
+        <Clip>
             <Image
                 src={`${url}${src}.jpg`}
                 alt={alt}

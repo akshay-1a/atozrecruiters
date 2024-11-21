@@ -10,7 +10,7 @@ import Image from "next/image"
 import { Mail, Phone, MapPin } from 'lucide-react'
 
 
-export function ContactDetails({heading, desc}: {heading: string, desc: string;}) {
+export function ContactDetails({ heading, desc }: { heading: string, desc: string; }) {
     return (
         <Card className={`overflow-hidden`}>
             <CardHeader>
@@ -45,14 +45,11 @@ export function Map() {
     return (
         <div className="my-12">
             <Card className="h-[400px] overflow-hidden">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.26394949510757!2d77.51711374497714!3d28.477719339742805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cebee99815159%3A0x3ae7b6ba05ede8e0!2sK.B.COMPLEX%2C%20ALPHA-II!5e0!3m2!1sen!2sin!4v1732002895145!5m2!1sen!2sin" width="100%" height="100%" style={{ border:0 }}allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.26394949510757!2d77.51711374497714!3d28.477719339742805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cebee99815159%3A0x3ae7b6ba05ede8e0!2sK.B.COMPLEX%2C%20ALPHA-II!5e0!3m2!1sen!2sin!4v1732002895145!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </Card>
         </div>
     )
 }
-
-{/* <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
-
 
 
 export function Candidate() {
@@ -167,6 +164,12 @@ export function Client() {
 
 export function SideImg() {
     return (
-        <Image src='/contact/bg.jpg' alt="" width={1000} height={1000} className="w-[50%] object-cover object-center aspect-auto rounded-lg m-2" />
+        <Image
+            src='/contact/bg.jpg'
+            alt=""
+            width={1000}
+            height={1000}
+            priority={true}
+            className="w-[50%] object-cover object-center aspect-auto rounded-lg m-2" />
     )
 }
