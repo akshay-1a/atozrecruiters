@@ -10,10 +10,12 @@ import Image from "next/image"
 import { Mail, Phone, MapPin } from 'lucide-react'
 
 
-export function ContactDetails({ heading, desc }: { heading: string, desc: string; }) {
+export function ContactDetails({ company, heading, desc }: { 
+    company: string, heading: string, desc: string; }) {
     return (
         <Card className={`overflow-hidden`}>
             <CardHeader>
+                <CardTitle className="text-2xl font-extrabold">{company}</CardTitle>
                 <CardTitle>{heading}</CardTitle>
                 <CardDescription>{desc}</CardDescription>
             </CardHeader>

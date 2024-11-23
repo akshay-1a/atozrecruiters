@@ -1,5 +1,4 @@
 import React from 'react'
-import { delay, motion } from 'framer-motion'
 import { CheckCircle } from 'lucide-react'
 import { Card } from '../ui/card'
 import { Clip, Fade } from '../animations/clip'

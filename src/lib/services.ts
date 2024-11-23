@@ -4,7 +4,7 @@ export const Services = {
     hero: {
       headline: "Recruitment Services Tailored to Your Business Needs",
       tagline: "Right Talent, Right Time, Every Time.",
-      para: "At A to Z Recruitment and Staffing, we don't just find candidates; we discover the perfect fit for your organization. Our recruitment solutions are designed to fuel your growth, ensuring every hire contributes to your business success. Whether you're a startup seeking to build a strong foundation or an established enterprise expanding your reach, our tailored strategies connect you with top-notch talent, saving you time and resources. \n\n Our approach goes beyond traditional recruitment. By understanding your business's unique culture and objectives, we craft a hiring experience that guarantees compatibility and drives results. With a vast talent pool, cutting-edge tools, and a commitment to excellence, we are here to transform your workforce, one strategic hire at a time.",
+      para: "At A To Z Recruiters and IT Solutions LLP, we don't just find candidates; we discover the perfect fit for your organization. Our recruitment solutions are designed to fuel your growth, ensuring every hire contributes to your business success. Whether you're a startup seeking to build a strong foundation or an established enterprise expanding your reach, our tailored strategies connect you with top-notch talent, saving you time and resources. \n\n Our approach goes beyond traditional recruitment. By understanding your business's unique culture and objectives, we craft a hiring experience that guarantees compatibility and drives results. With a vast talent pool, cutting-edge tools, and a commitment to excellence, we are here to transform your workforce, one strategic hire at a time.",
       cta: "Let's Build Your Dream Team Today!",
     },
     overview: {
@@ -111,7 +111,7 @@ export const Services = {
     hero: {
       headline: "HR Consulting That Transforms Workplaces",
       tagline: "Empowering Your Business, One Policy at a Time",
-      para: "At A to Z Recruitment and Staffing, we believe that a thriving workforce begins with strategic human resource management. Our HR consulting services are designed to align your people strategies with your business goals, ensuring a harmonious balance between employee satisfaction and organizational growth. From creating robust HR frameworks to resolving complex workforce challenges, we partner with you to build a sustainable and productive environment for your teams. \n\n With expertise spanning multiple industries, we take a tailored approach to every project, offering solutions like performance management, policy development, and organizational design. Our commitment to innovation and excellence enables us to deliver actionable insights and transformative results. Whether you're looking to revamp your HR policies or enhance employee engagement, we bring the expertise and tools needed to drive success at every level.",
+      para: "At A To Z Recruiters and IT Solutions LLP, we believe that a thriving workforce begins with strategic human resource management. Our HR consulting services are designed to align your people strategies with your business goals, ensuring a harmonious balance between employee satisfaction and organizational growth. From creating robust HR frameworks to resolving complex workforce challenges, we partner with you to build a sustainable and productive environment for your teams. \n\n With expertise spanning multiple industries, we take a tailored approach to every project, offering solutions like performance management, policy development, and organizational design. Our commitment to innovation and excellence enables us to deliver actionable insights and transformative results. Whether you're looking to revamp your HR policies or enhance employee engagement, we bring the expertise and tools needed to drive success at every level.",
       cta: "Get Expert HR Solutions Today!",
     },
     overview: {
@@ -218,7 +218,7 @@ export const Services = {
     hero: {
       headline: "Outsourcing Services That Drive Efficiency",
       tagline: "Seamless Staffing Solutions for Your Business Success",
-      para: "In today's dynamic business landscape, staying ahead means focusing on what you do best while leaving the rest to trusted partners. At A to Z Recruitment and Staffing, our outsourcing services are built to lighten your load. From temporary staffing to employee management, we ensure seamless operations that save you time and resources. With our proven expertise, you gain the flexibility to scale without compromising on quality. \n\n Whether it's managing compliance, handling seasonal staffing surges, or enhancing operational efficiency, our tailored outsourcing solutions empower your business to thrive. Let us take care of the back-office complexities so you can prioritize growth, innovation, and success.",
+      para: "In today's dynamic business landscape, staying ahead means focusing on what you do best while leaving the rest to trusted partners. At A To Z Recruiters and IT Solutions LLP, our outsourcing services are built to lighten your load. From temporary staffing to employee management, we ensure seamless operations that save you time and resources. With our proven expertise, you gain the flexibility to scale without compromising on quality. \n\n Whether it's managing compliance, handling seasonal staffing surges, or enhancing operational efficiency, our tailored outsourcing solutions empower your business to thrive. Let us take care of the back-office complexities so you can prioritize growth, innovation, and success.",
       cta: "Explore Our Outsourcing Solutions Today!",
     },
     overview: {
@@ -325,7 +325,7 @@ export const Services = {
     hero: {
       headline: "Effortless Payroll Management Solutions",
       tagline: "Streamlining Payroll for Seamless Business Operations",
-      para: "Payroll management shouldn't be a burden—it should be a breeze. At A to Z Recruitment and Staffing, we take the stress out of payroll processing with solutions tailored to your business. From accurate salary disbursements to ensuring statutory compliance, we provide end-to-end payroll management that keeps your team satisfied and your operations seamless. \n\n Our systemized approach minimizes errors and maximizes efficiency, giving you peace of mind while meeting all regulatory requirements. Whether you're a small business or a large enterprise, our expertise ensures your workforce is paid on time and in full compliance with labor laws.",
+      para: "Payroll management shouldn't be a burden—it should be a breeze. At A To Z Recruiters and IT Solutions LLP, we take the stress out of payroll processing with solutions tailored to your business. From accurate salary disbursements to ensuring statutory compliance, we provide end-to-end payroll management that keeps your team satisfied and your operations seamless. \n\n Our systemized approach minimizes errors and maximizes efficiency, giving you peace of mind while meeting all regulatory requirements. Whether you're a small business or a large enterprise, our expertise ensures your workforce is paid on time and in full compliance with labor laws.",
       cta: "Get Started with Hassle-Free Payroll Today!",
     },
     overview: {
@@ -399,7 +399,7 @@ export const Services = {
       stories: [
         {
           quote:
-            "A to Z Recruitment and Staffing has completely transformed our payroll process. Their attention to detail and commitment to accuracy have eliminated payroll errors and ensured timely payments. The peace of mind we've gained is priceless, and our employees couldn't be happier. Their expert handling of tax filings and compliance has saved us countless hours and potential fines.",
+            "A To Z Recruiters and IT Solutions LLP has completely transformed our payroll process. Their attention to detail and commitment to accuracy have eliminated payroll errors and ensured timely payments. The peace of mind we've gained is priceless, and our employees couldn't be happier. Their expert handling of tax filings and compliance has saved us countless hours and potential fines.",
           client: "Global Enterprises Ltd.",
         },
         {
@@ -432,7 +432,7 @@ export const Services = {
     hero: {
       headline: "Empower Your Workforce with Targeted Training and Development",
       tagline: "Building Skills, Enhancing Performance, Driving Growth",
-      para: "At A to Z Recruitment and Staffing, we believe in empowering employees with the knowledge and skills they need to excel. Our training and development programs are designed to unlock potential, nurture talent, and drive organizational success. From leadership development to specialized skill training, we tailor each program to suit your business needs. \n\n By fostering a culture of continuous learning, we enable your team to adapt to industry changes and deliver superior results. Invest in your workforce today to build a stronger tomorrow—because a skilled team is your company's greatest asset.",
+      para: "At A To Z Recruiters and IT Solutions LLP, we believe in empowering employees with the knowledge and skills they need to excel. Our training and development programs are designed to unlock potential, nurture talent, and drive organizational success. From leadership development to specialized skill training, we tailor each program to suit your business needs. \n\n By fostering a culture of continuous learning, we enable your team to adapt to industry changes and deliver superior results. Invest in your workforce today to build a stronger tomorrow—because a skilled team is your company's greatest asset.",
       cta: "Unlock Your Team's Potential Today!",
     },
     overview: {
@@ -539,7 +539,7 @@ export const Services = {
     hero: {
       headline: "Strategic Talent Acquisition for a Competitive Edge",
       tagline: "Aligning Talent with Business Goals",
-      para: "In an ever-changing talent landscape, a robust acquisition strategy is the cornerstone of long-term success. At A to Z Recruitment and Staffing, we offer strategic talent acquisition solutions designed to align with your business goals. Our services go beyond recruitment—we analyze market trends, identify skill gaps, and implement plans to meet future needs. \n\n Whether you're scaling operations or building a high-performance team, our strategies are tailored to provide sustainable growth. Let us help you attract, engage, and retain the right talent for a competitive edge in your industry.",
+      para: "In an ever-changing talent landscape, a robust acquisition strategy is the cornerstone of long-term success. At A To Z Recruiters and IT Solutions LLP, we offer strategic talent acquisition solutions designed to align with your business goals. Our services go beyond recruitment—we analyze market trends, identify skill gaps, and implement plans to meet future needs. \n\n Whether you're scaling operations or building a high-performance team, our strategies are tailored to provide sustainable growth. Let us help you attract, engage, and retain the right talent for a competitive edge in your industry.",
       cta: "Discover Your Perfect Hire Today!",
     },
     overview: {
@@ -604,7 +604,7 @@ export const Services = {
         },
         {
           title: "Commitment to Excellence",
-          para: "At A to Z Recruitment and Staffing, we are dedicated to delivering exceptional results. Our commitment to excellence is reflected in every aspect of our service—from our meticulous attention to detail during the recruitment process to our unwavering focus on client satisfaction. With us as your partner, you can be confident that your talent acquisition needs are in expert hands.",
+          para: "At A To Z Recruiters and IT Solutions LLP, we are dedicated to delivering exceptional results. Our commitment to excellence is reflected in every aspect of our service—from our meticulous attention to detail during the recruitment process to our unwavering focus on client satisfaction. With us as your partner, you can be confident that your talent acquisition needs are in expert hands.",
         },
       ],
     },
@@ -618,7 +618,7 @@ export const Services = {
         },
         {
           quote:
-            "Partnering with A to Z Recruitment and Staffing was the best decision for our talent acquisition needs. Their team took the time to understand our company culture and long-term goals, delivering candidates who not only fit the job description but also aligned with our values. Thanks to their efforts, we've built a strong, dynamic team that's driving our business forward.",
+            "Partnering with A To Z Recruiters and IT Solutions LLP was the best decision for our talent acquisition needs. Their team took the time to understand our company culture and long-term goals, delivering candidates who not only fit the job description but also aligned with our values. Thanks to their efforts, we've built a strong, dynamic team that's driving our business forward.",
           client: "Growth Dynamics Corp.",
         },
       ],

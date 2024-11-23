@@ -24,6 +24,7 @@ interface ContactPageProps {
         };
 
         contactInfo: {
+            company: string;
             heading: string;
             desc: string;
             details: { label: string; value: string }[];

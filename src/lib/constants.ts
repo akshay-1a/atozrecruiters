@@ -11,10 +11,23 @@ export const MetaData = {
   home: {
     page: {
       href: "/",
-      title: "Home | A to Z Recruiters and Staffing",
+      title: "A To Z Recruiters and IT Solution LLP",
       description:
         "Your trusted partner in recruitment and talent acquisition, shaping futures and empowering businesses. We don't just fill positions; we shape futures.",
       keywords: [
+        "Recruitment",
+        "Talent Acquisition",
+        "Staffing Solutions",
+        "HR Consulting",
+      ],
+    },
+    sitemap: {
+      href: "/sitemap.xml",
+      title: "Sitemap | A To Z Recruiters and IT Solution LLP",
+      description:
+        "Your trusted partner in recruitment and talent acquisition, shaping futures and empowering businesses. We don't just fill positions; we shape futures.",
+      keywords: [
+        "Jobs",
         "Recruitment",
         "Talent Acquisition",
         "Staffing Solutions",
@@ -25,28 +38,28 @@ export const MetaData = {
   company: {
     about: {
       href: "about",
-      title: "About Us | A to Z Recruiters and Staffing",
+      title: "About Us | A To Z Recruiters and IT Solution LLP",
       description:
         "Learn about our journey, values, and dedication to connecting talent with opportunity.",
       keywords: ["About A to Z", "Our Story", "HR Solutions"],
     },
     ourteam: {
       href: "team",
-      title: "Our Team | A to Z Recruiters and Staffing",
+      title: "Our Team | A To Z Recruiters and IT Solution LLP",
       description:
         "Meet the minds behind our success, driving innovation in recruitment and staffing.",
       keywords: ["HR Team", "Recruitment Experts", "Staffing Professionals"],
     },
     careers: {
       href: "careers",
-      title: "Careers | A to Z Recruiters and Staffing",
+      title: "Careers | A To Z Recruiters and IT Solution LLP",
       description:
         "Explore career opportunities with us and grow your professional journey.",
       keywords: ["Careers at A to Z", "Job Opportunities", "Work With Us"],
     },
     contact: {
       href: "contact",
-      title: "Contact Us | A to Z Recruiters and Staffing",
+      title: "Contact Us | A To Z Recruiters and IT Solution LLP",
       description:
         "Get in touch with us for personalized HR solutions and expert advice.",
       keywords: ["Contact A to Z", "HR Solutions", "Get in Touch"],
@@ -55,7 +68,7 @@ export const MetaData = {
   services: {
     recruitmentServices: {
       href: "recruitment-services",
-      title: "Recruitment Services | A to Z Recruiters and Staffing",
+      title: "Recruitment Services | A To Z Recruiters and IT Solution LLP",
       description:
         "Tailored recruitment services to meet your unique hiring needs.",
       keywords: [
@@ -66,27 +79,27 @@ export const MetaData = {
     },
     hrConsulting: {
       href: "hr-consulting-services",
-      title: "HR Consulting | A to Z Recruiters and Staffing",
+      title: "HR Consulting | A To Z Recruiters and IT Solution LLP",
       description:
-        "Expert HR consulting to enhance your organization’s efficiency.",
+        "Expert HR consulting to enhance your organization's efficiency.",
       keywords: ["HR Consulting", "Performance Management", "HR Strategy"],
     },
     outsourcing: {
       href: "outsourcing-services",
-      title: "Outsourcing Services | A to Z Recruiters and Staffing",
+      title: "Outsourcing Services | A To Z Recruiters and IT Solution LLP",
       description:
         "Seamless outsourcing solutions for all your staffing needs.",
       keywords: ["Staffing Solutions", "Temporary Staffing", "Outsourcing"],
     },
     payrollManagement: {
       href: "payroll-management",
-      title: "Payroll Management | A to Z Recruiters and Staffing",
+      title: "Payroll Management | A To Z Recruiters and IT Solution LLP",
       description: "Efficient and accurate payroll services for your business.",
       keywords: ["Payroll Services", "Compliance", "Employee Management"],
     },
     trainingDevelopment: {
       href: "training-and-development",
-      title: "Training & Development | A to Z Recruiters and Staffing",
+      title: "Training & Development | A To Z Recruiters and IT Solution LLP",
       description:
         "Empowering teams through comprehensive training and development programs.",
       keywords: [
@@ -97,7 +110,8 @@ export const MetaData = {
     },
     talentAcquisition: {
       href: "talent-acquisition-strategy",
-      title: "Talent Acquisition Strategy | A to Z Recruiters and Staffing",
+      title:
+        "Talent Acquisition Strategy | A To Z Recruiters and IT Solution LLP",
       description:
         "Strategic solutions for your talent acquisition needs, aligning with your business goals.",
       keywords: [
@@ -110,14 +124,14 @@ export const MetaData = {
   industry: {
     informationTechnology: {
       href: "/information-technology",
-      title: "Information Technology | A to Z Recruiters and Staffing",
+      title: "Information Technology | A To Z Recruiters and IT Solution LLP",
       description:
         "Providing expert HR solutions tailored to the fast-paced IT industry.",
       keywords: ["IT Staffing", "Tech Talent", "IT Recruitment"],
     },
     bankingFinance: {
       href: "/banking",
-      title: "Banking & Finance | A to Z Recruiters and Staffing",
+      title: "Banking & Finance | A To Z Recruiters and IT Solution LLP",
       description:
         "Trusted HR services for the banking and finance sector, ensuring the right fit for critical roles.",
       keywords: [
@@ -128,14 +142,14 @@ export const MetaData = {
     },
     healthcare: {
       href: "/healthcare",
-      title: "Healthcare Industry | A to Z Recruiters and Staffing",
+      title: "Healthcare Industry | A To Z Recruiters and IT Solution LLP",
       description:
         "Comprehensive staffing solutions for the healthcare sector, ensuring quality patient care.",
       keywords: ["Healthcare Staffing", "Medical Recruitment", "Healthcare HR"],
     },
     manufacturing: {
       href: "/manufacturing",
-      title: "Manufacturing | A to Z Recruiters and Staffing",
+      title: "Manufacturing | A To Z Recruiters and IT Solution LLP",
       description:
         "Efficient workforce solutions for the manufacturing industry, optimizing productivity and growth.",
       keywords: [
@@ -246,7 +260,7 @@ export const navItems = {
 export const homepage = {
   hero: {
     headline: "Connecting Talent with Opportunity, A to Z",
-    para: "At A to Z Recruitment and Staffing, we specialize in bridging the gap between exceptional talent and thriving businesses. Our tailored recruitment solutions ensure that every hire drives growth and success.",
+    para: "At A To Z Recruiters LLP, we specialize in bridging the gap between exceptional talent and thriving businesses. Our tailored recruitment solutions ensure that every hire drives growth and success.",
     cta: "Start Your Journey with Us Today",
     // public/homepage/...images.jpg
     url: "/homepage/hero/",
@@ -263,11 +277,11 @@ export const homepage = {
   introduction: {
     title: "Your Partner in Shaping Tomorrow's Workforce!",
     desc: [
-      "At A to Z Recruitment and Staffing, we don't just fill positions; we shape futures. With a proven track record in providing top-tier recruitment and talent acquisition services, we cater to businesses across industries, ensuring that every hire aligns with your company's vision and goals.",
+      "At A To Z Recruiters LLP, we don't just fill positions; we shape futures. With a proven track record in providing top-tier recruitment and talent acquisition services, we cater to businesses across industries, ensuring that every hire aligns with your company's vision and goals.",
       "And actually we don't just stop there. As our commitment goes beyond matching skills to job descriptions. We aim to build long-term partnerships, offering strategic guidance and workforce solutions that evolve with the market. Whether enhancing your leadership team or streamlining recruitment, we bring a personalized, innovative approach to help you stay ahead in the talent game.",
     ],
     image: "inter.png",
-    alt: "A To Z Recruitment And Staffing Firm",
+    alt: "A To Z Recruiters and IT Solution LLP",
   },
   whyChooseUs: [
     {
@@ -369,7 +383,7 @@ export const homepage = {
     default: "bg.jpg",
     path: "/homepage/faq/",
     introParagraph:
-      "At A to Z Recruitment and Staffing, our dream goes beyond connecting businesses with top talent. We envision a world where every professional finds purpose, and every organization thrives on the strength of its people. Let's build that future together.",
+      "At A To Z Recruiters LLP, our dream goes beyond connecting businesses with top talent. We envision a world where every professional finds purpose, and every organization thrives on the strength of its people. Let's build that future together.",
     faq: [
       {
         question: "What industries do you specialize in?",
@@ -519,6 +533,7 @@ export const contactData = () => {
       },
     },
     contactInfo: {
+      company: "A To Z Recruiters and IT Solution LLP",
       heading: "Contact Information",
       desc: "Get in touch with us directly.",
       details: [
@@ -573,7 +588,7 @@ type SocialLink = {
 };
 
 export const Footer = {
-  company: "A To Z Recruiters",
+  company: "A To Z Recruiters and IT Solution LLP",
   tagline:
     "Connecting talent with opportunity as we Bridge Talent and Opportunity, One Connection at a Time.",
   quick: [
@@ -587,7 +602,7 @@ export const Footer = {
   phone: "(+91) 91 5151 5209",
   job: "resume@atozrecruiters.com",
   proposal: "proposal@atozrecruiters.com",
-  rights: "A To Z Recruiters. All rights reserved.",
+  rights: "A To Z Recruiters and IT Solution LLP. All rights reserved.",
   developer: "Website Designed and Developed by Akshay Arora",
   link: {
     url: "https://akshay.imperfectors.com",

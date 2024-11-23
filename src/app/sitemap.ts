@@ -1,4 +1,11 @@
-import { MetaData, navItems } from "@/lib/constants";
+import { MetaData } from "@/lib/constants";
+import { Metadata as meta} from "next";
+import { generateMetadata as getMetadata } from "@/lib/generate-metadata";
+
+
+export async function generateMetadata(): Promise<meta> {
+  return getMetadata({ slug: ["home", "sitemap"] });
+}
 
 export default async function sitemap() {
   const baseUrl = "https://www.atozrecruiters.com";
@@ -21,9 +28,9 @@ export default async function sitemap() {
     ...Object.values(MetaData.industry).map((item) =>
       createSitemapEntry(item.href)
     ),
-    ...navItems.company.map((item) => createSitemapEntry(item.href)),
-    ...navItems.services.map((item) => createSitemapEntry(item.href)),
-    ...navItems.industries.map((item) => createSitemapEntry(item.href)),
+    // ...navItems.company.map((item) => createSitemapEntry(item.href)),
+    // ...navItems.services.map((item) => createSitemapEntry(item.href)),
+    // ...navItems.industries.map((item) => createSitemapEntry(item.href)),
   ];
 
   return sitemapEntries;

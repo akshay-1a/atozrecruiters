@@ -117,7 +117,7 @@ export function Fade({
     delay = 0.2,
     ease = [0.25, 0.1, 0.25, 1],
     distance = 150,
-    viewportAmount = 0.3
+    viewportAmount = 0.5
 }: Readonly<{
     children: React.ReactNode
     className?: string

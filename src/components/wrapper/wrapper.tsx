@@ -30,7 +30,7 @@ export function Footer() {
             <div className="container mx-auto px-14">
                 <div className="flex flex-col md:flex-row md:justify-around md:items-start gap-8">
                     <div >
-                        <h3 className="text-3xl font-extrabold uppercase mb-4">
+                        <h3 className="text-xl font-extrabold uppercase mb-4">
                             {f.company}
                         </h3>
                         <p className='text-lg max-w-md '>

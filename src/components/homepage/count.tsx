@@ -52,7 +52,7 @@ const AchievementCard: React.FC<Achievement> = ({ icon: Icon, count, label }) =>
 export default function Count() {
 
     return (
-        <section className="relative lg:min-h-screen w-full py-10 bg-slate-950 text-pretty">
+        <section className="relative lg:min-h-screen w-full bg-slate-950 text-pretty flex flex-col justify-center items-center gap-10">
             <Clip start='centerX' >
                 <DataBase />
             </Clip>

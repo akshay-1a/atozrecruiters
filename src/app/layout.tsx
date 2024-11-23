@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Wrapper from "@/components/wrapper/wrapper";
-import { MetaData, MetaDataKey } from '../lib/constants'
+// import { MetaData, MetaDataKey } from '../lib/constants'
 import { Analytics } from "@vercel/analytics/react";
 import { generateMetadata as getMetadata } from '@/lib/generate-metadata'
 import Script from "next/script";
+import ViewerCount from "@/components/wrapper/viewer-count";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -62,6 +63,7 @@ export default function RootLayout({
       >
         <Wrapper>
           {children}
+          <ViewerCount />
           <Analytics />
         </Wrapper>
       </body>

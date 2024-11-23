@@ -9,6 +9,69 @@ export interface NavItem {
 export interface CompanyData {
   slug: string;
   title: string;
+  hero: {
+    headline: string;
+    tagline: string;
+    cta: string;
+  };
+  story: {
+    title: string;
+    content: string;
+    milestones: {
+      year: number;
+      title: string;
+      description: string;
+      image: string;
+    }[];
+  };
+  mission: {
+    title: string;
+    mission: string;
+    vision: string;
+  };
+  values: {
+    title: string;
+    list: {
+      title: string;
+      description: string;
+    }[];
+  };
+  uniqueStrengths: {
+    title: string;
+    points: string[];
+  };
+  team: {
+    title: string;
+    members: {
+      name: string;
+      role: string;
+      image: string;
+    }[];
+  };
+  impact: {
+    title: string;
+    stats: {
+      value: string;
+      label: string;
+    }[];
+    testimonial: {
+      quote: string;
+      author: string;
+      company: string;
+    };
+  };
+  cta: {
+    title: string;
+    description: string;
+    primaryButton: {
+      text: string;
+      link: string;
+    };
+    secondaryButton: {
+      text: string;
+      link: string;
+    };
+  };
 }
 
 export interface ServiceData {
