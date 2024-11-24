@@ -63,7 +63,7 @@ export default function RootLayout({
       >
         <Wrapper>
           {children}
-          <ViewerCount />
+          {/* <ViewerCount /> */}
           <Analytics />
         </Wrapper>
       </body>
