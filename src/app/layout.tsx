@@ -6,7 +6,7 @@ import Wrapper from "@/components/wrapper/wrapper";
 import { Analytics } from "@vercel/analytics/react";
 import { generateMetadata as getMetadata } from '@/lib/generate-metadata'
 import Script from "next/script";
-import ViewerCount from "@/components/wrapper/viewer-count";
+// import ViewerCount from "@/components/wrapper/viewer-count";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
