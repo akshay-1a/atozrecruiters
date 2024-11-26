@@ -131,3 +131,49 @@ export const About = {
     secondaryButton: { text: "Explore Job Opportunities", link: "/jobs" },
   },
 };
+
+
+export interface Company {
+  name: string;
+  logo: string;
+}
+
+export const companies: Company[] = [
+  { name: "Wipro", logo: "wipro" },
+  { name: "TAVANT Technologies", logo: "tavant-technologies" },
+  { name: "Barclays", logo: "barclays" },
+  { name: "Brillio Technology", logo: "brillio" },
+  { name: "Hero", logo: "hero" },
+  { name: "Parle Agro", logo: "parle-agro" },
+  { name: "British Airways", logo: "british-airways" },
+  { name: "Accenture", logo: "accenture" },
+  { name: "CRIF", logo: "crif" },
+  { name: "Heptagon", logo: "heptagon" },
+  { name: "Dabur", logo: "dabur" },
+  { name: "HP", logo: "hp" },
+  { name: "Indian Oil", logo: "indian-oil" },
+  { name: "Just Dial", logo: "just-dial" },
+  { name: "Tele performance", logo: "tele-performance" },
+  { name: "United Health", logo: "united-health" },
+  { name: "Bank of America", logo: "bank-of-america" },
+  { name: "Gaurs real estate", logo: "gaurs" },
+  { name: "Bhutani", logo: "bhutani" },
+  { name: "Indusind", logo: "indusind" },
+  { name: "Axis", logo: "axis" },
+  { name: "Kotak", logo: "kotak" },
+  { name: "HDFC", logo: "hdfc" },
+  { name: "Motherson summi", logo: "motherson-summi" },
+  { name: "Apollo Hospital", logo: "apollo" },
+  { name: "Yatharth Hospital", logo: "yatharth" },
+  { name: "Medanta", logo: "medanta" },
+  { name: "V Mart", logo: "v-mart" },
+  { name: "Trends", logo: "trends" },
+  { name: "Mankind", logo: "mankind" },
+  { name: "MG Motors", logo: "mg-motors" },
+  { name: "Skoda", logo: "skoda" },
+];
+
+export const companyGroups = [
+  companies.slice(0, Math.ceil(companies.length / 2)),
+  companies.slice(Math.ceil(companies.length / 2)),
+];

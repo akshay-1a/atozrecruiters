@@ -415,6 +415,42 @@ export const homepage = {
         ],
         href: "/services/talent-acquisition-strategy",
       },
+      {
+        title: "Resume Modification",
+        image: "resume",
+        desc: "Professional resume enhancement with ATS optimization and targeted content to elevate your job application.",
+        tags: [
+          "ATS Optimization",
+          "Professional Writing",
+          "Job-Specific Resumes",
+          "Career Growth",
+        ],
+        href: "/services/resume-modification-services",
+      },
+      {
+        title: "Interview Training",
+        image: "interview",
+        desc: "Comprehensive training sessions to boost confidence, refine communication, and excel in interviews.",
+        tags: [
+          "Mock Interviews",
+          "Feedback Sessions",
+          "Body Language Training",
+          "Job Readiness",
+        ],
+        href: "/services/interview-training-services",
+      },
+      {
+        title: "Campus Recruitment",
+        image: "campus",
+        desc: "Tailored campus hiring solutions to source, assess, and onboard the best talent from leading institutions.",
+        tags: [
+          "Campus Drives",
+          "Pre-Placement Talks",
+          "Talent Identification",
+          "Onboarding Assistance",
+        ],
+        href: "/services/campus-recruitment-services",
+      },
     ],
   },
   faqSection: {
@@ -633,7 +669,7 @@ export const Footer = {
     "Connecting talent with opportunity as we Bridge Talent and Opportunity, One Connection at a Time.",
   quick: [
     { label: "Home", url: "/" },
-    { label: "About", url: "/#about" },
+    { label: "About", url: "/about" },
     { label: "Services", url: "/#services" },
     { label: "Contact", url: "/contact" },
   ] as QuickLink[],

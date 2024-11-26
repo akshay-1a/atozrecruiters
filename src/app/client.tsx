@@ -1,3 +1,4 @@
+import { CompanyShowcase } from '@/components/homepage/company-showcase'
 import Count from '@/components/homepage/count'
 import Faq from '@/components/homepage/faq'
 import Hero from '@/components/homepage/hero-section'
@@ -11,6 +12,7 @@ export default function Client() {
             <Hero />
             <Count />
             <Intro />
+            <CompanyShowcase/>
             <Services />
             <Faq/>
         </div>

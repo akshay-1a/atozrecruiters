@@ -19,7 +19,7 @@ export function P({ children, className = "" }: Readonly<{
     className?: string
 }>) {
     return (
-        <Fade>
+        <Fade distance={50}>
             <p className={`${className}`}>
                 {children}
             </p>
@@ -33,7 +33,7 @@ export function H2({ children, className = "" }: Readonly<{
     className?: string
 }>) {
     return (
-        <Fade>
+        <Fade distance={50}>
             <h2 className={`text-3xl sm:text-4xl md:text-6xl font-sans font-extrabold  ${className}`}>
                 {children}
             </h2>

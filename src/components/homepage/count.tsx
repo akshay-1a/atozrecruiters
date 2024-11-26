@@ -52,7 +52,7 @@ const AchievementCard: React.FC<Achievement> = ({ icon: Icon, count, label }) =>
 export default function Count() {
 
     return (
-        <section className="relative lg:min-h-screen w-full bg-slate-950 text-pretty flex flex-col justify-center items-center gap-10">
+        <div className="relative lg:min-h-screen w-full bg-slate-950 text-pretty flex flex-col justify-center items-center gap-10">
             <Clip start='centerX' >
                 <DataBase />
             </Clip>
@@ -63,7 +63,7 @@ export default function Count() {
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 
@@ -95,6 +95,7 @@ const DataBase = () => {
                     alt="Growth chart"
                     width={800}
                     height={800}
+                    priority
                     className="rounded-lg h-56 lg:h-60 lg:aspect-auto w-full z-10"
                 />
                 <div className='absolute bg-cyan-600 translate-x-3 translate-y-3 rounded-lg h-full w-full z-0' />

@@ -17,7 +17,7 @@ export default function Faq() {
     const [activeImage, setActiveImage] = useState(faqS.default)
 
     return (
-        <section className="relative p-8 md:p-24 min-h-screen text-pretty">
+        <div className="relative p-8 md:p-24 min-h-screen text-pretty">
             <AnimatePresence mode='popLayout'>
                 {/* Background Image */}
                 <Image
@@ -97,6 +97,6 @@ export default function Faq() {
                     </div>
                 </div>
             </Clip>
-        </section>
+        </div>
     )
 }

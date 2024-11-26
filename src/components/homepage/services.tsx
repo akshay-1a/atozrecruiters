@@ -12,7 +12,7 @@ import { Clip } from '../animations/clip';
 export default function Services() {
     const service = homepage.services
     return (
-        <section id="services" className='min-h-[80vh] flex flex-col justify-start items-center gap-5 text-pretty p-10'>
+        <div id="services" className='min-h-[80vh] flex flex-col justify-start items-center gap-5 text-pretty p-10'>
             <Clip start='right' className='flex flex-col gap-5'>
             <h2 className='text-slate-800 rounded-md text-2xl md:text-4xl font-extrabold '>
                 {service.title}
@@ -27,7 +27,7 @@ export default function Services() {
                 ))}
 
             </div>
-        </section>
+        </div>
     )
 }
 
