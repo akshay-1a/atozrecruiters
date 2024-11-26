@@ -20,6 +20,7 @@ export default function FAQ({ data }: FAQProps) {
             <Clip>
                 <h2 className="mb-8 text-center text-3xl font-extrabold text-slate-700 sm:text-5xl">{data.title}</h2>
             </Clip>
+            <div >
             <Fade>
             <Accordion type="single" collapsible className="w-full">
                 {data.questions.map((faq, index) => (
@@ -34,6 +35,7 @@ export default function FAQ({ data }: FAQProps) {
                 ))}
             </Accordion>
             </Fade>
+            </div>
         </section>
     )
 }

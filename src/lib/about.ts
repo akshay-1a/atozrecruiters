@@ -1,13 +1,13 @@
 export const aboutData = {
   hero: {
     headline: "Connecting Talent with Opportunity",
-    tagline: "A To Z Recruiters: Your Partner in IT Staffing Excellence",
+    tagline: "AToZ Recruiters LLP: Your Partner in IT Staffing Excellence",
   },
   story: {
     title: "Our Journey",
-    content: "Founded in 2015, A To Z Recruiters emerged from a vision to bridge the gap between top IT talent and innovative companies. What started as a small team of passionate recruiters has grown into a leading force in IT staffing solutions.",
+    content: "Founded in 2015, AToZ Recruiters LLP emerged from a vision to bridge the gap between top IT talent and innovative companies. What started as a small team of passionate recruiters has grown into a leading force in IT staffing solutions.",
     milestones: [
-      { year: 2015, event: "A To Z Recruiters founded" },
+      { year: 2015, event: "AToZ Recruiters LLP founded" },
       { year: 2018, event: "Expanded to serve 100+ clients" },
       { year: 2020, event: "Launched AI-powered matching algorithm" },
       { year: 2023, event: "Opened international offices" },
@@ -53,7 +53,7 @@ export const aboutData = {
       { value: "250+", label: "Partner Companies" },
     ],
     testimonial: {
-      quote: "A To Z Recruiters transformed our hiring process. Their expertise in IT recruitment is unmatched, and they've consistently delivered top talent that has driven our company's growth.",
+      quote: "AToZ Recruiters LLP transformed our hiring process. Their expertise in IT recruitment is unmatched, and they've consistently delivered top talent that has driven our company's growth.",
       author: "Michael Johnson",
       company: "Tech Innovators Inc.",
     },

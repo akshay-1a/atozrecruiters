@@ -32,9 +32,9 @@ export default function Navbar() {
                         />
                     </Link>
 
-                    <NavigationMenu className=" hidden md:block">
-                        <NavigationMenuList>
-                            <NavigationMenuItem>
+                    <NavigationMenu className=" hidden md:block -left-32 ">
+                        <NavigationMenuList className="space-x-2">
+                            {/* <NavigationMenuItem>
                                 <NavigationMenuTrigger className="">
                                     Company
                                 </NavigationMenuTrigger>
@@ -52,18 +52,19 @@ export default function Navbar() {
                                         ))}
                                     </ul>
                                 </NavigationMenuContent>
-                            </NavigationMenuItem>
+                            </NavigationMenuItem> */}
 
-                            <NavigationMenuItem>
+                            <NavigationMenuItem className="">
                                 <NavigationMenuTrigger>Services</NavigationMenuTrigger>
-                                <NavigationMenuContent>
-                                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+                                <NavigationMenuContent className="w-full  ">
+                                    <ul className="grid gap-3 p-4 w-[600px] grid-cols-2">
                                         {navItems.services.map((item) => (
                                             <ListItem
                                                 key={item.title}
                                                 title={item.title} 
                                                 url={item.url}
                                                 href={item.href}
+                                                className="w-[18vw]"
                                             >
                                                 {item.description}
                                             </ListItem>
@@ -89,7 +90,13 @@ export default function Navbar() {
                                     </ul>
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
-
+                            <NavigationMenuItem>
+                                <Link href="/about" legacyBehavior passHref>
+                                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                        About
+                                    </NavigationMenuLink>
+                                </Link>
+                            </NavigationMenuItem>
                             <NavigationMenuItem>
                                 <Link href="/contact" legacyBehavior passHref>
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>

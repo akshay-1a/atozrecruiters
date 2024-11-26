@@ -5,19 +5,19 @@ export const Company = {
     hero: {
       headline: "Connecting Talent with Opportunity",
       tagline:
-        "At A to Z Recruitment and IT Solution LLP, we specialize in bridging the gap between exceptional talent and ambitious businesses. With a passion for excellence, we are reshaping recruitment to help companies thrive and careers flourish.",
+        "At AToZ Recruiters LLP, we specialize in bridging the gap between exceptional talent and ambitious businesses. With a passion for excellence, we are reshaping recruitment to help companies thrive and careers flourish.",
       cta: "Discover How We Make the Perfect Match!",
     },
     story: {
       title: "Our Journey",
       content:
-        "Founded in 2015, A To Z Recruiters emerged from a vision to bridge the gap between top IT talent and innovative companies. What started as a small team of passionate recruiters has grown into a leading force in IT staffing solutions.",
+        "Founded in 2015, AToZ Recruiters LLP emerged from a vision to bridge the gap between top IT talent and innovative companies. What started as a small team of passionate recruiters has grown into a leading force in IT staffing solutions.",
       milestones: [
         {
           year: 2015,
           title: "A New Beginning",
           description:
-            "A To Z Recruiters was founded with a mission to revolutionize IT staffing.",
+            "AToZ Recruiters LLP was founded with a mission to revolutionize IT staffing.",
           image: "founded",
         },
         {
@@ -46,7 +46,7 @@ export const Company = {
     mission: {
       title: "Our Mission & Vision",
       mission:
-        "At A to Z Recruitment and IT Solution LLP, our mission is to empower organizations by bridging the gap between opportunity and potential. We strive to connect businesses with exceptional talent that fuels their growth and innovation, enabling them to achieve their strategic goals. For individuals, we are dedicated to crafting meaningful career pathways, ensuring every professional is matched to a role that aligns with their skills, ambitions, and aspirations. Our mission extends beyond placements — we aim to create impactful, lasting relationships that inspire success on both ends.",
+        "At AToZ Recruiters LLP, our mission is to empower organizations by bridging the gap between opportunity and potential. We strive to connect businesses with exceptional talent that fuels their growth and innovation, enabling them to achieve their strategic goals. For individuals, we are dedicated to crafting meaningful career pathways, ensuring every professional is matched to a role that aligns with their skills, ambitions, and aspirations. Our mission extends beyond placements — we aim to create impactful, lasting relationships that inspire success on both ends.",
       vision:
         "Our vision is to become the most trusted and innovative recruitment partner globally, recognized for our unparalleled commitment to excellence and a human-centric approach. We aspire to lead the industry by consistently delivering exceptional results, fostering a culture of integrity, collaboration, and continuous improvement. By leveraging our expertise and insights, we aim to redefine recruitment and staffing, shaping a future where every connection we make transforms lives, businesses, and industries for the better.",
     },
@@ -120,7 +120,7 @@ export const Company = {
       ],
       testimonial: {
         quote:
-          "Partnering with A to Z Recruiters has been transformative for our business. Their ability to understand our needs and deliver top talent consistently is unparalleled. They don't just fill positions—they build teams that drive growth.",
+          "Partnering with AToZ Recruiters LLP has been transformative for our business. Their ability to understand our needs and deliver top talent consistently is unparalleled. They don't just fill positions—they build teams that drive growth.",
         author: "Michael Johnson",
         company: "Tech Innovators Inc.",
       },

@@ -15,7 +15,7 @@ export function ContactDetails({ company, heading, desc }: {
     return (
         <Card className={`overflow-hidden`}>
             <CardHeader>
-                <CardTitle className="text-2xl font-extrabold">{company}</CardTitle>
+                {/* <CardTitle className="text-2xl font-extrabold">{company}</CardTitle> */}
                 <CardTitle>{heading}</CardTitle>
                 <CardDescription>{desc}</CardDescription>
             </CardHeader>

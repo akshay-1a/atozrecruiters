@@ -11,7 +11,7 @@ export const MetaData = {
   home: {
     page: {
       href: "/",
-      title: "A To Z Recruiters and IT Solution LLP",
+      title: "AToZ Recruiters LLP",
       description:
         "Your trusted partner in recruitment and talent acquisition, shaping futures and empowering businesses. We don't just fill positions; we shape futures.",
       keywords: [
@@ -23,7 +23,7 @@ export const MetaData = {
     },
     sitemap: {
       href: "/sitemap.xml",
-      title: "Sitemap | A To Z Recruiters and IT Solution LLP",
+      title: "Sitemap | AToZ Recruiters LLP",
       description:
         "Your trusted partner in recruitment and talent acquisition, shaping futures and empowering businesses. We don't just fill positions; we shape futures.",
       keywords: [
@@ -38,28 +38,28 @@ export const MetaData = {
   company: {
     about: {
       href: "about",
-      title: "About Us | A To Z Recruiters and IT Solution LLP",
+      title: "About Us | AToZ Recruiters LLP",
       description:
         "Learn about our journey, values, and dedication to connecting talent with opportunity.",
       keywords: ["About A to Z", "Our Story", "HR Solutions"],
     },
     ourteam: {
       href: "team",
-      title: "Our Team | A To Z Recruiters and IT Solution LLP",
+      title: "Our Team | AToZ Recruiters LLP",
       description:
         "Meet the minds behind our success, driving innovation in recruitment and staffing.",
       keywords: ["HR Team", "Recruitment Experts", "Staffing Professionals"],
     },
     careers: {
       href: "careers",
-      title: "Careers | A To Z Recruiters and IT Solution LLP",
+      title: "Careers | AToZ Recruiters LLP",
       description:
         "Explore career opportunities with us and grow your professional journey.",
       keywords: ["Careers at A to Z", "Job Opportunities", "Work With Us"],
     },
     contact: {
       href: "contact",
-      title: "Contact Us | A To Z Recruiters and IT Solution LLP",
+      title: "Contact Us | AToZ Recruiters LLP",
       description:
         "Get in touch with us for personalized HR solutions and expert advice.",
       keywords: ["Contact A to Z", "HR Solutions", "Get in Touch"],
@@ -68,7 +68,7 @@ export const MetaData = {
   services: {
     recruitmentServices: {
       href: "recruitment-services",
-      title: "Recruitment Services | A To Z Recruiters and IT Solution LLP",
+      title: "Recruitment Services | AToZ Recruiters LLP",
       description:
         "Tailored recruitment services to meet your unique hiring needs.",
       keywords: [
@@ -79,27 +79,27 @@ export const MetaData = {
     },
     hrConsulting: {
       href: "hr-consulting-services",
-      title: "HR Consulting | A To Z Recruiters and IT Solution LLP",
+      title: "HR Consulting | AToZ Recruiters LLP",
       description:
         "Expert HR consulting to enhance your organization's efficiency.",
       keywords: ["HR Consulting", "Performance Management", "HR Strategy"],
     },
     outsourcing: {
       href: "outsourcing-services",
-      title: "Outsourcing Services | A To Z Recruiters and IT Solution LLP",
+      title: "Outsourcing Services | AToZ Recruiters LLP",
       description:
         "Seamless outsourcing solutions for all your staffing needs.",
       keywords: ["Staffing Solutions", "Temporary Staffing", "Outsourcing"],
     },
     payrollManagement: {
       href: "payroll-management",
-      title: "Payroll Management | A To Z Recruiters and IT Solution LLP",
+      title: "Payroll Management | AToZ Recruiters LLP",
       description: "Efficient and accurate payroll services for your business.",
       keywords: ["Payroll Services", "Compliance", "Employee Management"],
     },
     trainingDevelopment: {
       href: "training-and-development",
-      title: "Training & Development | A To Z Recruiters and IT Solution LLP",
+      title: "Training & Development | AToZ Recruiters LLP",
       description:
         "Empowering teams through comprehensive training and development programs.",
       keywords: [
@@ -110,8 +110,7 @@ export const MetaData = {
     },
     talentAcquisition: {
       href: "talent-acquisition-strategy",
-      title:
-        "Talent Acquisition Strategy | A To Z Recruiters and IT Solution LLP",
+      title: "Talent Acquisition Strategy | AToZ Recruiters LLP",
       description:
         "Strategic solutions for your talent acquisition needs, aligning with your business goals.",
       keywords: [
@@ -120,18 +119,39 @@ export const MetaData = {
         "Workforce Planning",
       ],
     },
+    resumeModification: {
+      href: "resume-modification-services",
+      title: "Resume Modification Services | AToZ Recruiters LLP",
+      description:
+        "Professional resume services designed to elevate your career prospects.",
+      keywords: ["Resume Writing", "Resume Optimization", "Career Growth"],
+    },
+    interviewTraining: {
+      href: "interview-training",
+      title: "Interview Training | AToZ Recruiters LLP",
+      description:
+        "Master the art of interviews with expert training and guidance.",
+      keywords: ["Interview Skills", "Mock Interviews", "Job Preparation"],
+    },
+    campusRecruitment: {
+      href: "campus-recruitment-services",
+      title: "Campus Recruitment Services | AToZ Recruiters LLP",
+      description:
+        "Connecting top talent with leading organizations through strategic campus recruitment.",
+      keywords: ["Campus Drives", "Fresh Talent Hiring", "College Recruitment"],
+    },
   },
   industry: {
     informationTechnology: {
-      href: "/information-technology",
-      title: "Information Technology | A To Z Recruiters and IT Solution LLP",
+      href: "information-technology",
+      title: "Information Technology | AToZ Recruiters LLP",
       description:
         "Providing expert HR solutions tailored to the fast-paced IT industry.",
       keywords: ["IT Staffing", "Tech Talent", "IT Recruitment"],
     },
     bankingFinance: {
-      href: "/banking",
-      title: "Banking & Finance | A To Z Recruiters and IT Solution LLP",
+      href: "banking",
+      title: "Banking & Finance | AToZ Recruiters LLP",
       description:
         "Trusted HR services for the banking and finance sector, ensuring the right fit for critical roles.",
       keywords: [
@@ -141,15 +161,15 @@ export const MetaData = {
       ],
     },
     healthcare: {
-      href: "/healthcare",
-      title: "Healthcare Industry | A To Z Recruiters and IT Solution LLP",
+      href: "healthcare",
+      title: "Healthcare Industry | AToZ Recruiters LLP",
       description:
         "Comprehensive staffing solutions for the healthcare sector, ensuring quality patient care.",
       keywords: ["Healthcare Staffing", "Medical Recruitment", "Healthcare HR"],
     },
     manufacturing: {
-      href: "/manufacturing",
-      title: "Manufacturing | A To Z Recruiters and IT Solution LLP",
+      href: "manufacturing",
+      title: "Manufacturing | AToZ Recruiters LLP",
       description:
         "Efficient workforce solutions for the manufacturing industry, optimizing productivity and growth.",
       keywords: [
@@ -164,26 +184,26 @@ export type MetaDataKey = keyof typeof MetaData;
 // export type MetaData = typeof MetaData[keyof typeof MetaData];
 
 export const navItems = {
-  company: [
-    {
-      title: "About Us",
-      href: "/about",
-      description: "Learn about our mission, vision, and values",
-      url: "about.jpg", // Example image URL
-    },
-    {
-      title: "Our Team",
-      href: "/team",
-      description: "Meet our experienced recruitment professionals",
-      url: "team.jpg", // Example image URL
-    },
-    {
-      title: "Careers",
-      href: "/careers",
-      description: "Join our growing team of recruiters",
-      url: "career.jpg", // Example image URL
-    },
-  ],
+  // company: [
+  //   {
+  //     title: "About Us",
+  //     href: "/about",
+  //     description: "Learn about our mission, vision, and values",
+  //     url: "about.jpg", // Example image URL
+  //   },
+  //   {
+  //     title: "Our Team",
+  //     href: "/team",
+  //     description: "Meet our experienced recruitment professionals",
+  //     url: "team.jpg", // Example image URL
+  //   },
+  //   {
+  //     title: "Careers",
+  //     href: "/careers",
+  //     description: "Join our growing team of recruiters",
+  //     url: "career.jpg", // Example image URL
+  //   },
+  // ],
   services: [
     {
       title: "Recruitment Services",
@@ -224,11 +244,31 @@ export const navItems = {
       title: "Talent Acquisition Strategy",
       href: "/services/talent-acquisition-strategy",
       description:
-        "Strategic planning for attracting top talent and improving recruitment processes",
+        "Strategic planning for attracting top talent and improving recruitment processes.",
       url: "talent.jpg", // Example image URL
     },
+    {
+      title: "Resume Modification",
+      href: "/services/resume-modification-services",
+      description:
+        "Enhance your resume with professional writing and ATS optimization to stand out in competitive job markets.",
+      url: "resume.jpg", // Example image URL
+    },
+    {
+      title: "Interview Training",
+      href: "/services/interview-training-services",
+      description:
+        "Develop critical interview skills and gain confidence with expert-led mock interviews and personalized coaching.",
+      url: "interview.jpg", // Example image URL
+    },
+    {
+      title: "Campus Recruitment",
+      href: "/services/campus-recruitment-services",
+      description:
+        "Comprehensive campus hiring solutions to connect your organization with top talent from premier institutions.",
+      url: "campus.jpg", // Example image URL
+    },
   ],
-
   industries: [
     {
       title: "Information Technology",
@@ -260,7 +300,7 @@ export const navItems = {
 export const homepage = {
   hero: {
     headline: "Connecting Talent with Opportunity, A to Z",
-    para: "At A To Z Recruiters LLP, we specialize in bridging the gap between exceptional talent and thriving businesses. Our tailored recruitment solutions ensure that every hire drives growth and success.",
+    para: "At AToZ Recruiters LLP, we specialize in bridging the gap between exceptional talent and thriving businesses. Our tailored recruitment solutions ensure that every hire drives growth and success.",
     cta: "Start Your Journey with Us Today",
     // public/homepage/...images.jpg
     url: "/homepage/hero/",
@@ -277,11 +317,11 @@ export const homepage = {
   introduction: {
     title: "Your Partner in Shaping Tomorrow's Workforce!",
     desc: [
-      "At A To Z Recruiters LLP, we don't just fill positions; we shape futures. With a proven track record in providing top-tier recruitment and talent acquisition services, we cater to businesses across industries, ensuring that every hire aligns with your company's vision and goals.",
+      "At AToZ Recruiters LLP, we don't just fill positions; we shape futures. With a proven track record in providing top-tier recruitment and talent acquisition services, we cater to businesses across industries, ensuring that every hire aligns with your company's vision and goals.",
       "And actually we don't just stop there. As our commitment goes beyond matching skills to job descriptions. We aim to build long-term partnerships, offering strategic guidance and workforce solutions that evolve with the market. Whether enhancing your leadership team or streamlining recruitment, we bring a personalized, innovative approach to help you stay ahead in the talent game.",
     ],
     image: "inter.png",
-    alt: "A To Z Recruiters and IT Solution LLP",
+    alt: "AToZ Recruiters LLP",
   },
   whyChooseUs: [
     {
@@ -383,7 +423,7 @@ export const homepage = {
     default: "bg.jpg",
     path: "/homepage/faq/",
     introParagraph:
-      "At A To Z Recruiters LLP, our dream goes beyond connecting businesses with top talent. We envision a world where every professional finds purpose, and every organization thrives on the strength of its people. Let's build that future together.",
+      "At AToZ Recruiters LLP, our dream goes beyond connecting businesses with top talent. We envision a world where every professional finds purpose, and every organization thrives on the strength of its people. Let's build that future together.",
     faq: [
       {
         question: "What industries do you specialize in?",
@@ -405,7 +445,7 @@ export const homepage = {
       },
       {
         question:
-          "What makes A to Z Recruitment different from other staffing agencies?",
+          "What makes AToZ Recruiters LLP different from other staffing agencies?",
         image: "staffing.jpg",
         answer:
           "Our commitment to building long-term partnerships and delivering customized, innovative solutions sets us apart. We're not just a service provider; we're your strategic growth partner.",
@@ -416,12 +456,12 @@ export const homepage = {
     {
       client: "John Doe, CEO of XYZ Corp",
       feedback:
-        "Working with A to Z has transformed our hiring process. Their expertise and commitment to excellence are unmatched.",
+        "Working with AToZ Recruiters LLP has transformed our hiring process. Their expertise and commitment to excellence are unmatched.",
     },
   ],
   closingCTA: {
     message:
-      "Whether you're looking to build a strong team or seeking your next career move, A to Z Recruitment and Staffing is your trusted partner.",
+      "Whether you're looking to build a strong team or seeking your next career move, AToZ Recruiters LLP is your trusted partner.",
     cta: "Let's Get Started Today!",
   },
 };
@@ -533,7 +573,7 @@ export const contactData = () => {
       },
     },
     contactInfo: {
-      company: "A To Z Recruiters and IT Solution LLP",
+      company: "AToZ Recruiters LLP",
       heading: "Contact Information",
       desc: "Get in touch with us directly.",
       details: [
@@ -588,7 +628,7 @@ type SocialLink = {
 };
 
 export const Footer = {
-  company: "A To Z Recruiters and IT Solution LLP",
+  company: "AToZ Recruiters LLP",
   tagline:
     "Connecting talent with opportunity as we Bridge Talent and Opportunity, One Connection at a Time.",
   quick: [
@@ -602,7 +642,7 @@ export const Footer = {
   phone: "(+91) 91 5151 5209",
   job: "resume@atozrecruiters.com",
   proposal: "proposal@atozrecruiters.com",
-  rights: "A To Z Recruiters and IT Solution LLP. All rights reserved.",
+  rights: "AToZ Recruiters LLP. All rights reserved.",
   developer: "Website Designed and Developed by Akshay Arora",
   link: {
     url: "https://akshay.imperfectors.com",

@@ -6,6 +6,8 @@ import { IoLogoFacebook, IoLogoTwitter, IoLogoLinkedin, IoLogoInstagram } from "
 import Navbar from './navbar';
 import Whatsapp from './whatsapp';
 import { Footer as f } from '@/lib/constants';
+import { AnimatePresence, motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 
 export default function Wrapper({
@@ -15,11 +17,72 @@ export default function Wrapper({
 }>) {
     return (
         <div className='text-slate-950'>
-            <Navbar />
-            {children}
-            <Footer />
-            <Whatsapp />
+            <PageTransition>
+                <Navbar />
+                {children}
+                <Footer />
+                <Whatsapp />
+            </PageTransition>
         </div>
+    )
+}
+
+
+
+const transitionVariants = {
+    initial: {
+        x: '100%',
+        y: '0%',
+        height: '100%',
+    },
+    animate: {
+        x: '100%',
+        y: '0%',
+        height: '0%',
+    },
+    exit: {
+        x: ['0%', '100%'],
+        y: ['100%', '0%'],
+        height: ['0%', '100%'],
+    }
+};
+
+export function PageTransition({ children }: { children: React.ReactNode }) {
+    const pathname = usePathname()
+
+    return (
+        <>
+            <AnimatePresence>
+                <div key={pathname}>
+                    <motion.div className='fixed top-0 bottom-0 right-full w-screen h-screen z-50 bg-cyan-100'
+                        variants={transitionVariants}
+                        initial='initial'
+                        animate='animate'
+                        exit='exit'
+                        transition={{ delay: 0.1, duration: 1, ease: 'easeInOut' }}
+                    >
+                    </motion.div>
+                    <motion.div className='fixed top-0 bottom-0 right-full w-screen h-screen z-40 bg-cyan-500'
+                        variants={transitionVariants}
+                        initial='initial'
+                        animate='animate'
+                        exit='exit'
+                        transition={{ delay: 0.5, duration: 1, ease: 'easeInOut' }}
+                    >
+                    </motion.div>
+                    <motion.div className='fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-cyan-700'
+                        variants={transitionVariants}
+                        initial='initial'
+                        animate='animate'
+                        exit='exit'
+                        transition={{ delay: 0.9, duration: 1, ease: 'easeInOut' }}
+                    >
+
+                    </motion.div>
+                </div>
+            </AnimatePresence>
+            {children}
+        </>
     )
 }
 

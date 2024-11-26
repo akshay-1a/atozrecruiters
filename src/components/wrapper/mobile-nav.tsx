@@ -64,7 +64,7 @@ export default function MobileNav() {
                         variants={menuVariants}
                     >
                         <Accordion type="single" collapsible className="space-y-2">
-                            <AccordionItem value="company" className="border-none">
+                            {/* <AccordionItem value="company" className="border-none">
                                 <AccordionTrigger className="py-3 px-4 text-sm font-medium hover:bg-sky-50 rounded-lg">
                                     Company
                                 </AccordionTrigger>
@@ -83,7 +83,7 @@ export default function MobileNav() {
                                         ))}
                                     </motion.div>
                                 </AccordionContent>
-                            </AccordionItem>
+                            </AccordionItem> */}
 
                             <AccordionItem value="services" className="border-none">
                                 <AccordionTrigger className="py-3 px-4 text-sm font-medium hover:bg-sky-50 rounded-lg">
@@ -128,6 +128,18 @@ export default function MobileNav() {
                             </AccordionItem>
                         </Accordion>
 
+                        <motion.div
+                            variants={itemVariants}
+                            className="mt-4 px- 4"
+                        >
+                            <Link
+                                href="/about"
+                                onClick={() => setIsOpen(false)}
+                                className="block py-3 px-4 text-sm font-medium text-sky-600 hover:bg-sky-50 rounded-lg transition-colors"
+                            >
+                                About
+                            </Link>
+                        </motion.div>
                         <motion.div
                             variants={itemVariants}
                             className="mt-4 px- 4"

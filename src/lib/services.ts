@@ -4,7 +4,7 @@ export const Services = {
     hero: {
       headline: "Recruitment Services Tailored to Your Business Needs",
       tagline: "Right Talent, Right Time, Every Time.",
-      para: "At A To Z Recruiters and IT Solutions LLP, we don't just find candidates; we discover the perfect fit for your organization. Our recruitment solutions are designed to fuel your growth, ensuring every hire contributes to your business success. Whether you're a startup seeking to build a strong foundation or an established enterprise expanding your reach, our tailored strategies connect you with top-notch talent, saving you time and resources. \n\n Our approach goes beyond traditional recruitment. By understanding your business's unique culture and objectives, we craft a hiring experience that guarantees compatibility and drives results. With a vast talent pool, cutting-edge tools, and a commitment to excellence, we are here to transform your workforce, one strategic hire at a time.",
+      para: "At AToZ Recruiters LLP, we don't just find candidates; we discover the perfect fit for your organization. Our recruitment solutions are designed to fuel your growth, ensuring every hire contributes to your business success. Whether you're a startup seeking to build a strong foundation or an established enterprise expanding your reach, our tailored strategies connect you with top-notch talent, saving you time and resources. \n\n Our approach goes beyond traditional recruitment. By understanding your business's unique culture and objectives, we craft a hiring experience that guarantees compatibility and drives results. With a vast talent pool, cutting-edge tools, and a commitment to excellence, we are here to transform your workforce, one strategic hire at a time.",
       cta: "Let's Build Your Dream Team Today!",
     },
     overview: {
@@ -78,7 +78,7 @@ export const Services = {
       stories: [
         {
           quote:
-            "A to Z Recruitment Services has been a game-changer for our hiring process. They helped us reduce our hiring time by an impressive 40%, which significantly improved our ability to scale quickly. The candidates they provide are always of exceptional quality, fitting perfectly with our company culture and technical needs. Their expertise and dedication make them a valuable partner in our growth journey.",
+            "AToZ Recruitment Services has been a game-changer for our hiring process. They helped us reduce our hiring time by an impressive 40%, which significantly improved our ability to scale quickly. The candidates they provide are always of exceptional quality, fitting perfectly with our company culture and technical needs. Their expertise and dedication make them a valuable partner in our growth journey.",
           client: "Tech Solutions Inc.",
         },
         {
@@ -111,7 +111,7 @@ export const Services = {
     hero: {
       headline: "HR Consulting That Transforms Workplaces",
       tagline: "Empowering Your Business, One Policy at a Time",
-      para: "At A To Z Recruiters and IT Solutions LLP, we believe that a thriving workforce begins with strategic human resource management. Our HR consulting services are designed to align your people strategies with your business goals, ensuring a harmonious balance between employee satisfaction and organizational growth. From creating robust HR frameworks to resolving complex workforce challenges, we partner with you to build a sustainable and productive environment for your teams. \n\n With expertise spanning multiple industries, we take a tailored approach to every project, offering solutions like performance management, policy development, and organizational design. Our commitment to innovation and excellence enables us to deliver actionable insights and transformative results. Whether you're looking to revamp your HR policies or enhance employee engagement, we bring the expertise and tools needed to drive success at every level.",
+      para: "At AToZ Recruiters LLP, we believe that a thriving workforce begins with strategic human resource management. Our HR consulting services are designed to align your people strategies with your business goals, ensuring a harmonious balance between employee satisfaction and organizational growth. From creating robust HR frameworks to resolving complex workforce challenges, we partner with you to build a sustainable and productive environment for your teams. \n\n With expertise spanning multiple industries, we take a tailored approach to every project, offering solutions like performance management, policy development, and organizational design. Our commitment to innovation and excellence enables us to deliver actionable insights and transformative results. Whether you're looking to revamp your HR policies or enhance employee engagement, we bring the expertise and tools needed to drive success at every level.",
       cta: "Get Expert HR Solutions Today!",
     },
     overview: {
@@ -218,7 +218,7 @@ export const Services = {
     hero: {
       headline: "Outsourcing Services That Drive Efficiency",
       tagline: "Seamless Staffing Solutions for Your Business Success",
-      para: "In today's dynamic business landscape, staying ahead means focusing on what you do best while leaving the rest to trusted partners. At A To Z Recruiters and IT Solutions LLP, our outsourcing services are built to lighten your load. From temporary staffing to employee management, we ensure seamless operations that save you time and resources. With our proven expertise, you gain the flexibility to scale without compromising on quality. \n\n Whether it's managing compliance, handling seasonal staffing surges, or enhancing operational efficiency, our tailored outsourcing solutions empower your business to thrive. Let us take care of the back-office complexities so you can prioritize growth, innovation, and success.",
+      para: "In today's dynamic business landscape, staying ahead means focusing on what you do best while leaving the rest to trusted partners. At AToZ Recruiters LLP, our outsourcing services are built to lighten your load. From temporary staffing to employee management, we ensure seamless operations that save you time and resources. With our proven expertise, you gain the flexibility to scale without compromising on quality. \n\n Whether it's managing compliance, handling seasonal staffing surges, or enhancing operational efficiency, our tailored outsourcing solutions empower your business to thrive. Let us take care of the back-office complexities so you can prioritize growth, innovation, and success.",
       cta: "Explore Our Outsourcing Solutions Today!",
     },
     overview: {
@@ -325,7 +325,7 @@ export const Services = {
     hero: {
       headline: "Effortless Payroll Management Solutions",
       tagline: "Streamlining Payroll for Seamless Business Operations",
-      para: "Payroll management shouldn't be a burden—it should be a breeze. At A To Z Recruiters and IT Solutions LLP, we take the stress out of payroll processing with solutions tailored to your business. From accurate salary disbursements to ensuring statutory compliance, we provide end-to-end payroll management that keeps your team satisfied and your operations seamless. \n\n Our systemized approach minimizes errors and maximizes efficiency, giving you peace of mind while meeting all regulatory requirements. Whether you're a small business or a large enterprise, our expertise ensures your workforce is paid on time and in full compliance with labor laws.",
+      para: "Payroll management shouldn't be a burden—it should be a breeze. At AToZ Recruiters LLP, we take the stress out of payroll processing with solutions tailored to your business. From accurate salary disbursements to ensuring statutory compliance, we provide end-to-end payroll management that keeps your team satisfied and your operations seamless. \n\n Our systemized approach minimizes errors and maximizes efficiency, giving you peace of mind while meeting all regulatory requirements. Whether you're a small business or a large enterprise, our expertise ensures your workforce is paid on time and in full compliance with labor laws.",
       cta: "Get Started with Hassle-Free Payroll Today!",
     },
     overview: {
@@ -399,7 +399,7 @@ export const Services = {
       stories: [
         {
           quote:
-            "A To Z Recruiters and IT Solutions LLP has completely transformed our payroll process. Their attention to detail and commitment to accuracy have eliminated payroll errors and ensured timely payments. The peace of mind we've gained is priceless, and our employees couldn't be happier. Their expert handling of tax filings and compliance has saved us countless hours and potential fines.",
+            "AToZ Recruiters LLP has completely transformed our payroll process. Their attention to detail and commitment to accuracy have eliminated payroll errors and ensured timely payments. The peace of mind we've gained is priceless, and our employees couldn't be happier. Their expert handling of tax filings and compliance has saved us countless hours and potential fines.",
           client: "Global Enterprises Ltd.",
         },
         {
@@ -432,7 +432,7 @@ export const Services = {
     hero: {
       headline: "Empower Your Workforce with Targeted Training and Development",
       tagline: "Building Skills, Enhancing Performance, Driving Growth",
-      para: "At A To Z Recruiters and IT Solutions LLP, we believe in empowering employees with the knowledge and skills they need to excel. Our training and development programs are designed to unlock potential, nurture talent, and drive organizational success. From leadership development to specialized skill training, we tailor each program to suit your business needs. \n\n By fostering a culture of continuous learning, we enable your team to adapt to industry changes and deliver superior results. Invest in your workforce today to build a stronger tomorrow—because a skilled team is your company's greatest asset.",
+      para: "At AToZ Recruiters LLP, we believe in empowering employees with the knowledge and skills they need to excel. Our training and development programs are designed to unlock potential, nurture talent, and drive organizational success. From leadership development to specialized skill training, we tailor each program to suit your business needs. \n\n By fostering a culture of continuous learning, we enable your team to adapt to industry changes and deliver superior results. Invest in your workforce today to build a stronger tomorrow—because a skilled team is your company's greatest asset.",
       cta: "Unlock Your Team's Potential Today!",
     },
     overview: {
@@ -539,7 +539,7 @@ export const Services = {
     hero: {
       headline: "Strategic Talent Acquisition for a Competitive Edge",
       tagline: "Aligning Talent with Business Goals",
-      para: "In an ever-changing talent landscape, a robust acquisition strategy is the cornerstone of long-term success. At A To Z Recruiters and IT Solutions LLP, we offer strategic talent acquisition solutions designed to align with your business goals. Our services go beyond recruitment—we analyze market trends, identify skill gaps, and implement plans to meet future needs. \n\n Whether you're scaling operations or building a high-performance team, our strategies are tailored to provide sustainable growth. Let us help you attract, engage, and retain the right talent for a competitive edge in your industry.",
+      para: "In an ever-changing talent landscape, a robust acquisition strategy is the cornerstone of long-term success. At AToZ Recruiters LLP, we offer strategic talent acquisition solutions designed to align with your business goals. Our services go beyond recruitment—we analyze market trends, identify skill gaps, and implement plans to meet future needs. \n\n Whether you're scaling operations or building a high-performance team, our strategies are tailored to provide sustainable growth. Let us help you attract, engage, and retain the right talent for a competitive edge in your industry.",
       cta: "Discover Your Perfect Hire Today!",
     },
     overview: {
@@ -604,7 +604,7 @@ export const Services = {
         },
         {
           title: "Commitment to Excellence",
-          para: "At A To Z Recruiters and IT Solutions LLP, we are dedicated to delivering exceptional results. Our commitment to excellence is reflected in every aspect of our service—from our meticulous attention to detail during the recruitment process to our unwavering focus on client satisfaction. With us as your partner, you can be confident that your talent acquisition needs are in expert hands.",
+          para: "At AToZ Recruiters LLP, we are dedicated to delivering exceptional results. Our commitment to excellence is reflected in every aspect of our service—from our meticulous attention to detail during the recruitment process to our unwavering focus on client satisfaction. With us as your partner, you can be confident that your talent acquisition needs are in expert hands.",
         },
       ],
     },
@@ -618,7 +618,7 @@ export const Services = {
         },
         {
           quote:
-            "Partnering with A To Z Recruiters and IT Solutions LLP was the best decision for our talent acquisition needs. Their team took the time to understand our company culture and long-term goals, delivering candidates who not only fit the job description but also aligned with our values. Thanks to their efforts, we've built a strong, dynamic team that's driving our business forward.",
+            "Partnering with AToZ Recruiters LLP was the best decision for our talent acquisition needs. Their team took the time to understand our company culture and long-term goals, delivering candidates who not only fit the job description but also aligned with our values. Thanks to their efforts, we've built a strong, dynamic team that's driving our business forward.",
           client: "Growth Dynamics Corp.",
         },
       ],
@@ -637,6 +637,381 @@ export const Services = {
         {
           q: "Can you help with executive-level recruitment?",
           a: "Yes, we specialize in executive search and recruitment for senior-level positions. Our dedicated team uses a targeted approach to identify and attract top leadership talent who can drive strategic initiatives and contribute to your company's long-term success.",
+        },
+      ],
+    },
+  },
+  ResumeModification: {
+    href: "/resume-modification-services",
+    // title: "Resume Modification Services",
+    hero: {
+      headline: "Perfecting Your Resume to Land Your Dream Job",
+      tagline: "Stand Out in the Crowd with a Professionally Enhanced Resume.",
+      para: "Your resume is more than just a document; it's your personal brand, your professional story, and the gateway to exciting career opportunities. At AToZ Recruiters LLP, we offer top-notch resume modification services to help you make a lasting impression. Whether you're a fresher, a mid-career professional, or an industry leader, our experts craft resumes that reflect your strengths, skills, and achievements with precision and flair. Let's help you secure that interview!",
+      cta: "Enhance Your Resume Today!",
+    },
+    overview: {
+      title: "Why Resume Modification Matters",
+      description:
+        "Your resume is often your first interaction with potential employers. A well-crafted resume can set you apart, effectively showcasing your strengths and aligning with industry standards to open doors to opportunities.",
+      url: "/services/resume/",
+      images: [
+        "recruitment",
+        "resume",
+        "writing",
+        "workplace",
+        "assessment",
+        "growth",
+      ],
+    },
+    keyBenefits: {
+      title: "Key Benefits",
+      benefits: [
+        "ATS Optimization \nWe optimize your resume with industry-relevant keywords, ensuring it passes through ATS filters effortlessly.",
+        "Professional Formatting \nA visually appealing design tailored to your industry.",
+        "Content Enhancement \nCompelling language and action-driven bullet points that showcase your achievements effectively.",
+        "Customization \nEach resume is tailored to specific job descriptions, making it highly relevant.",
+        "Error-Free Resumes \nThorough proofreading to eliminate any grammatical or formatting errors.",
+      ],
+    },
+    process: {
+      title: "How It Works",
+      src: "/services/resume/",
+      steps: [
+        {
+          url: "consultation",
+          title: "Consultation",
+          step: "Start by sharing your current resume and career goals with us. Our team engages in a detailed discussion to understand your professional aspirations and the specific industries or roles you're targeting. This step ensures we align our efforts with your career objectives.",
+        },
+        {
+          url: "skill_assessment",
+          title: "Skill Assessment",
+          step: "Our experts evaluate your skills, experience, and achievements. This in-depth analysis allows us to identify your unique value propositions and align your profile with industry requirements. We focus on areas of improvement while amplifying your strengths.",
+        },
+        {
+          url: "optimization",
+          title: "Content Optimization",
+          step: "We meticulously revise your resume, utilizing powerful language and precise keywords that are ATS-friendly. The goal is to create a document that highlights your expertise, makes a strong impression, and increases your chances of landing interviews.",
+        },
+        {
+          url: "formatting",
+          title: "Design & Formatting",
+          step: "We provide a selection of modern, professional templates to choose from, each designed to maximize readability and visual appeal. Whether you're in a creative field or a corporate role, we ensure your resume stands out while maintaining industry-specific standards.",
+        },
+        {
+          url: "review",
+          title: "Review & Delivery",
+          step: "Your resume undergoes a final round of detailed checks to ensure it is flawless. We deliver the polished resume to you, ready to captivate recruiters and open doors to exciting opportunities.",
+        },
+      ],
+    },
+    whyChooseUs: {
+      title: "Why Choose Us",
+      points: [
+        {
+          title: "Recruitment Expertise",
+          para: "Our deep understanding of the recruitment landscape gives us a distinct edge in crafting resumes that resonate with hiring managers. By leveraging insights from years of staffing experience, we ensure that every resume aligns with industry trends and employer expectations. Our team stays updated with evolving recruitment practices and uses this knowledge to fine-tune your resume, ensuring it stands out in competitive job markets. From formatting to content, every element is meticulously designed to make your profile shine.",
+        },
+        {
+          title: "Affordable Pricing",
+          para: "Quality doesn't have to come at an exorbitant price. Our services are designed to be cost-effective, providing exceptional value for professionals at all stages of their careers. Transparency in pricing ensures you know exactly what you're paying for. We believe in making premium resume services accessible to everyone, whether you're a recent graduate or an experienced professional. With no hidden charges, our affordable packages provide an unmatched balance of quality and affordability.",
+        },
+        {
+          title: "Quick Turnaround",
+          para: "We respect the urgency of your job search and are committed to delivering revamped resumes promptly. With a structured process and efficient workflows, you can count on us to meet tight deadlines without compromising quality. Understanding the competitive nature of job applications, we prioritize timeliness and ensure that your resume is ready when you need it most. Whether you're applying for a role tomorrow or preparing for a long-term career plan, we deliver within your required timeline.",
+        },
+        {
+          title: "Dedicated Support",
+          para: "From the initial consultation to the final delivery, our team works closely with you to understand your vision. Whether it's answering questions, providing revisions, or offering guidance, we're with you every step of the way to ensure your satisfaction. Our approachable and client-focused team ensures clear communication and personalized attention throughout the process. We pride ourselves on being available for all your concerns and delivering a tailored resume that reflects your career aspirations.",
+        },
+        {
+          title: "Proven Success",
+          para: "Our proven track record speaks volumes. Hundreds of professionals across various industries have secured their dream roles with our expertly crafted resumes. We take pride in our role in their success stories and aim to deliver the same results for you. By combining industry expertise, attention to detail, and a passion for excellence, we've helped countless clients achieve their goals. Your success is our mission, and every resume we craft is a testament to that commitment.",
+        },
+      ],
+    },
+    testimonials: {
+      title: "Client Success Stories",
+      stories: [
+        {
+          quote:
+            "I was struggling to get interview calls despite having relevant skills. After using AToZ's resume modification service, I saw a drastic improvement. Within two weeks, I landed my dream job in the IT sector. The professional formatting and ATS optimization made my resume stand out among hundreds of applicants. I highly recommend AToZ for anyone looking to elevate their career prospects with a polished resume.",
+          client: "Software Engineer",
+        },
+        {
+          quote:
+            "The ATS optimization was a game changer! My old resume wasn't even reaching recruiters. Thanks to AToZ, I'm now working with one of the top firms in the finance industry. The team's attention to detail and insightful recommendations highlighted my strengths in ways I hadn't considered before. This service truly transformed my job search journey, and I couldn't be more thankful.",
+          client: "Financial Analyst",
+        },
+      ],
+    },
+    faq: {
+      title: "FAQs",
+      questions: [
+        {
+          q: "How long does the resume modification process take?",
+          a: "Our process typically takes 3-5 business days, ensuring meticulous attention to detail at every step. For those with urgent needs, we offer expedited services to meet tight deadlines without compromising quality. By focusing on a streamlined workflow, we deliver high-quality resumes that stand out while saving you valuable time during your job search.",
+        },
+        {
+          q: "Can you customize my resume for a specific job?",
+          a: "Yes, we specialize in tailoring resumes to specific job descriptions. Simply share the job details, and we'll craft a customized document that highlights the qualifications and achievements most relevant to the role. This personalized approach enhances your chances of catching a recruiter's attention and ensures that your resume is optimized for their expectations.",
+        },
+        {
+          q: "What industries do you specialize in?",
+          a: "We cater to a wide range of industries, including IT, healthcare, finance, marketing, engineering, and more. Whether you're transitioning careers or advancing in your field, our team is equipped to adapt to your industry's specific demands. Our expertise ensures that your resume not only aligns with industry standards but also effectively showcases your unique capabilities.",
+        },
+        {
+          q: "Do you offer cover letter writing services as well?",
+          a: "Absolutely! A strong cover letter complements your resume and strengthens your application. Our experts can create a compelling cover letter tailored to your target role, increasing your chances of making a lasting impression. With a well-crafted cover letter, you'll be able to communicate your enthusiasm and suitability for the position effectively.",
+        },
+      ],
+    },
+  },
+  InterviewTraining: {
+    href: "/interview-training-services",
+    hero: {
+      headline: "Master the Art of Interviews with Confidence",
+      tagline:
+        "Transform Your Potential Into Success With Our Expert Guidance.",
+      para: "Interviews can be life-changing opportunities, and proper preparation is the key to unlocking their full potential. At AToZ Recruiters LLP, we provide comprehensive interview training that equips you with the skills, strategies, and confidence to shine in front of any hiring panel. Whether you're a fresh graduate or a seasoned professional aiming for your next big role, our tailored programs are designed to bring out the best in you. Let's make every interview your gateway to success!",
+      cta: "Enroll in Our Interview Training Today!",
+    },
+    overview: {
+      title: "Why Interview Training Matters",
+      description:
+        "In today's competitive job market, standing out during interviews is crucial. It's not just about answering questions but showcasing your personality, skills, and value to potential employers. Our interview training services help you navigate even the trickiest questions, refine your communication, and develop a winning mindset. With AToZ Recruiters LLP, you don't just prepare for interviews - you master them.",
+      url: "/services/interview/",
+      images: [
+        "mock",
+        "interview-stress",
+        "confidence",
+        "success",
+        "interview",
+      ],
+    },
+    keyBenefits: {
+      title: "Key Benefits",
+      benefits: [
+        "Mock Interview Sessions \nSimulated interviews to help you tackle real-world scenarios and reduce anxiety. Gain experience in an environment that mirrors actual job interviews.",
+        "Personalized Feedback \nTailored insights to refine your answers and improve your delivery. Understand your strengths and areas of improvement for future success.",
+        "Confidence Building \nBoost your confidence and develop poise for handling any question with ease. Walk into your next interview knowing you're prepared for anything.",
+        "Industry-Specific Coaching \nCustomized sessions to highlight your strengths in your specific field. Our coaches will focus on industry trends to sharpen your interview skills.",
+        "Body Language Guidance \nLearn key non-verbal cues to project professionalism and confidence. Master your posture, gestures, and eye contact to leave a positive impact.",
+      ],
+    },
+    process: {
+      title: "How It Works",
+      src: "/services/interview/",
+      steps: [
+        {
+          url: "training",
+          title: "Assessment",
+          step: "The first step in your interview preparation journey is a comprehensive assessment. We begin by evaluating your current skillset, strengths, and any areas for improvement through a detailed consultation. Our goal is to understand your unique background, career aspirations, and previous interview experiences. This helps us identify key focus areas and tailor our coaching to meet your specific needs, ensuring we address your challenges head-on and position you for success in the job market.",
+        },
+        {
+          url: "strategy",
+          title: "Custom Strategy",
+          step: "Once we have a clear understanding of your profile, our experts craft a personalized interview preparation plan that is designed specifically around your career goals. We take into account the industry you're targeting, the roles you're applying for, and your individual strengths. Our strategy is crafted to boost your confidence and optimize your responses, ensuring you are ready to showcase your potential in interviews. This plan will guide you through every step of the process, from initial preparation to final mock interviews, with continuous adjustments based on your progress.",
+        },
+        {
+          url: "mock",
+          title: "Mock Interviews",
+          step: "To make sure you're truly ready for the real thing, we engage you in multiple mock interviews. These simulations mirror the types of interviews you'll face in the job market, whether they are technical, HR, or panel interviews. Each session is designed to introduce you to different interview styles, from competency-based to behavioral and situational questions. By going through these realistic exercises, you'll gain valuable insights into your performance, become more comfortable under pressure, and learn how to navigate tricky interview questions with ease.",
+        },
+        {
+          url: "skill-enhancement",
+          title: "Skill Enhancement",
+          step: "In this stage, we focus on fine-tuning your core interview skills to ensure you shine in every aspect of the interview process. We'll work with you on improving communication, enhancing your body language, and developing strong question-answering strategies. You'll learn to articulate your achievements clearly and confidently, ensuring that your answers reflect your expertise and capabilities. We also provide guidance on handling tricky questions, managing stress, and maintaining a positive tone throughout the interview, all of which are key to making a lasting impression on hiring managers.",
+        },
+        {
+          url: "review",
+          title: "Final Review & Feedback",
+          step: "The final step is a comprehensive review of your mock interview sessions. After conducting thorough evaluations, we provide you with detailed feedback that includes actionable advice to help you excel in your upcoming interviews. We'll highlight your strengths, point out areas that still need improvement, and offer solutions to overcome any remaining obstacles. This feedback is invaluable as it gives you the opportunity to make final adjustments and perfect your performance before walking into your next interview with complete confidence.",
+        },
+      ],
+    },
+    whyChooseUs: {
+      title: "Why Choose Us",
+      points: [
+        {
+          title: "Expert Trainers",
+          para: "Our team consists of highly experienced recruiters and industry professionals who bring years of expertise to the table. They understand the intricacies of the hiring process and know exactly what hiring managers are looking for. By leveraging their in-depth knowledge of current trends and job market demands, our trainers provide you with insights that ensure you're equipped with the skills needed to stand out. Their vast experience across different industries and roles allows them to offer specific guidance tailored to your needs, giving you an edge over other candidates.",
+        },
+        {
+          title: "Customized Approach",
+          para: "At AToZ Recruiters LLP, we recognize that every professional is unique. That's why we don't follow a one-size-fits-all approach. Our training programs are fully customized to align with your career aspirations, the specific demands of the industry you're targeting, and your personal strengths. Whether you're looking to break into a new field or move up the career ladder, our training sessions are designed to address your specific challenges and needs. This personalized attention and flexibility allow us to create a roadmap that empowers you to succeed, something that generic coaching programs simply can't offer.",
+        },
+        {
+          title: "Proven Success",
+          para: "Our track record speaks for itself. Hundreds of candidates who have participated in our interview training programs have gone on to secure their dream jobs. We don't just promise results; we deliver them. The techniques and strategies we employ are tried, tested, and continuously refined to meet the evolving demands of the job market. From entry-level positions to senior executive roles, our training has helped professionals from diverse industries gain confidence, master interview skills, and land interviews with top companies. Our clients' success stories are a testament to the effectiveness of our approach.",
+        },
+        {
+          title: "Affordable and Accessible",
+          para: "We believe that everyone deserves access to top-quality interview coaching, regardless of their budget or schedule. That's why we offer our services at competitive prices without compromising on the quality of the training. Whether you're a fresh graduate or an experienced professional, our services are designed to be affordable, offering tremendous value for money. Additionally, we understand that time is of the essence during a job search. Our flexible schedules, including evening and weekend slots, and online coaching options ensure that you can fit training into your busy routine without stress. We make career success accessible to everyone.",
+        },
+        {
+          title: "Comprehensive Support",
+          para: "Our commitment to your success doesn't end with the final training session. From the initial consultation to post-training follow-ups, we provide comprehensive support throughout your interview preparation journey. We're not just here to teach you how to answer questions; we're dedicated to ensuring you feel confident, prepared, and equipped to handle any interview scenario. Our experts are always available to provide guidance, answer questions, and offer insights even after the training is complete. This ongoing support is designed to keep you on track and make sure you're fully prepared for every stage of the interview process.",
+        },
+      ],
+    },
+    testimonials: {
+      title: "Success Stories from Our Clients",
+      stories: [
+        {
+          quote:
+            "I was nervous about interviews, but the training at AToZ Recruiters LLP transformed my approach. The mock interviews and feedback were eye-opening, and I nailed my next interview to secure a fantastic position!",
+          client: "Marketing Specialist",
+        },
+        {
+          quote:
+            "The personalized coaching was exceptional. They not only prepared me for tricky questions but also boosted my confidence. I'm now working in my dream company, thanks to their incredible guidance.",
+          client: "Software Engineer",
+        },
+      ],
+    },
+    faq: {
+      title: "FAQs",
+      questions: [
+        {
+          q: "How long does the training process take?",
+          a: "Our training programs typically last between 1-2 weeks, depending on the level of preparation required. We also offer intensive sessions for those with urgent interview schedules.",
+        },
+        {
+          q: "Can you help with specific industries?",
+          a: "Absolutely! Our trainers have expertise across various sectors, including IT, healthcare, finance, engineering, and more. We customize the sessions based on your field and role.",
+        },
+        {
+          q: "Do you offer online training?",
+          a: "Yes, we provide flexible online training options so you can prepare from the comfort of your home, regardless of your location.",
+        },
+        {
+          q: "Is the training suitable for freshers?",
+          a: "Definitely! We've designed our programs to cater to freshers, mid-level professionals, and senior executives. Everyone can benefit from our strategies and insights.",
+        },
+      ],
+    },
+  },
+  CampusRecruitment: {
+    href: "/campus-recruitment-services",
+    hero: {
+      headline: "Empowering Talent, Enabling Success",
+      tagline:
+        "Your Trusted Partner for Exceptional Campus Recruitment Solutions.",
+      para: "AToZ Recruiters LLP specializes in connecting organizations with the brightest minds at educational institutions. Our campus recruitment services are tailored to streamline the hiring process, ensuring you secure top-tier talent efficiently and effectively. From conducting recruitment drives to personalized candidate assessments, we take care of everything, enabling your organization to build a future-ready workforce. Let's bridge the gap between ambition and opportunity together.",
+      cta: "Start Your Campus Recruitment Journey Today!",
+    },
+    overview: {
+      title: "Why Campus Recruitment Services Are Essential",
+      description:
+        "Campus recruitment is the cornerstone of building a dynamic and innovative workforce. Engaging with students and fresh graduates allows organizations to identify untapped potential and shape future leaders. Our services simplify the process by offering end-to-end solutions, from pre-placement talks to final onboarding. With our expertise, hiring from campuses becomes a strategic advantage, helping you gain access to a diverse pool of skilled professionals ready to make a difference in your organization.",
+      url: "/services/campus/",
+      images: ["students", "recruitment", "career", "dream-job", "placement"],
+    },
+    keyBenefits: {
+      title: "Key Benefits",
+      benefits: [
+        "Access to Top Talent \nWe connect you with the best and brightest from leading educational institutions.",
+        "Streamlined Recruitment Process \nFrom initial engagement to onboarding, we handle every aspect efficiently.",
+        "Diverse Talent Pool \nHire candidates from varied academic backgrounds to enrich your workforce.",
+        "Cost-Effective Solutions \nReduce hiring costs with our well-organized campus drives.",
+        "Brand Visibility \nStrengthen your organization's presence and reputation among top institutions.",
+      ],
+    },
+    process: {
+      title: "How It Works",
+      src: "/services/campus/",
+      steps: [
+        {
+          url: "requirements",
+          title: "Understanding Requirements",
+          step: "We begin by analyzing your hiring needs, including skill sets, job roles, and target campuses. This involves detailed discussions with your HR team to ensure we capture the essence of your expectations. By mapping your goals to specific campus strengths, we ensure a tailored and impactful recruitment plan.",
+        },
+        {
+          url: "strategy",
+          title: "Strategic Planning",
+          step: "A tailored recruitment strategy is designed, ensuring alignment with your organizational goals. We identify the right institutions, outline timelines, and define assessment criteria. This meticulous planning ensures a smooth and result-driven execution of your campus recruitment drive.",
+        },
+        {
+          url: "engagement",
+          title: "Pre-Campus Engagement",
+          step: "We initiate pre-placement talks, host webinars, and share job descriptions to attract top talent. By creating a strong brand presence, we help generate enthusiasm and interest among students, giving you access to the best candidates well before the interview stage.",
+        },
+        {
+          url: "campus-drive",
+          title: "Campus Drives",
+          step: "Our team conducts seamless on-campus and virtual recruitment drives, managing assessments and interviews. From scheduling sessions to organizing aptitude tests, we ensure the entire process runs efficiently, giving you the best possible talent for your organization.",
+        },
+        {
+          url: "onboarding",
+          title: "Onboarding Support",
+          step: "From offer rollouts to ensuring candidates are job-ready, we handle the final stages of recruitment. Our post-recruitment guidance ensures smooth integration of selected candidates into your team, setting them up for immediate success in their roles.",
+        },
+      ],
+    },
+    whyChooseUs: {
+      title: "Why Choose Us",
+      points: [
+        {
+          title: "Industry Expertise",
+          para: "With years of experience in recruitment, we understand the nuances of hiring fresh talent from campuses. Our team has cultivated strong relationships with prestigious institutions, enabling us to tap into a pool of highly skilled candidates. We stay updated with the latest trends in campus hiring, ensuring our methods are innovative and effective. This deep industry knowledge allows us to design strategies that resonate with both employers and students, making the recruitment process seamless and efficient.",
+        },
+        {
+          title: "Tailored Solutions",
+          para: "We don't believe in a one-size-fits-all approach when it comes to recruitment. Every organization has unique goals, and we take the time to understand yours in detail. From customizing assessment tools to aligning with your company culture, we ensure that every aspect of our service is tailored to your specific needs. This bespoke approach not only improves the hiring experience but also ensures you attract candidates who are the perfect fit for your team and long-term vision.",
+        },
+        {
+          title: "End-to-End Support",
+          para: "From the initial planning stages to the final onboarding process, we offer comprehensive support at every step. Our services include everything from coordinating pre-placement talks and managing interview schedules to handling offer rollouts and candidate follow-ups. By taking care of the logistics and administrative tasks, we allow your team to focus on selecting the best talent. This holistic support system guarantees a streamlined recruitment experience and maximizes the success of your hiring efforts.",
+        },
+        {
+          title: "Cost Efficiency",
+          para: "Recruiting top talent doesn’t have to break the bank. Our services are designed to deliver maximum value while keeping costs in check. By leveraging our expertise and streamlined processes, you save both time and resources. Whether it’s reducing travel costs through virtual campus drives or minimizing administrative overhead, we ensure your recruitment strategy is cost-effective without compromising on quality. This efficiency translates into a greater return on investment for your organization.",
+        },
+        {
+          title: "Proven Success",
+          para: "We've helped numerous organizations secure exceptional talent from some of the most prestigious campuses across the country. Our track record includes building high-performing teams for startups, mid-sized enterprises, and industry leaders. By consistently delivering outstanding results, we have earned the trust of our clients. Whether you’re looking to hire fresh graduates or interns, our proven methods ensure you gain access to the brightest minds who can drive growth and innovation within your company.",
+        },
+      ],
+    },
+    testimonials: {
+      title: "Client Success Stories",
+      stories: [
+        {
+          quote:
+            "AToZ Recruiters LLP revolutionized our campus recruitment process. Their seamless execution and insightful candidate assessments helped us onboard some of the best talent. Highly recommended!",
+          client: "HR Manager, Leading IT Firm",
+        },
+        {
+          quote:
+            "Their strategic approach and expertise made our campus recruitment drives highly successful. We were able to hire exceptionally talented freshers who are now excelling in our organization.",
+          client: "Talent Acquisition Head, FMCG Company",
+        },
+        {
+          quote:
+            "Working with AToZ Recruiters LLP was an absolute pleasure. Their ability to identify and engage with top-notch candidates is unparalleled. A brilliant experience overall.",
+          client: "Recruitment Lead, Financial Services",
+        },
+      ],
+    },
+    faq: {
+      title: "FAQs",
+      questions: [
+        {
+          q: "How do you select campuses for recruitment?",
+          a: "We analyze your hiring criteria and align it with the strengths of specific institutions to target campuses that match your needs. Our network includes leading colleges and universities across diverse fields.",
+        },
+        {
+          q: "Can you handle both on-campus and virtual drives?",
+          a: "Yes, we offer flexible solutions for both on-campus and virtual recruitment drives. Our technology-driven approach ensures seamless execution, regardless of the format.",
+        },
+        {
+          q: "What industries do you cater to?",
+          a: "We cater to a wide range of industries, including IT, manufacturing, healthcare, finance, and more. Our expertise allows us to adapt to the specific needs of different sectors.",
+        },
+        {
+          q: "Do you provide post-recruitment support?",
+          a: "Absolutely! We offer comprehensive post-recruitment support, including candidate onboarding assistance and ensuring a smooth transition into your organization.",
         },
       ],
     },
@@ -676,6 +1051,21 @@ export const Related = {
       name: "Payroll Management",
       image: "payroll",
       href: "/services/payroll-management",
+    },
+    {
+      name: "Resume Modification Services",
+      image: "resume",
+      href: "/services/resume-modification-services",
+    },
+    {
+      name: "Interview Training",
+      image: "interview",
+      href: "/services/interview-training-services",
+    },
+    {
+      name: "Campus Recruitment Services",
+      image: "campus",
+      href: "/services/campus-recruitment-services",
     },
   ],
 };

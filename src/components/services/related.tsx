@@ -33,7 +33,7 @@ export default function RelatedServices({ data }: RelatedProps) {
                         viewport={{once: true}}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                         className={
-                            index >= 4 || index === 0
+                            index >= 7 || index === 0
                                 ? "sm:col-span-3 text-4xl" // Centers the last 2 items in the second row
                                 : "text-3xl"
                         }

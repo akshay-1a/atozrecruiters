@@ -33,9 +33,9 @@ export default function WhyChooseUs({ data }: WhyChooseUsProps) {
             <Fade>
                 <Card className="w-full h-full max-w-7xl overflow-hidden shadow-xl flex justify-center items-center p-4 md:p-8">
                     {/* <CardContent className="p-8"> */}
-                    <Tabs value={activeTab} onValueChange={setActiveTab} className="md:h-80">
+                    <Tabs value={activeTab} onValueChange={setActiveTab} className="md:h-80 w-[80vw]">
                         <div className="h-full w-full flex flex-col md:flex-row gap-10">
-                            <TabsList className="flex h-full md:flex-col justify-around gap-2 p-4 md:max-w-80 w-full">
+                            <TabsList className="flex h-full md:flex-col justify-around gap-2 p-4 md:max-w-80 w-full overflow-scroll">
                                 {data.points.map((point) => (
                                     <TabsTrigger
                                         key={point.title}
@@ -47,7 +47,7 @@ export default function WhyChooseUs({ data }: WhyChooseUsProps) {
                                 ))}
                             </TabsList>
                             <Card className="w-full">
-                                <AnimatePresence mode="wait">
+                                <AnimatePresence mode="sync">
                                     {data.points.map((point) => (
                                         <TabsContent key={point.title} value={point.title} className="h-full data-[state=active]:flex">
                                             <CardContent className="flex h-full flex-col p-6">

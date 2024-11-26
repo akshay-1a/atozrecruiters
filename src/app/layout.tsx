@@ -6,6 +6,7 @@ import Wrapper from "@/components/wrapper/wrapper";
 import { Analytics } from "@vercel/analytics/react";
 import { generateMetadata as getMetadata } from '@/lib/generate-metadata'
 import Script from "next/script";
+import { WelcomeModal } from "@/components/homepage/welcome-modal";
 // import ViewerCount from "@/components/wrapper/viewer-count";
 
 const geistSans = localFont({
@@ -62,6 +63,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-slate-950`}
       >
         <Wrapper>
+          <WelcomeModal/>
           {children}
           {/* <ViewerCount /> */}
           <Analytics />

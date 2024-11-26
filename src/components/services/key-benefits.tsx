@@ -19,15 +19,15 @@ export default function KeyBenefits({ data }: KeyBenefitsProps) {
                     {data.title}
                 </h2>
             </Clip>
-            <div className="grid grid-row-dense md:grid-cols-2 place-content-center gap-20 ">
+            <div className="flex flex-wrap justify-center items-center gap-20 h-full ">
                 {data.benefits.map((benefit, index) => {
                     const [bold, regular] = benefit.split('\n');
                     return (
                         <Fade
                             key={index}
                             delay={0.1 * index}
-                            distance={200}
-                            className="relative w-full h-fullyhi flex items-end space-x-2 space-y-2 hover:space-x-3 hover:space-y-3 transition-all duration-300 ease-linear"
+                            distance={100}
+                            className="relative w-[40%] h-52 flex-shrink-0 flex items-end space-x-2 space-y-2 hover:space-x-3 hover:space-y-3 transition-all duration-300 ease-linear"
                         >
                             <div className='relative w-full h-full z-20'>
                                 <Card className='relative p-10 flex gap-5 justify-center h-full z-20'>
