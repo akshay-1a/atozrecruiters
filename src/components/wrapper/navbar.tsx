@@ -18,7 +18,7 @@ import MobileNav from "./mobile-nav"
 
 export default function Navbar() {
     return (
-        <header className="border-b bg-[#0171A3]">
+        <header className="border-b bg-[#0171A3] relative z-50">
             <div className="container mx-auto px-8 md:px-16 py-5">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="flex items-center space-x-2 z-50">
@@ -32,32 +32,12 @@ export default function Navbar() {
                         />
                     </Link>
 
-                    <NavigationMenu className=" hidden md:block -left-32 ">
-                        <NavigationMenuList className="space-x-2">
-                            {/* <NavigationMenuItem>
-                                <NavigationMenuTrigger className="">
-                                    Company
-                                </NavigationMenuTrigger>
-                                <NavigationMenuContent>
-                                    <ul className="grid w-[400px] gap-3 p-4 md:w-[340px] md:grid- cols-2">
-                                        {navItems.company.map((item) => (
-                                            <ListItem
-                                                key={item.title}
-                                                title={item.title}
-                                                url={item.url}
-                                                href={item.href}
-                                            >
-                                                {item.description}
-                                            </ListItem>
-                                        ))}
-                                    </ul>
-                                </NavigationMenuContent>
-                            </NavigationMenuItem> */}
-
+                    <NavigationMenu className="relative hidden md:block">
+                        <NavigationMenuList className="space-x-">
                             <NavigationMenuItem className="">
                                 <NavigationMenuTrigger>Services</NavigationMenuTrigger>
-                                <NavigationMenuContent className="w-full  ">
-                                    <ul className="grid gap-3 p-4 w-[600px] grid-cols-2">
+                                <NavigationMenuContent className="w-full  relative ">
+                                    <ul className="grid gap-3 p-4 w-[600px] grid-cols-2 z-30">
                                         {navItems.services.map((item) => (
                                             <ListItem
                                                 key={item.title}

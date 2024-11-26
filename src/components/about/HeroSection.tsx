@@ -12,7 +12,7 @@ interface HeroProps {
 
 export function HeroSection({ data }: HeroProps) {
   return (
-    <section className={`relative w-full py-40 md:h-[89vh] p-4 md:p-10 pt-24 flex items-center md:items-start justify-end overflow-hidden bg-gradient-to-r from-cyan-950 to-cyan-700 text-white`}>
+    <section className={`relative w-full py-40 md:h-[89vh] p-4 md:p-16 pt-24 flex items-center md:items-start justify-end overflow-hidden bg-gradient-to-r from-cyan-950 to-cyan-700 text-white`}>
       <Fade speed={0.9} distance={150}
         className="text-right z-10 flex flex-col justify-start items-end gap-3"
       >

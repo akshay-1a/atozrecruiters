@@ -127,7 +127,7 @@ export const MetaData = {
       keywords: ["Resume Writing", "Resume Optimization", "Career Growth"],
     },
     interviewTraining: {
-      href: "interview-training",
+      href: "interview-training-services",
       title: "Interview Training | AToZ Recruiters LLP",
       description:
         "Master the art of interviews with expert training and guidance.",
@@ -661,7 +661,7 @@ export const Footer = {
     },
     {
       icon: IoLogoLinkedin,
-      url: "https://linkedin.com/atozrecruiters",
+      url: "https://www.linkedin.com/company/atoz-recruiters-trainers/",
       color: "blue",
     },
     {

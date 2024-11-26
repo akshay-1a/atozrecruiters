@@ -7,12 +7,12 @@ import React from 'react'
 
 export default function Client() {
     return (
-        <main className='min-h-screen w-full overflow-hidden bg-cyan-50 '>
+        <div className='min-h-screen w-full overflow-hidden bg-cyan-50 '>
             <Hero />
             <Count />
             <Intro />
             <Services />
             <Faq/>
-        </main>
+        </div>
     )
 }

@@ -2,7 +2,6 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { IoLogoFacebook, IoLogoTwitter, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io5";
 import Navbar from './navbar';
 import Whatsapp from './whatsapp';
 import { Footer as f } from '@/lib/constants';

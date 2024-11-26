@@ -63,7 +63,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-slate-950`}
       >
         <Wrapper>
-          <WelcomeModal/>
+          {/* <WelcomeModal/> */}
           {children}
           {/* <ViewerCount /> */}
           <Analytics />
