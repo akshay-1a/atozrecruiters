@@ -18,6 +18,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import { navItems } from "@/lib/constants"
+import Image from "next/image"
 
 export default function MobileNav() {
     const [isOpen, setIsOpen] = React.useState(false)
@@ -48,12 +49,10 @@ export default function MobileNav() {
                     </button>
                 </SheetTrigger>
                 <SheetContent side="left" className="w-[280px] p-0">
-                    <SheetHeader className="p-6 border-b bg-cyan-100">
-                        <SheetTitle className="text-lg font-bold text-sky-800 uppercase">
-                            <span className="font-extrabold font-serif text-5xl">A To Z</span>
-                            <br/>
-                            <span className="font-extrabold tracking-[3.2px] font-serif text-xl">Recruiters</span>
-                            
+                    <SheetHeader className="p-6 border-b bg-cyan-100 flex flex-col justify-center items-center">
+                        <Image src="/logo.jpg" alt="" width={200} height={200} className="rounded-md" />
+                        <SheetTitle className="text-md font-extrabold text-sky-800 uppercase font-mono">
+                            AToZ Recruiters LLP
                         </SheetTitle>
                     </SheetHeader>
 

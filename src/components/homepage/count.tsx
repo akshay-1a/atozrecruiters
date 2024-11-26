@@ -52,7 +52,7 @@ const AchievementCard: React.FC<Achievement> = ({ icon: Icon, count, label }) =>
 export default function Count() {
 
     return (
-        <div className="relative lg:min-h-screen w-full bg-slate-950 text-pretty flex flex-col justify-center items-center gap-10">
+        <div className="relative py-10 lg:min-h-screen w-full bg-slate-950 text-pretty flex flex-col justify-center items-center gap-10">
             <Clip start='centerX' >
                 <DataBase />
             </Clip>
@@ -82,7 +82,7 @@ const DataBase = () => {
     return (
         <motion.div
             ref={ref}
-            className="mt-2 flex flex-col lg:flex-row items-center justify-center w-full gap-16 py-10 px-8 lg:px-20 bg-cyan-200 lg:h-[48vh]">
+            className="flex flex-col lg:flex-row items-center justify-center w-full gap-16 py-10 px-8 lg:px-20 bg-cyan-200 lg:h-[48vh]">
             <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
