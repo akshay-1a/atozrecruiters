@@ -771,7 +771,7 @@ export const Industries: Record<string, IndustryData> = {
       heading: "Gulf Recruitment by the Numbers",
       items: [
         { value: "98%", label: "Client Retention Rate" },
-        { value: "1,000+", label: "Professionals Placed in Gulf Countries" },
+        { value: "1000+", label: "Professionals Placed in Gulf Countries" },
         { value: "48hrs", label: "Response Time for Hiring Requests" },
         { value: "25+", label: "Industries Served Across the Gulf" },
       ],
@@ -836,16 +836,3 @@ export const Industries: Record<string, IndustryData> = {
     },
   },
 };
-
-// Add this to your industries.ts file
-// export const industryIcons = {
-//   fmcg: ['ShoppingCart', 'TrendingUp', 'Package', 'Truck'],
-//   pharmaceuticals: ['Pill', 'Microscope', 'Flask', 'Stethoscope'],
-//   oilAndGas: ['Droplet', 'Factory', 'Fuel', 'PipelineIcon'],
-//   bfsi: ['Landmark', 'CreditCard', 'PieChart', 'Shield'],
-//   salesAndMarketing: ['BarChart', 'Target', 'Users', 'Megaphone'],
-//   realEstate: ['Home', 'Building', 'Key', 'Map'],
-//   retail: ['Store', 'ShoppingBag', 'Banknote', 'Tag'],
-//   bpoAndKpo: ['Headphones', 'BarChart2', 'FileText', 'Globe'],
-//   gulfHiring: ['Briefcase', 'Plane', 'Sun', 'MapPin']
-// };

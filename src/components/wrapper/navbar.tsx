@@ -43,7 +43,7 @@ export default function Navbar() {
                                                 key={item.title}
                                                 title={item.title} 
                                                 url={item.url}
-                                                // href={item.href}
+                                                href={item.href}
                                                 className="w-[18vw]"
                                             >
                                                 {item.description}
@@ -62,7 +62,7 @@ export default function Navbar() {
                                                 key={item.title}
                                                 title={item.title}
                                                 url={item.url}
-                                                // href={item.href}
+                                                href={item.href}
                                             >
                                                 {item.description}
                                             </ListItem>

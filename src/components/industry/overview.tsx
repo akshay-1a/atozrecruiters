@@ -11,17 +11,10 @@ export default function Overview({ data }: { data: IndustryData['overview'] }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="relative h-screen w-full py-16 md:py-24 px-8 md:px-24"
+      className="relative min-h-screen w-full py-8 md:p-24 "
     >
-
-      {/* <Image
-        src={`/industries/${data.bg}.jpg`}
-        alt={data.heading}
-        fill
-        className="bg-cover bg-center z-0"
-      /> */}
       <div className="relative h-full w-full
-      flex flex-col justify-center items-start gap-10 p-8 z-10">
+      flex flex-col justify-center items-start md:gap-10 p-8 z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -30,7 +23,7 @@ export default function Overview({ data }: { data: IndustryData['overview'] }) {
         >
           {data.heading}
         </motion.h2>
-        <div className="flex flex-col md:flex-row items-start justify-around gap-20 w-full">
+        <div className="flex flex-col-reverse md:flex-row items-start justify-around gap-5 md:gap-20 w-full">
           <div className="">
             {data.content.map((paragraph, index) => (
               <motion.p

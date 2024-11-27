@@ -327,63 +327,63 @@ export const navItems = {
   industries: [
     {
       title: "FMCG",
-      href: "/industries/fmcg",
+      href: "/industry/fmcg",
       description:
         "Specialized recruitment for the Fast-Moving Consumer Goods sector, connecting businesses with skilled talent to drive growth.",
       url: "fmcg.jpg", // Example image URL
     },
     {
       title: "Pharmaceuticals",
-      href: "/industries/pharmaceuticals",
+      href: "/industry/pharmaceuticals",
       description:
         "Comprehensive staffing solutions for the pharmaceutical industry, ensuring access to top-tier professionals for innovation and compliance.",
       url: "pharmaceuticals.jpg", // Example image URL
     },
     {
       title: "Oil and Gas",
-      href: "/industries/oilandgas",
+      href: "/industry/oil-and-gas",
       description:
         "Tailored recruitment services for the oil and gas industry, meeting the unique demands of this dynamic and technical sector.",
       url: "oil-gas.jpg", // Example image URL
     },
     {
       title: "BFSI",
-      href: "/industries/bfsi",
+      href: "/industry/bfsi",
       description:
         "Expert hiring solutions for banking, financial services, and insurance industries to secure exceptional talent for critical roles.",
       url: "bfsi.jpg", // Example image URL
     },
     {
       title: "Sales & Marketing",
-      href: "/industries/sales-marketing",
+      href: "/industry/sales-and-marketing",
       description:
         "Strategic recruitment for sales and marketing professionals, driving growth, branding, and customer engagement.",
       url: "sales-marketing.jpg", // Example image URL
     },
     {
       title: "Real Estate",
-      href: "/industries/real-estate",
+      href: "/industry/real-estate",
       description:
         "Efficient staffing solutions for the real estate sector, building exceptional teams for diverse and dynamic projects.",
       url: "real-estate.jpg", // Example image URL
     },
     {
       title: "Retail",
-      href: "/industries/retail",
+      href: "/industry/retail",
       description:
         "Recruitment services for the retail sector, connecting businesses with skilled professionals for customer-centric roles.",
       url: "retail.jpg", // Example image URL
     },
     {
       title: "BPO & KPO",
-      href: "/industries/bpo-kpo",
+      href: "/industry/bpo-kpo",
       description:
         "Focused recruitment for the BPO and KPO industries, ensuring high-performing teams for global service excellence.",
       url: "bpo-kpo.jpg", // Example image URL
     },
     {
       title: "Gulf Hiring",
-      href: "/industries/gulf-hiring",
+      href: "/industry/gulf-hiring",
       description:
         "Specialized recruitment services for the Gulf region, connecting employers with skilled professionals for international roles.",
       url: "gulf-hiring.jpg", // Example image URL

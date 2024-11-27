@@ -16,7 +16,7 @@ export default function FAQ({ data }: { data: IndustryData['faqs'] }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="py-16 md:py-24 md:px-36"
+      className="py-16 px-8 md:py-24 md:px-36"
     >
       <div className="">
         <motion.h2
@@ -37,7 +37,7 @@ export default function FAQ({ data }: { data: IndustryData['faqs'] }) {
             >
               <AccordionItem value={`item-${index}`}>
                 <AccordionTrigger className='text-lg md:text-xl font-semibold'>{faq.question}</AccordionTrigger>
-                <AccordionContent className='md:text-lg'>{faq.answer}</AccordionContent>
+                <AccordionContent className='text-base md:text-lg'>{faq.answer}</AccordionContent>
               </AccordionItem>
             </motion.div>
           ))}

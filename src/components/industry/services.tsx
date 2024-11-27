@@ -15,9 +15,9 @@ export default function Services({ data }: { data: IndustryData['services'] }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="py-16 md:py-24 bg-cyan-50"
+      className="py-16 px-8 md:py-24 bg-cyan-50"
     >
-      <div className="container mx-auto px-4 md:px-36">
+      <div className="container mx-auto md:px-36">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ export default function Services({ data }: { data: IndustryData['services'] }) {
                   <CardHeader className='flex flex-row gap-5 justify-start items-start'>
                     <Icon className="h-20 w-40 text-cyan-600" />
                     <div className='space-y-3'>
-                    <CardTitle>{service.title}</CardTitle>
+                    <CardTitle className='font-bold'>{service.title}</CardTitle>
                     <CardDescription>{service.description}</CardDescription>
                     </div>
                   </CardHeader>

@@ -22,7 +22,7 @@ export default function CallToAction({ data }: { data: IndustryData['callToActio
         aria-hidden="true"
       />
       <div className="relative py-16 md:py-36 bg-slate-900/50 z-10 w-full h-full flex flex-col justify-center items-center">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-8 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ export default function CallToAction({ data }: { data: IndustryData['callToActio
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="mb-8 text-xl max-w-3xl mx-auto"
+            className="mb-8 text-base  md:text-xl max-w-3xl mx-auto"
           >
             {data.content}
           </motion.p>
