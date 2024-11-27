@@ -120,7 +120,7 @@ export function VelocityScroll({
                             className="w-20 h-20 object-contain"
                         />
                         </div>
-                        <span className="mt-2 text-sm font-medium">{company.name}{index}</span>
+                        <span className="mt-2 text-sm font-medium">{company.name}</span>
                     </div>
                 ))}
             </ParallaxLogos>

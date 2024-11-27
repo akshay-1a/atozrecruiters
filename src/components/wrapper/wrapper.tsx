@@ -77,9 +77,19 @@ export function Footer() {
                         <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
                         <p>{f.address}</p>
                         <p>{f.address1}</p>
-                        <p>Phone:{f.phone}</p>
-                        <p>Job Seeker: {f.job}</p>
-                        <p>Company: {f.proposal}</p>
+                        <p>
+                            Phone: {f.phone}
+                        </p>
+                        <p>Job Seeker:
+                            <span className='lowercase'>
+                                {f.job}
+                            </span>
+                        </p>
+                        <p>Company:
+                            <span className='lowercase'>
+                                {f.proposal}
+                            </span>
+                        </p>
                     </div>
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Follow Us</h4>

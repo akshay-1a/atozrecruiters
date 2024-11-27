@@ -142,40 +142,95 @@ export const MetaData = {
     },
   },
   industry: {
-    informationTechnology: {
-      href: "information-technology",
-      title: "Information Technology | AToZ Recruiters LLP",
+    fmcg: {
+      href: "fmcg",
+      title: "FMCG Industry | AToZ Recruiters LLP",
       description:
-        "Providing expert HR solutions tailored to the fast-paced IT industry.",
-      keywords: ["IT Staffing", "Tech Talent", "IT Recruitment"],
-    },
-    bankingFinance: {
-      href: "banking",
-      title: "Banking & Finance | AToZ Recruiters LLP",
-      description:
-        "Trusted HR services for the banking and finance sector, ensuring the right fit for critical roles.",
+        "Specialized recruitment services for the FMCG sector, connecting businesses with top-tier talent to drive growth and market leadership.",
       keywords: [
-        "Finance Recruitment",
-        "Banking HR Solutions",
-        "Financial Talent",
+        "FMCG Recruitment",
+        "Consumer Goods Talent",
+        "FMCG Hiring Solutions",
       ],
     },
-    healthcare: {
-      href: "healthcare",
-      title: "Healthcare Industry | AToZ Recruiters LLP",
+    pharmaceuticals: {
+      href: "pharmaceuticals",
+      title: "Pharmaceuticals Industry | AToZ Recruiters LLP",
       description:
-        "Comprehensive staffing solutions for the healthcare sector, ensuring quality patient care.",
-      keywords: ["Healthcare Staffing", "Medical Recruitment", "Healthcare HR"],
+        "Expert HR solutions for the pharmaceutical industry, sourcing exceptional talent to power innovation and compliance.",
+      keywords: ["Pharma Recruitment", "R&D Talent", "Pharmaceutical Hiring"],
     },
-    manufacturing: {
-      href: "manufacturing",
-      title: "Manufacturing | AToZ Recruiters LLP",
+    oilAndGas: {
+      href: "oil-and-gas",
+      title: "Oil and Gas Industry | AToZ Recruiters LLP",
       description:
-        "Efficient workforce solutions for the manufacturing industry, optimizing productivity and growth.",
+        "Tailored recruitment strategies for the oil and gas sector, meeting the unique demands of a dynamic and technical industry.",
       keywords: [
-        "Manufacturing Recruitment",
-        "Industrial Staffing",
-        "Skilled Labor",
+        "Oil and Gas Staffing",
+        "Energy Sector Hiring",
+        "Engineering Talent",
+      ],
+    },
+    bfsi: {
+      href: "bfsi",
+      title: "BFSI Sector | AToZ Recruiters LLP",
+      description:
+        "Comprehensive hiring solutions for the banking, financial services, and insurance sectors to secure top-performing talent.",
+      keywords: [
+        "BFSI Recruitment",
+        "Finance HR Solutions",
+        "Banking Talent Acquisition",
+      ],
+    },
+    salesAndMarketing: {
+      href: "sales-and-marketing",
+      title: "Sales & Marketing | AToZ Recruiters LLP",
+      description:
+        "Strategic recruitment services for sales and marketing professionals to drive growth, branding, and customer engagement.",
+      keywords: [
+        "Sales Recruitment",
+        "Marketing Talent",
+        "Growth Strategy Hiring",
+      ],
+    },
+    realEstate: {
+      href: "real-estate",
+      title: "Real Estate Sector | AToZ Recruiters LLP",
+      description:
+        "Expert staffing solutions for the real estate industry, enabling businesses to build exceptional teams for dynamic projects.",
+      keywords: [
+        "Real Estate Staffing",
+        "Property Sector Hiring",
+        "Construction Talent",
+      ],
+    },
+    retail: {
+      href: "retail",
+      title: "Retail Industry | AToZ Recruiters LLP",
+      description:
+        "Efficient hiring solutions for the retail sector, connecting businesses with skilled professionals for customer-centric roles.",
+      keywords: [
+        "Retail Recruitment",
+        "Customer Service Talent",
+        "Retail HR Solutions",
+      ],
+    },
+    bpoKpo: {
+      href: "bpo-kpo",
+      title: "BPO & KPO | AToZ Recruiters LLP",
+      description:
+        "Focused recruitment for the BPO and KPO industries, ensuring high-performing teams for global service excellence.",
+      keywords: ["BPO Staffing", "KPO Recruitment", "Call Center Talent"],
+    },
+    gulfHiring: {
+      href: "gulf-hiring",
+      title: "Gulf Hiring | AToZ Recruiters LLP",
+      description:
+        "Specialized recruitment for the Gulf region, connecting employers with skilled professionals for international roles.",
+      keywords: [
+        "Gulf Recruitment",
+        "Middle East Talent",
+        "Global Hiring Solutions",
       ],
     },
   },
@@ -271,28 +326,67 @@ export const navItems = {
   ],
   industries: [
     {
-      title: "Information Technology",
-      href: "/information-technology",
-      description: "Software, Hardware, and IT Services",
-      url: "infotech.jpg", // Example image URL
+      title: "FMCG",
+      href: "/industries/fmcg",
+      description:
+        "Specialized recruitment for the Fast-Moving Consumer Goods sector, connecting businesses with skilled talent to drive growth.",
+      url: "fmcg.jpg", // Example image URL
     },
     {
-      title: "Banking & Finance",
-      href: "/banking",
-      description: "Financial Services and Banking",
-      url: "banking.jpg", // Example image URL
+      title: "Pharmaceuticals",
+      href: "/industries/pharmaceuticals",
+      description:
+        "Comprehensive staffing solutions for the pharmaceutical industry, ensuring access to top-tier professionals for innovation and compliance.",
+      url: "pharmaceuticals.jpg", // Example image URL
     },
     {
-      title: "Healthcare",
-      href: "/healthcare",
-      description: "Medical and Healthcare Professionals",
-      url: "healthcare.jpg", // Example image URL
+      title: "Oil and Gas",
+      href: "/industries/oilandgas",
+      description:
+        "Tailored recruitment services for the oil and gas industry, meeting the unique demands of this dynamic and technical sector.",
+      url: "oil-gas.jpg", // Example image URL
     },
     {
-      title: "Manufacturing",
-      href: "/manufacturing",
-      description: "Production and Manufacturing",
-      url: "manufacturing.jpg", // Example image URL
+      title: "BFSI",
+      href: "/industries/bfsi",
+      description:
+        "Expert hiring solutions for banking, financial services, and insurance industries to secure exceptional talent for critical roles.",
+      url: "bfsi.jpg", // Example image URL
+    },
+    {
+      title: "Sales & Marketing",
+      href: "/industries/sales-marketing",
+      description:
+        "Strategic recruitment for sales and marketing professionals, driving growth, branding, and customer engagement.",
+      url: "sales-marketing.jpg", // Example image URL
+    },
+    {
+      title: "Real Estate",
+      href: "/industries/real-estate",
+      description:
+        "Efficient staffing solutions for the real estate sector, building exceptional teams for diverse and dynamic projects.",
+      url: "real-estate.jpg", // Example image URL
+    },
+    {
+      title: "Retail",
+      href: "/industries/retail",
+      description:
+        "Recruitment services for the retail sector, connecting businesses with skilled professionals for customer-centric roles.",
+      url: "retail.jpg", // Example image URL
+    },
+    {
+      title: "BPO & KPO",
+      href: "/industries/bpo-kpo",
+      description:
+        "Focused recruitment for the BPO and KPO industries, ensuring high-performing teams for global service excellence.",
+      url: "bpo-kpo.jpg", // Example image URL
+    },
+    {
+      title: "Gulf Hiring",
+      href: "/industries/gulf-hiring",
+      description:
+        "Specialized recruitment services for the Gulf region, connecting employers with skilled professionals for international roles.",
+      url: "gulf-hiring.jpg", // Example image URL
     },
   ],
 };

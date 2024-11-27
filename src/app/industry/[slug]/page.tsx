@@ -1,9 +1,9 @@
 import React from 'react'
 import { Metadata } from 'next'
-import { Services } from '@/lib/services'
 import { MetaData } from '@/lib/constants'
 import Client from './client'
 import { notFound } from 'next/navigation'
+import { Industries } from '@/lib/industries'
 
 type Props = {
   params: Promise<{
@@ -14,11 +14,11 @@ type Props = {
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const {slug} = await props.params;
   // Find the service metadata based on the URL
-  const serviceMetadata = Object.values(MetaData.services).find(
-    service => service.href === `${slug}`
+  const IndustryMetadata = Object.values(MetaData.industry).find(
+    industry => industry.href === `${slug}`
   )
 
-  if (!serviceMetadata) {
+  if (!IndustryMetadata) {
     return {
       title: "Not Found | A to Z Recruiters LLP",
       description:
@@ -33,15 +33,15 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   }
 
   return {
-    title: serviceMetadata.title,
-    description: serviceMetadata.description,
-    keywords: serviceMetadata.keywords,
+    title: IndustryMetadata.title,
+    description: IndustryMetadata.description,
+    keywords: IndustryMetadata.keywords,
   }
 }
 
 export async function generateStaticParams() {
-  return Object.values(Services).map((service) => ({
-    slug: service.href.replace('/', ''),
+  return Object.values(Industries).map((industry) => ({
+    slug: industry.href.replace('/', ''),
   }))
 }
 
@@ -49,14 +49,14 @@ export async function generateStaticParams() {
 export default async function Page(props: Props) {
   const params = await props.params;
   // Since we're in an async component, we can safely access params
-  const serviceData = Object.values(Services).find(
-    service => service.href === `/${params.slug}`
+  const InsustryData = Object.values(Industries).find(
+    industry => industry.href === `/${params.slug}`
   )
 
-  if (!serviceData) {
+  if (!InsustryData) {
     // Instead of console.log, use notFound() to show the 404 page
     notFound()
   }
 
-  return <Client data={serviceData} />
+  return <Client data={InsustryData} />
 }

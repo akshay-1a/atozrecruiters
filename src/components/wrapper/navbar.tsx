@@ -43,7 +43,7 @@ export default function Navbar() {
                                                 key={item.title}
                                                 title={item.title} 
                                                 url={item.url}
-                                                href={item.href}
+                                                // href={item.href}
                                                 className="w-[18vw]"
                                             >
                                                 {item.description}
@@ -56,13 +56,13 @@ export default function Navbar() {
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger>Industries</NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    <ul className="grid w-[400px] gap-3 p-4 md:w-[340px] md:grid- cols-2">
+                                    <ul className="grid w-[400px] gap-3 p-4 md:w-[600px] md:grid-cols-2">
                                         {navItems.industries.map((item) => (
                                             <ListItem
                                                 key={item.title}
                                                 title={item.title}
                                                 url={item.url}
-                                                href={item.href}
+                                                // href={item.href}
                                             >
                                                 {item.description}
                                             </ListItem>

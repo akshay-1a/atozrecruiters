@@ -40,7 +40,7 @@ body {
 }
 
 .strok {
-    -webkit-text-stroke: 3px #5d6f8845;
+    -webkit-text-stroke: 0.5px #111;
 }
 /* 
 .bg{
