@@ -26,7 +26,7 @@ export default async function sitemap() {
       createSitemapEntry(`/services/${item.href}`)
     ),
     ...Object.values(MetaData.industry).map((item) =>
-      createSitemapEntry(item.href)
+      createSitemapEntry(`/industry/${item.href}`)
     ),
     // ...navItems.company.map((item) => createSitemapEntry(item.href)),
     // ...navItems.services.map((item) => createSitemapEntry(item.href)),

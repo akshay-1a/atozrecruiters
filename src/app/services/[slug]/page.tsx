@@ -1,9 +1,9 @@
 import React from 'react'
 import { Metadata } from 'next'
-import { Services } from '@/lib/services'
 import { MetaData } from '@/lib/constants'
 import Client from './client'
 import { notFound } from 'next/navigation'
+import { Services } from '@/lib/services'
 
 type Props = {
   params: Promise<{

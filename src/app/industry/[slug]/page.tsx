@@ -13,6 +13,7 @@ type Props = {
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const {slug} = await props.params;
+
   // Find the service metadata based on the URL
   const IndustryMetadata = Object.values(MetaData.industry).find(
     industry => industry.href === `${slug}`
