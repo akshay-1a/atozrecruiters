@@ -46,6 +46,94 @@ export interface IndustryData {
 }
 
 export const Industries: Record<string, IndustryData> = {
+  itTelecom: {
+    href: "/it-telecom",
+    title: "IT/ITES & Telecommunication Recruitment Services",
+    header: {
+      title: "🌐 Driving Innovation in IT/ITES & Telecommunication Recruitment",
+      subtitle:
+        "Connecting cutting-edge businesses with exceptional talent in technology and telecommunication.",
+      image: "it-telecom/banner",
+    },
+    overview: {
+      heading:
+        "The Growing Need for Specialized Talent in IT/ITES & Telecom 💻📡",
+      content: [
+        "The IT/ITES & Telecommunication industries form the backbone of the digital age, driving innovation and global connectivity. These sectors demand highly skilled professionals who can handle complex systems, adapt to evolving technologies, and deliver scalable solutions.",
+        "At AToZ Recruiters LLP, we excel in bridging the gap between industry leaders and exceptional talent. Whether you're looking for software developers, network engineers, or data analysts, our expertise ensures that every hire aligns with your organizational objectives and contributes to growth and transformation.",
+      ],
+      image: "it-telecom/overview",
+      caption: "IT & Telecommunication Industry Recruitment Solutions 🌐",
+    },
+    stats: {
+      heading: "IT/ITES & Telecom Recruitment by the Numbers",
+      items: [
+        { value: "98%", label: "Client Satisfaction Rate" },
+        { value: "1000+", label: "Tech & Telecom Professionals Placed" },
+        { value: "36hrs", label: "Average Turnaround Time" },
+        { value: "25+", label: "Years of Industry Expertise" },
+      ],
+    },
+    services: {
+      heading: "Our IT/ITES & Telecom-Focused Services 🚀",
+      list: [
+        {
+          title: "Software Development & Engineering",
+          description:
+            "Recruit top-tier software developers, engineers, and architects with expertise in modern programming languages, frameworks, and agile methodologies. Our candidates deliver reliable, innovative, and efficient solutions tailored to your business needs.",
+        },
+        {
+          title: "Networking & Cybersecurity",
+          description:
+            "Secure professionals specializing in network design, infrastructure, and cybersecurity to maintain robust and secure IT environments. Our experts help protect sensitive data and ensure seamless communication across platforms.",
+        },
+        {
+          title: "Data Analytics & Cloud Solutions",
+          description:
+            "Leverage the power of data with our recruitment services for data analysts, AI specialists, and cloud architects. Our candidates help organizations make data-driven decisions and implement scalable cloud solutions for operational efficiency.",
+        },
+        {
+          title: "Telecommunication Experts",
+          description:
+            "We connect you with telecom professionals skilled in network deployment, optimization, and maintenance. These specialists ensure seamless connectivity and scalability in an ever-expanding global network.",
+        },
+      ],
+    },
+    callToAction: {
+      heading: "📞 Build Your IT/Telecom Dream Team Today!",
+      bg: "it-telecom/abstract",
+      content:
+        "Partner with AToZ Recruiters LLP to find top talent tailored to your IT/ITES and Telecommunication needs. Let us simplify your hiring process while you focus on driving technological innovation and success.",
+      buttonText: "Get Started",
+      buttonLink: "/contact",
+    },
+    faqs: {
+      heading: "Frequently Asked Questions ❓",
+      list: [
+        {
+          question:
+            "Why is specialized recruitment important for IT/ITES & Telecom?",
+          answer:
+            "These industries require highly technical expertise to keep pace with constant innovation and global demands. Specialized recruitment ensures that you onboard professionals with the right skills, certifications, and experience to excel in their roles and drive business success.",
+        },
+        {
+          question: "Do you cater to startups in the tech and telecom sectors?",
+          answer:
+            "Yes, we provide flexible and scalable hiring solutions tailored to startups. From finding dynamic developers to experienced strategists, we ensure your team is equipped to meet ambitious goals in a competitive landscape.",
+        },
+        {
+          question: "What roles do you specialize in for these industries?",
+          answer:
+            "We specialize in hiring for roles such as software developers, data scientists, IT architects, network engineers, cybersecurity analysts, and telecom experts. Our network ensures access to the best talent across diverse domains.",
+        },
+        {
+          question: "How do you ensure candidates meet technical requirements?",
+          answer:
+            "We use rigorous assessment methods, including technical skill evaluations, industry-specific tests, and in-depth interviews. This ensures that every candidate matches your specific technical and cultural requirements.",
+        },
+      ],
+    },
+  },
   fmcg: {
     href: "/fmcg",
     title: "FMCG Recruitment Services",

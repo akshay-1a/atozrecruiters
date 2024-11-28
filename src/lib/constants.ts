@@ -142,6 +142,19 @@ export const MetaData = {
     },
   },
   industry: {
+    itTelecom: {
+      href: "it-telecom",
+      title: "IT/ITES & Telecommunication Recruitment | AToZ Recruiters LLP",
+      description:
+        "Expert recruitment services for IT, ITES, and Telecommunication industries, sourcing top-tier professionals to drive innovation and operational success.",
+      keywords: [
+        "IT Recruitment",
+        "ITES Hiring Solutions",
+        "Telecommunication Talent Acquisition",
+        "IT Workforce Solutions",
+        "Tech Industry Recruitment",
+      ],
+    },
     fmcg: {
       href: "fmcg",
       title: "FMCG Industry | AToZ Recruiters LLP",
@@ -325,6 +338,13 @@ export const navItems = {
     },
   ],
   industries: [
+    {
+      title: "IT/ITES & Telecommunication",
+      href: "/industry/it-telecom",
+      description:
+        "Comprehensive hiring solutions for IT, IT-enabled services, and Telecommunication industries, bridging the gap between cutting-edge technology and skilled professionals.",
+      url: "it-telecom.jpg", // Example image URL
+    },
     {
       title: "FMCG",
       href: "/industry/fmcg",
