@@ -32,7 +32,6 @@ export function PaymentForm({ formFields, services, qrCodeImage, onSubmit }: Pay
 
         const formElement = event.currentTarget
         const formData = new FormData(formElement)
-        console.log(formData)
 
         // Add the selected service name to the form data
         if (selectedService) {
@@ -52,6 +51,8 @@ export function PaymentForm({ formFields, services, qrCodeImage, onSubmit }: Pay
             setError('An error occurred while submitting the form. Please try again.')
         } finally {
             setIsSubmitting(false)
+            formElement.reset() // Reset form after successful submission
+
         }
     }
 
@@ -178,8 +179,8 @@ export function PaymentForm({ formFields, services, qrCodeImage, onSubmit }: Pay
                                     src={qrCodeImage}
                                     alt="Payment QR Code"
                                     width={200}
-                                    height={200}
-                                    className="mx-auto rounded-lg shadow-md object-contain"
+                                    height={600}
+                                    className="mx-auto rounded-lg shadow-md object-contain w-full"
                                 />
                             </motion.div>
                         )}
