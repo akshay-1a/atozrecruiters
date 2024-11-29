@@ -22,7 +22,7 @@ export default function Header({ data }: {
         objectFit="cover"
         className="absolute inset-0 z-0"
       />
-      <div className="relative w-full h-full flex flex-col justify-center items-center bg-cyan-950/50 hover:bg-cyan-950/80 transition-color ease-linear duration-300 text-center">
+      <div className="relative w-full h-full flex flex-col justify-center items-center bg-cyan-950/40 hover:bg-cyan-950/65 transition-color ease-linear duration-300 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
