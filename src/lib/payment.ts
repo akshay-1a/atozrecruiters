@@ -75,7 +75,7 @@ export const paymentPageData: PaymentPageData = {
     },
     {
       name: "paymentScreenshot",
-      label: "Upload Payment Confirmation",
+      label: "🔼Payment Screenshot",
       type: "file",
       required: true,
     },

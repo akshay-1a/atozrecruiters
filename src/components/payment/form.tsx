@@ -73,16 +73,16 @@ export function PaymentForm({ formFields, services, qrCodeImage, onSubmit }: Pay
     return (
         <Card className="w-full h-full max-w-4xl mx-auto bg-gradient-to-br from-slate-50 to-cyan-50 shadow-lg">
             <div className="flex flex-col md:flex-row h-full">
-                <div className="md:w-3/5 h-full p-6 flex flex-col justify-between" >
+                <div className="md:w-3/5 h-full md:p-6 flex flex-col justify-between" >
                     <CardHeader>
-                        <CardTitle className="text-2xl font-bold text-slate-700">Payment Details</CardTitle>
+                        <CardTitle className="text-2xl font-bold text-cyan-900">Payment Details</CardTitle>
                     </CardHeader>
                     <CardContent>
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <div className="grid grid-cols-2 gap-4 h-full">
                                 {formFields.map((field) => (
                                     <div key={field.name} className={`space-y-2 `}>
-                                        <Label htmlFor={field.name} className="text-sm font-medium text-gray-700">{field.label}</Label>
+                                        <Label htmlFor={field.name} className="text-sm font-medium text-slate-700">{field.label}</Label>
                                         {field.type === "select" ? (
                                             <Select name={field.name} onValueChange={handleServiceChange}>
                                                 <SelectTrigger>
@@ -137,7 +137,7 @@ export function PaymentForm({ formFields, services, qrCodeImage, onSubmit }: Pay
                                     <span className="font-bold">
                                         {" ₹" + selectedService.amount}
                                     </span>
-                                    <p className="text-sm text-gray-600 mt-1">Please pay and submit the form with required details.</p>
+                                    <p className="text-sm text-slate-600 mt-1">Please pay and submit the form with required details.</p>
                                 </div>
                             )}
                             <Button
@@ -151,7 +151,7 @@ export function PaymentForm({ formFields, services, qrCodeImage, onSubmit }: Pay
                         {error && <p className="text-red-500 mt-2">{error}</p>}
                     </CardContent>
                 </div>
-                <div className="md:w-2/5 p-6 bg-cyan-100 relative overflow-hidden rounded-r-lg w-full">
+                <div className="md:w-2/5 p-6 bg-cyan-100 relative overflow-hidden rounded-b-lg md:rounded-r-lg md:rounded-bl-none w-full">
                     <AnimatePresence>
                         {isSubmitting && !isFlipping && (
                             <motion.div
@@ -174,7 +174,7 @@ export function PaymentForm({ formFields, services, qrCodeImage, onSubmit }: Pay
                                 transition={{ duration: 0.5 }}
                                 className="h-full flex flex-col justify-center"
                             >
-                                <h3 className="text-lg font-semibold mb-4 text-cyan-800">Scan QR Code to Pay</h3>
+                                <h3 className="text-lg font-black mb-4 text-cyan-800">Scan QR Code to Pay</h3>
                                 <Image
                                     src={qrCodeImage}
                                     alt="Payment QR Code"

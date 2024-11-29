@@ -29,9 +29,9 @@ export default function PaymentPage() {
     const stepsIcons = [CreditCard, DollarSign, Smartphone, FileCheck, Mail, Send]
 
     return (
-        <div className="container mx-auto py-12 px-4 md:p-28 bg-gradient-to-b from-slate-50 to-white min-h-screen">
+        <div className="container mx-auto py-20 px-5 md:p-28 bg-gradient-to-b from-slate-50 to-white min-h-screen">
             <motion.h1
-                className="text-5xl font-extrabold pb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-slate-600 via-slate-800 to-slate-600"
+                className=" text-4xl md:text-5xl font-black pb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-slate-800 via-cyan-700 to-slate-800"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -58,7 +58,7 @@ export default function PaymentPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
             >
-                <h2 className="text-3xl font-bold mb-8 text-center text-slate-700">How to Make a Payment</h2>
+                <h2 className="text-3xl md:text-4xl font-black mb-8 text-center text-slate-700">How to Make a Payment</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {paymentPageData.paymentSteps.map((step, index) => (
                         <motion.div
