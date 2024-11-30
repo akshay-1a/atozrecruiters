@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { JobListing } from '@/types';
 import { X, RefreshCw, PlusIcon } from 'lucide-react';
+import { Clip } from '../animations/clip';
 // import { PlusIcon } from '@heroicons/react/24/solid';
 
 interface SearchAndFilterProps {
@@ -42,7 +43,7 @@ export function SearchAndFilter({ jobs, onFilter }: SearchAndFilterProps) {
     };
 
     return (
-        <div className="mb-8 p-6 bg-white rounded-lg shadow-md">
+        <Clip start='centerY' className="mb-8 p-6 bg-white rounded-lg shadow-md">
             <div className="flex mb-4">
                 <div className="relative flex-grow">
                     <input
@@ -92,7 +93,7 @@ export function SearchAndFilter({ jobs, onFilter }: SearchAndFilterProps) {
                     </div>
                 </div>
             </div>
-        </div>
+        </Clip>
     );
 }
 
