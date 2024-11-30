@@ -43,13 +43,13 @@ export const MetaData = {
         "Learn about our journey, values, and dedication to connecting talent with opportunity.",
       keywords: ["About A to Z", "Our Story", "HR Solutions"],
     },
-    ourteam: {
-      href: "team",
-      title: "Our Team | AToZ Recruiters LLP",
-      description:
-        "Meet the minds behind our success, driving innovation in recruitment and staffing.",
-      keywords: ["HR Team", "Recruitment Experts", "Staffing Professionals"],
-    },
+    // ourteam: {
+    //   href: "team",
+    //   title: "Our Team | AToZ Recruiters LLP",
+    //   description:
+    //     "Meet the minds behind our success, driving innovation in recruitment and staffing.",
+    //   keywords: ["HR Team", "Recruitment Experts", "Staffing Professionals"],
+    // },
     careers: {
       href: "careers",
       title: "Careers | AToZ Recruiters LLP",
@@ -63,6 +63,17 @@ export const MetaData = {
       description:
         "Get in touch with us for personalized HR solutions and expert advice.",
       keywords: ["Contact A to Z", "HR Solutions", "Get in Touch"],
+    },
+    payment: {
+      href: "payment",
+      title: "Payment Gateway | AToZ Recruiters LLP",
+      description:
+        "Submit payments securely for our recruitment and HR services. Follow simple steps to complete your transaction with ease.",
+      keywords: [
+        "UPI Payment",
+        "Secure Phonepe Transactions",
+        "Recruitment Services Payment",
+      ],
     },
   },
   services: {
