@@ -238,8 +238,8 @@ export const Services = {
     keyBenefits: {
       title: "Key Benefits",
       benefits: [
-        "Scalable Workforce \n\nOur outsourcing services provide you with a flexible workforce that can adapt to your changing business needs, ensuring you always have the right team size for any project.",
-        "Cost-Effective Solutions \nReduce overhead costs associated with hiring, training, and retaining full-time employees. Our services help you optimize your budget without compromising on quality.",
+        "Scalable Workforce \nOur services provide you with a flexible workforce that can adapt to changing business needs, ensuring you always have right team size for any project.",
+        "Cost-Effective Solutions \nReduce overhead costs associated with hiring, training, and retaining full-time employees. We help you optimize your budget without compromising on quality.",
         "Expert Talent Pool \nGain access to a wide network of skilled professionals across various industries, ensuring you have the right expertise for every task or project.",
         "Focus on Core Business \nBy outsourcing non-core activities, your team can concentrate on strategic initiatives, driving growth and innovation in your organization.",
       ],
