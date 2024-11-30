@@ -1,6 +1,7 @@
 import { JobListing } from '@/types';
 import { motion } from 'framer-motion';
 import { MapPin, DollarSign, Clock, GraduationCap, Mail, Phone } from 'lucide-react';
+import { redirect } from 'next/navigation';
 
 interface JobListingsProps {
     jobs: JobListing[];
@@ -56,7 +57,7 @@ export default function JobListings({ jobs }: JobListingsProps) {
                         </div>
                     </div>
                     <div className="absolute bg-cyan-800 p-4 bottom-0 left-0 right-0">
-                        <button className="w-full bg-white text-cyan-800 font-semibold py-2 px-4 rounded-md hover:bg-cyan-100 transition-colors">
+                        <button onClick={() => {redirect("/contact");}} className="w-full bg-white text-cyan-800 font-semibold py-2 px-4 rounded-md hover:bg-cyan-100 transition-colors">
                             Apply Now
                         </button>
                     </div>
