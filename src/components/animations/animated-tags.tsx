@@ -47,7 +47,7 @@ export function H3({ children, className = "" }: Readonly<{
 }>) {
     return (
         <Fade>
-            <h3 className={`text-3xl sm:text-4xl md:text-6xl font-sans max-w-7xl font-extrabold  ${className}`}>
+            <h3 className={`text-3xl sm:text-2xl md:text-3xl font-sans max-w-7xl font-extrabold mx-auto text-center  ${className}`}>
                 {children}
             </h3>
         </Fade>

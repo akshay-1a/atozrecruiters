@@ -6,6 +6,18 @@ export interface NavItem {
   url: string;
 }
 
+
+export interface JobListing {
+  jobTitle: string;
+  location: string;
+  salary: string;
+  experience: string;
+  qualification: string;
+  keyResponsibilities: string;
+  contactEmail: string;
+  phone: string;
+}
+
 export interface CompanyData {
   slug: string;
   title: string;

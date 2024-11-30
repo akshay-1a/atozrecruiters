@@ -62,6 +62,18 @@ export default function MobileNav() {
                         animate="visible"
                         variants={menuVariants}
                     >
+                        <motion.div
+                            variants={itemVariants}
+                            className="mt-4 px- 4"
+                        >
+                            <Link
+                                href="/careers"
+                                onClick={() => setIsOpen(false)}
+                                className="block py-3 px-4 text-sm font-medium text-sky-600 hover:bg-sky-50 rounded-lg transition-colors"
+                            >
+                                Careers
+                            </Link>
+                        </motion.div>
                         <Accordion type="single" collapsible className="space-y-2">
                             {/* <AccordionItem value="company" className="border-none">
                                 <AccordionTrigger className="py-3 px-4 text-sm font-medium hover:bg-sky-50 rounded-lg">

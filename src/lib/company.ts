@@ -177,3 +177,4 @@ export const companyGroups = [
   companies.slice(0, Math.ceil(companies.length / 2)),
   companies.slice(Math.ceil(companies.length / 2)),
 ];
+

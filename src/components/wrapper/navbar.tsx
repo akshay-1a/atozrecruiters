@@ -34,6 +34,14 @@ export default function Navbar() {
 
                     <NavigationMenu className="relative hidden md:block">
                         <NavigationMenuList className="space-x-">
+
+                            <NavigationMenuItem>
+                                <Link href="/careers" legacyBehavior passHref>
+                                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                        Careers
+                                    </NavigationMenuLink>
+                                </Link>
+                            </NavigationMenuItem>
                             <NavigationMenuItem className="">
                                 <NavigationMenuTrigger>Services</NavigationMenuTrigger>
                                 <NavigationMenuContent className="w-full  relative ">
