@@ -34,7 +34,7 @@ export const About = {
         image: "recognition",
       },
       {
-        year: 2023,
+        year: 2024,
         title: "Global Expansion",
         description:
           "Opened international offices to better serve our global client base and talent pool.",

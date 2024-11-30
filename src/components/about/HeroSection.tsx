@@ -18,7 +18,7 @@ export function HeroSection({ data }: HeroProps) {
       >
         <h1 className="text-5xl md:text-8xl md:max-w-4xl font-bold mb-4">{data.headline}</h1>
         <p className="text-lg md:text-xl md:max-w-3xl pb-5">{data.tagline}</p>
-        <Button className='bg-cyan-300 text-cyan-950 font-bold p-4 text-lg' size="lg">{data.cta}</Button>
+        <Button className='bg-cyan-300 hover:bg-cyan-600 text-cyan-950 hover:text-cyan-100 font-bold p-4 text-lg' size="lg">{data.cta}</Button>
       </Fade>
       <motion.div
         className="absolute inset-0 z-0"
