@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { JobListing } from '@/types';
 import JobListings from '@/components/careers/job-listings';
 import { SearchAndFilter } from '@/components/careers/search-filter';
-import { H1, H3, P } from '@/components/animations/animated-tags';
 import Link from 'next/link';
 import { Clip, Fade } from '@/components/animations/clip';
 

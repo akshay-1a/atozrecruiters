@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { JobListing } from '@/types';
-import { X, RefreshCw, PlusIcon } from 'lucide-react';
+import { X, PlusIcon } from 'lucide-react';
 import { Clip } from '../animations/clip';
 // import { PlusIcon } from '@heroicons/react/24/solid';
 

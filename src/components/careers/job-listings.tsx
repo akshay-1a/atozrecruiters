@@ -1,6 +1,6 @@
 import { JobListing } from '@/types';
 import { motion } from 'framer-motion';
-import { MapPin, DollarSign, Clock, GraduationCap, Mail, Phone, FileText, IndianRupee } from 'lucide-react';
+import { MapPin, Clock, GraduationCap, Mail, Phone, FileText, IndianRupee } from 'lucide-react';
 import { redirect } from 'next/navigation';
 
 interface JobListingsProps {
