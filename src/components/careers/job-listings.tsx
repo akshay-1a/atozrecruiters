@@ -39,7 +39,7 @@ export default function JobListings({ jobs }: JobListingsProps) {
                                 {job.qualification || 'Qualification not specified'}
                             </span>
                         </div>
-                        {job.jdLink && (
+                        {job.jd && (
                             <div className="flex items-center text-slate-600 mb-2">
                                 <FileText size={18} className="mr-2 text-cyan-600" />
                                 <a
@@ -54,7 +54,7 @@ export default function JobListings({ jobs }: JobListingsProps) {
                         )}
                         {/* <p className="text-slate-700 mb-2">
                             <span className='font-bold'>Jd Link: <br/></span>
-                            {job.jdLink || 'No responsibilities specified'}
+                            {job.jd || 'No responsibilities specified'}
                         </p> */}
                         <div className="flex items-center text-slate-600 mb-2">
                             <Mail size={18} className="mr-2 text-cyan-600" />
