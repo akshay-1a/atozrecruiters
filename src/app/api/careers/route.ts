@@ -37,7 +37,7 @@ async function fetchAndParseCSV(): Promise<JobListing[]> {
       salary: row[headers.indexOf("Salary")] || "",
       experience: row[headers.indexOf("Experience")] || "",
       qualification: row[headers.indexOf("Qualification")] || "",
-      jdLink: row[headers.indexOf("JD Link")] || "",
+      jd: row[headers.indexOf("JD")] || "",
       contactEmail: row[headers.indexOf("Contact Email")] || "",
       phone: row[headers.indexOf("Phone")] || "",
     };

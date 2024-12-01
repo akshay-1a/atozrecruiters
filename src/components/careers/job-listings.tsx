@@ -43,7 +43,7 @@ export default function JobListings({ jobs }: JobListingsProps) {
                             <div className="flex items-center text-slate-600 mb-2">
                                 <FileText size={18} className="mr-2 text-cyan-600" />
                                 <a
-                                    href={job.jdLink}
+                                    href={job.jd}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-cyan-600 hover:text-cyan-800 transition-colors"
