@@ -13,7 +13,7 @@ export interface JobListing {
   salary: string;
   experience: string;
   qualification: string;
-  keyResponsibilities: string;
+  jdLink: string;
   contactEmail: string;
   phone: string;
 }

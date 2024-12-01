@@ -23,8 +23,7 @@ export function SearchAndFilter({ jobs, onFilter }: SearchAndFilterProps) {
     useEffect(() => {
         const filteredJobs = jobs.filter(job => {
             const matchesSearch =
-                job.jobTitle.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                job.keyResponsibilities.toLowerCase().includes(searchTerm.toLowerCase());
+                job.jobTitle.toLowerCase().includes(searchTerm.toLowerCase());
             const matchesLocation = selectedLocations.length === 0 || selectedLocations.includes(job.location);
 
             return matchesSearch && matchesLocation;

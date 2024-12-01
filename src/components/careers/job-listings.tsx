@@ -1,6 +1,6 @@
 import { JobListing } from '@/types';
 import { motion } from 'framer-motion';
-import { MapPin, DollarSign, Clock, GraduationCap, Mail, Phone } from 'lucide-react';
+import { MapPin, DollarSign, Clock, GraduationCap, Mail, Phone, FileText, IndianRupee } from 'lucide-react';
 import { redirect } from 'next/navigation';
 
 interface JobListingsProps {
@@ -8,7 +8,7 @@ interface JobListingsProps {
 }
 
 export default function JobListings({ jobs }: JobListingsProps) {
-    // console.log("Jobs data:", jobs);
+    console.log("Jobs data:", jobs);
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {jobs.map((job, index) => (
@@ -26,7 +26,7 @@ export default function JobListings({ jobs }: JobListingsProps) {
                             <span className="text-slate-800">{job.location || 'Location not specified'}</span>
                         </div>
                         <div className="flex items-center text-slate-600 mb-2">
-                            <DollarSign size={18} className="mr-2 text-cyan-600" />
+                            <IndianRupee size={18} className="mr-2 text-cyan-600" />
                             <span className="text-slate-800">{job.salary || 'Salary not specified'}</span>
                         </div>
                         <div className="flex items-center text-slate-600 mb-2">
@@ -34,15 +34,28 @@ export default function JobListings({ jobs }: JobListingsProps) {
                             <span className="text-slate-800">{job.experience || 'Experience not specified'}</span>
                         </div>
                         <div className="flex items-center text-slate-600 mb-2">
-                            <GraduationCap size={18} className="mr-2 text-cyan-600" />
-                            <span className="text-slate-800">
+                            <GraduationCap size={20} className="mr-2 text-cyan-600 flex-shrink-0" />
+                            <span className="text-slate-800 text-wrap">
                                 {job.qualification || 'Qualification not specified'}
                             </span>
                         </div>
-                        <p className="text-slate-700 mb-2">
-                            <span className='font-bold'>Key Responsibilities: <br/></span>
-                            {job.keyResponsibilities || 'No responsibilities specified'}
-                        </p>
+                        {job.jdLink && (
+                            <div className="flex items-center text-slate-600 mb-2">
+                                <FileText size={18} className="mr-2 text-cyan-600" />
+                                <a
+                                    href={job.jdLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-cyan-600 hover:text-cyan-800 transition-colors"
+                                >
+                                    View Job Description
+                                </a>
+                            </div>
+                        )}
+                        {/* <p className="text-slate-700 mb-2">
+                            <span className='font-bold'>Jd Link: <br/></span>
+                            {job.jdLink || 'No responsibilities specified'}
+                        </p> */}
                         <div className="flex items-center text-slate-600 mb-2">
                             <Mail size={18} className="mr-2 text-cyan-600" />
                             <a href={`mailto:${job.contactEmail}`} className="text-slate-800 hover:text-cyan-800 transition-colors text-wrap">
