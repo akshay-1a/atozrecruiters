@@ -42,7 +42,7 @@ interface ContactPageProps {
 export default function ContactPage({ contactData }: ContactPageProps) {
     const [activeTab, setActiveTab] = useState('candidate')
 
-    const handleSubmit = (formKey: string, formData: Record<string, string>) => {
+    const handleSubmit = (formKey: string, formData: FormData) => {
         console.log(`Form submitted for ${formKey}:`, formData)
         // Add your form submission logic here
     }

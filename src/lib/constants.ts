@@ -679,8 +679,8 @@ export const contactData = () => {
           { name: "location", label: "Location", type: "text", required: true },
           {
             name: "resume",
-            label: "(Google Drive link of resume)",
-            type: "url",
+            label: "Upload Resume",
+            type: "file",
             required: true,
           },
         ],

@@ -1,7 +1,4 @@
-"use server";
-
-// app/api/contact/route.ts
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 // Email templates
@@ -14,7 +11,7 @@ const getCandidateEmailTemplate = (data: any) => `
 <p><strong>Contact:</strong> ${data.contact}</p>
 <p><strong>Email:</strong> ${data.email}</p>
 <p><strong>Location:</strong> ${data.location}</p>
-${data.resume ? `<p><strong>Resume Link:</strong> ${data.resume}</p>` : ""}
+<p><strong>Resume:</strong> Attached</p>
 `;
 
 const getClientEmailTemplate = (data: any) => `
@@ -37,10 +34,10 @@ const createTransporter = () => {
   }
 
   return nodemailer.createTransport({
-    service: "Zoho", // Add this line
+    service: "Zoho",
     host: "smtp.zoho.com",
     port: 465,
-    secure: true, // true for 465 port
+    secure: true,
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
@@ -60,7 +57,7 @@ const getRecipientEmail = (formType: FormType) => {
   return recipients[formType];
 };
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
   try {
     // Validate environment variables
     if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
@@ -71,8 +68,9 @@ export async function POST(request: Request) {
       );
     }
 
-    const data = await request.json();
-    const { formType, ...formData } = data;
+    const formData = await request.formData();
+    const formType = formData.get("formType") as FormType;
+
     // Validate form type
     if (formType !== "candidate" && formType !== "client") {
       return NextResponse.json(
@@ -80,26 +78,47 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+
+    const data: Record<string, string> = {};
+    formData.forEach((value, key) => {
+      if (typeof value === "string") {
+        data[key] = value;
+      }
+    });
+
     const emailTemplate =
       formType === "candidate"
-        ? getCandidateEmailTemplate(formData)
-        : getClientEmailTemplate(formData);
+        ? getCandidateEmailTemplate(data)
+        : getClientEmailTemplate(data);
 
     const subject =
       formType === "candidate"
-        ? `New Candidate Application: ${formData.fullName}`
-        : `New Business Proposal: ${formData.organization}`;
+        ? `New Candidate Application: ${data.fullName}`
+        : `New Business Proposal: ${data.organization}`;
 
     const transporter = createTransporter();
     const recipientEmail = getRecipientEmail(formType);
 
-    const mailOptions = {
+    const mailOptions: nodemailer.SendMailOptions = {
       from: process.env.EMAIL_USER,
       to: recipientEmail,
-      replyTo: formData.email || process.env.EMAIL_USER,
+      replyTo: data.email || process.env.EMAIL_USER,
       subject: subject,
       html: emailTemplate,
     };
+
+    if (formType === "candidate") {
+      const resumeFile = formData.get("resume") as File;
+      if (resumeFile) {
+        const buffer = await resumeFile.arrayBuffer();
+        mailOptions.attachments = [
+          {
+            filename: resumeFile.name,
+            content: Buffer.from(buffer),
+          },
+        ];
+      }
+    }
 
     try {
       // Verify connection first

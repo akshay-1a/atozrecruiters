@@ -6,7 +6,6 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import Image from "next/image"
 
-
 interface FormField {
     name: string
     label: string
@@ -24,7 +23,7 @@ interface FormComponentProps {
         purpose: string
         fields: FormField[]
     }
-    onSubmit: (formData: Record<string, string>) => void
+    onSubmit: (formData: FormData) => void
 }
 
 export function FormComponent({ formtype, imgCap, imgUrl, imgPos, formData, onSubmit }: FormComponentProps) {
@@ -40,24 +39,12 @@ export function FormComponent({ formtype, imgCap, imgUrl, imgPos, formData, onSu
 
         const formElement = event.currentTarget
         const formData = new FormData(formElement)
-        const data: Record<string, string> = {}
-        formData.forEach((value, key) => {
-            data[key] = value.toString()
-        })
-        // onSubmit(data)
-        try {
-            // Determine form type from the inner heading
-            const formType = data.currentRole ? 'candidate' : 'client'
+        formData.append('formType', formtype)
 
+        try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    formType,
-                    ...data
-                }),
+                body: formData,
             })
 
             if (!response.ok) {
@@ -65,8 +52,8 @@ export function FormComponent({ formtype, imgCap, imgUrl, imgPos, formData, onSu
             }
 
             setSuccess(true)
-            formElement.reset() // Reset form after successful submission
-            onSubmit(data)
+            formElement.reset()
+            onSubmit(formData)
 
         } catch (error) {
             console.error('Error submitting form:', error)
@@ -89,13 +76,21 @@ export function FormComponent({ formtype, imgCap, imgUrl, imgPos, formData, onSu
                             Form submitted successfully! We'll get back to you soon.
                         </div>
                     )}
-                    <form onSubmit={handleSubmit} className="space-y-4">
+                    <form onSubmit={handleSubmit} className="space-y-4" encType="multipart/form-data">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {formData.fields.map((field) => (
                                 <div key={field.name} className={`space-y-2 ${field.type === "textarea" ? "md:col-span-2" : ""}`} >
                                     <Label htmlFor={field.name}>{field.label}</Label>
                                     {field.type === "textarea" ? (
                                         <Textarea id={field.name} name={field.name} required={field.required} />
+                                    ) : field.type === "file" ? (
+                                        <Input
+                                            id={field.name}
+                                            name={field.name}
+                                            type="file"
+                                            required={field.required}
+                                            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                                        />
                                     ) : (
                                         <Input
                                             id={field.name}
@@ -117,8 +112,6 @@ export function FormComponent({ formtype, imgCap, imgUrl, imgPos, formData, onSu
         </Card>
     )
 }
-
-
 
 export function FormImage({
     imgCap,
@@ -164,3 +157,4 @@ export function FormImage({
         </div>
     );
 }
+
