@@ -424,7 +424,7 @@ export const navItems = {
 
 export const homepage = {
   hero: {
-    headline: "Connecting Talent with Opportunity, A to Z",
+    headline: "Connecting Talent with Opportunity, AToZ",
     para: "At AToZ Recruiters LLP, we specialize in bridging the gap between exceptional talent and thriving businesses. Our tailored recruitment solutions ensure that every hire drives growth and success.",
     cta: "Start Your Journey with Us Today",
     // public/homepage/...images.jpg
