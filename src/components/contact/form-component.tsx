@@ -89,6 +89,7 @@ export function FormComponent({ formtype, imgCap, imgUrl, imgPos, formData, onSu
                                             name={field.name}
                                             type="file"
                                             required={field.required}
+                                            className="file:h-full p-0 file:text-sm file:font-semibold file:bg-stone-200 file:text-stone-900 hover:file:bg-stone-300"
                                             accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
                                         />
                                     ) : (
