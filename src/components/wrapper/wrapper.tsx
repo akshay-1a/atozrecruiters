@@ -5,8 +5,6 @@ import Link from 'next/link'
 import Navbar from './navbar';
 import Whatsapp from './whatsapp';
 import { Footer as f } from '@/lib/constants';
-import { AnimatePresence, motion } from 'framer-motion';
-import { usePathname } from 'next/navigation';
 
 
 export default function Wrapper({
