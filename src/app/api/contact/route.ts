@@ -5,13 +5,15 @@ import nodemailer from "nodemailer";
 const getCandidateEmailTemplate = (data: any) => `
 <h2>New Candidate Application</h2>
 <p><strong>Full Name:</strong> ${data.fullName}</p>
-<p><strong>Father's Name:</strong> ${data.fathersName}</p>
-<p><strong>Experience:</strong> ${data.experience} years</p>
-<p><strong>Current Role:</strong> ${data.currentRole}</p>
 <p><strong>Contact:</strong> ${data.contact}</p>
 <p><strong>Email:</strong> ${data.email}</p>
-<p><strong>Location:</strong> ${data.location}</p>
-<p><strong>Resume:</strong> Attached</p>
+<p><strong>Experience:</strong> ${data.experience} years</p>
+<p><strong>Notice Period / LWD:</strong> ${data.noticePeriod}</p>
+<p><strong>Current / Last salary:</strong> ${data.currentSalary}</p>
+<p><strong>Expected Salary:</strong> ${data.expectedSalary}</p>
+<p><strong>Preferred Job Role:</strong> ${data.jobRole}</p>
+<p><strong>Preferred Job Location:</strong> ${data.location}</p>
+<p><strong>Resume:</strong> View Attached documents</p>
 `;
 
 const getClientEmailTemplate = (data: any) => `
