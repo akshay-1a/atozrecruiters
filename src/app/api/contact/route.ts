@@ -54,7 +54,7 @@ type FormType = "candidate" | "client";
 // Function to get the appropriate recipient email based on form type
 const getRecipientEmail = (formType: FormType) => {
   const recipients = {
-    candidate: "resume@atozrecruiters.com",
+    candidate: "akshay1.py@gmail.com",
     client: "proposal@atozrecruiters.com",
   } as const;
 
@@ -86,8 +86,7 @@ async function addToGoogleSheet(
             data.currentSalary,
             data.expectedSalary,
             data.jobRole,
-            data.location,
-            "Attachment in email",
+            data.location
           ],
         ]
       : [
@@ -107,7 +106,7 @@ async function addToGoogleSheet(
   try {
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: formType === "candidate" ? "Candidates!A:J" : "Clients!A:I",
+      range: formType === "candidate" ? "Candidates!A:I" : "Clients!A:I",
       valueInputOption: "USER_ENTERED",
       requestBody: { values },
     });
