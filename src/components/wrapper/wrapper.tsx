@@ -15,7 +15,9 @@ export default function Wrapper({
     return (
         <div className='text-slate-950'>
             <Navbar />
+            <div className='select-none'>
             {children}
+            </div>
             <Footer />
             <Whatsapp />
         </div>
