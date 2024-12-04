@@ -81,7 +81,7 @@ export const paymentPageData: PaymentPageData = {
     },
     {
       name: "referenceNumber",
-      label: "Transaction Reference",
+      label: "Transaction Reference (UTR No)",
       type: "text",
       required: true,
       placeholder: "e.g., TXN123456",
