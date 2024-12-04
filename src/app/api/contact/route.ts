@@ -54,7 +54,8 @@ type FormType = "candidate" | "client";
 // Function to get the appropriate recipient email based on form type
 const getRecipientEmail = (formType: FormType) => {
   const recipients = {
-    candidate: "akshay1.py@gmail.com",
+    // candidate: "akshay1.py@gmail.com",
+    candidate: "resume@atozrecruiters.com",
     client: "proposal@atozrecruiters.com",
   } as const;
 

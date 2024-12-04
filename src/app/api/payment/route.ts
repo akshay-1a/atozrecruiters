@@ -94,8 +94,8 @@ export async function POST(request: Request) {
 
     const mailOptions: nodemailer.SendMailOptions = {
       from: process.env.EMAIL_USER,
-      // to: "atozrecruitersllp@gmail.com",
-      to: "akshay1.py@gmail.com",
+      to: "atozrecruitersllp@gmail.com",
+      // to: "akshay1.py@gmail.com",
       replyTo: (formData.get("email") as string) || process.env.EMAIL_USER,
       subject: subject,
       html: emailTemplate,
